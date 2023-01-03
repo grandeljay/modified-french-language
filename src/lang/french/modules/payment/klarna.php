@@ -11,7 +11,7 @@
 $lang_array = array(
     'MODULE_PAYMENT_' . $klarna_code . '_TEXT_TITLE'            => '',
     'MODULE_PAYMENT_' . $klarna_code . '_TEXT_DESCRIPTION'      => 'Avant de pouvoir configurer les méthodes de paiement de Klarna Payments, vous devez ouvrir un compte marchand avec Klarna. Vous recevrez ensuite les informations et les données de connexion nécessaires à la création de votre compte. Si vous avez déjà un numéro de client Klarna, mais que vous n\'êtes pas Kxxxxxx, veuillez envoyer un e-mail à <a href="mailto:vertrieb@klarna.com">vertrieb@klarna.com.</a><br /><br />
-    <img src="../lang/spanish/admin/images/icon.gif" border="0" />
+    <img src="../lang/french/admin/images/icon.gif" border="0" />
     <a href="https://www.klarna.com/de/verkaeufer/" target="_blank" style="text-decoration: underline; font-weight: bold;">Créez un compte Klarna ici.</a>
     <img src="images/icon_popup.gif" border="0" />',
     'MODULE_PAYMENT_' . $klarna_code . '_TEXT_INFO'             => '',

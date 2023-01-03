@@ -31,7 +31,7 @@ define('MODULE_ADMIN_LOG_STATUS_DESC', 'Activer l\'enregistrement de l\'administ
 define('MODULE_ADMIN_LOG_DISPLAY_TITLE', 'Inscription au spectacle ?');
 define('MODULE_ADMIN_LOG_DISPLAY_DESC', 'Afficher le journal de l\'administrateur dans le pied de page');
 
-define('MODULE_ADMIN_LOG_SHOW_DETAILS_TITLE', '¿Mostrar detalles ?');
+define('MODULE_ADMIN_LOG_SHOW_DETAILS_TITLE', 'Afficher les détails ?');
 define('MODULE_ADMIN_LOG_SHOW_DETAILS_DESC', 'Montrez les détails du changement sous forme de matrice');
 
 define('MODULE_ADMIN_LOG_SHOW_DETAILS_FULL_TITLE', 'Montrer tous les détails ?');

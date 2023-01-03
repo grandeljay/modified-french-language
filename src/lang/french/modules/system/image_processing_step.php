@@ -30,7 +30,7 @@ define('IMAGE_EXPORT', 'Cliquez sur Démarrer pour commencer le traitement par l
 define('IMAGE_EXPORT_TYPE', '<hr noshade><strong>Traitement par lots :</strong>');
 
 define('IMAGE_STEP_INFO', 'Images créées : ');
-define('IMAGE_STEP_INFO_READY', ' - ¡Listo !');
+define('IMAGE_STEP_INFO_READY', ' - Prêt !');
 define('TEXT_MAX_IMAGES', '<b>Images par rechargement de page :</b>');
 define('TEXT_PROCESS_TYPE', '<b>Traitement des images :</b>');
 define('TEXT_SETTINGS', '<b>Ajustes :</b>');

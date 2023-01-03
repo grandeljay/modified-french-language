@@ -508,7 +508,7 @@ define('SHOW_IP_LOG_TITLE', 'L\'enregistrement de la propriété intellectuelle 
 define('SHOW_IP_LOG_DESC', 'Afficher le texte "Votre IP sera enregistré pour des raisons de sécurité" lors du paiement ?');
 
 define('ACTIVATE_GIFT_SYSTEM_TITLE', 'Activer le système de bons d\'achat ?');
-define('ACTIVATE_GIFT_SYSTEM_DESC', '¿Activer le système de coupons ?<br/><b>Remarque :</b> Le ot_coupon <a href="' . xtc_href_link(FILENAME_MODULES, 'set=ordertotal&module=ot_coupon') . '"><b>ici</b></a> et ot_gv <a href="' . xtc_href_link(FILENAME_MODULES, 'set=ordertotal&module=ot_gv') . '"><b>ici</b></a> doivent être activés.');
+define('ACTIVATE_GIFT_SYSTEM_DESC', 'Activer le système de coupons ?<br/><b>Remarque :</b> Le ot_coupon <a href="' . xtc_href_link(FILENAME_MODULES, 'set=ordertotal&module=ot_coupon') . '"><b>ici</b></a> et ot_gv <a href="' . xtc_href_link(FILENAME_MODULES, 'set=ordertotal&module=ot_gv') . '"><b>ici</b></a> doivent être activés.');
 
 define('SECURITY_CODE_LENGTH_TITLE', 'Longueur du code de bon d\'achat');
 define('SECURITY_CODE_LENGTH_DESC', 'Saisissez ici la longueur du code du bon d\'achat (16 caractères maximum).');
@@ -943,7 +943,7 @@ define('SEO_URL_MOD_CLASS_TITLE', 'Module URL');
 define('SEO_URL_MOD_CLASS_DESC', 'Sélectionnez un module URL.');
 
 define('MODULE_BANNER_MANAGER_STATUS_TITLE', 'Gestionnaire de bannières');
-define('MODULE_BANNER_MANAGER_STATUS_DESC', '¿Activar Banner Manager ?');
+define('MODULE_BANNER_MANAGER_STATUS_DESC', 'Activer Banner Manager ?');
 
 define('MODULE_NEWSLETTER_STATUS_TITLE', 'Bulletin d\'information');
 define('MODULE_NEWSLETTER_STATUS_DESC', 'Activer le système de bulletin ?');

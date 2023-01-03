@@ -3,9 +3,9 @@
 /**
  * French language
  *
- * @author  Jay Trees <spanish-language@grandels.email>
- * @link    https://github.com/grandeljay/modified-spanish-language
- * @package GrandelJaySpanishLanguage
+ * @author  Jay Trees <french-language@grandels.email>
+ * @link    https://github.com/grandeljay/modified-french-language
+ * @package GrandelJayFrenchLanguage
  */
 
 define('HEADING_TITLE', 'Suivi des fournisseurs de services de colis');

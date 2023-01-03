@@ -333,7 +333,7 @@ define('SUCCESS_FILE_SAVED_SUCCESSFULLY', 'Succès : Le fichier téléchargé a 
 define('WARNING_NO_FILE_UPLOADED', 'Avertissement : Aucun fichier n\'a été téléchargé.');
 define('ERROR_FILE_NOT_REMOVEABLE', 'Erreur : Le fichier n\'a pas pu être supprimé.');
 
-define('DELETE_ENTRY', '¿Entrée dégagée ?');
+define('DELETE_ENTRY', 'Entrée dégagée ?');
 define('TEXT_PAYMENT_ERROR', '<b>ATTENTION :</b> Activez un <a href="%s">module de paiement</a>!');
 define('TEXT_SHIPPING_ERROR', '<b>AVERTISSEMENT :</b> Activez un <a href="%s">module d\'expédition</a>!');
 define('TEXT_PAYPAL_CONFIG', '<b>AVERTISSEMENT :</b> Veuillez configurer le module de paiement PayPal en "mode actif" : <a href="%s"><strong>Partenaire -&gt; PayPal</strong></a>');

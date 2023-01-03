@@ -10,7 +10,7 @@
 
 $klarna_code = 'KLARNA_PAYOVERTIME';
 
-include DIR_FS_CATALOG . 'lang/spanish/modules/payment/klarna.php';
+include DIR_FS_CATALOG . 'lang/french/modules/payment/klarna.php';
 
 $lang_array['MODULE_PAYMENT_' . $klarna_code . '_TEXT_TITLE']         = 'Location-vente Klarna';
 $lang_array['MODULE_PAYMENT_' . $klarna_code . '_TEXT_ERROR_MESSAGE'] = 'Le paiement de la location-vente a été annulé.';
