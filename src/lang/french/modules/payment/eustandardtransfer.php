@@ -11,7 +11,7 @@
 define('MODULE_PAYMENT_EUSTANDARDTRANSFER_TEXT_TITLE', 'Virement bancaire standard de l\'UE');
 define(
     'MODULE_PAYMENT_EUSTANDARDTRANSFER_TEXT_DESCRIPTION',
-    '<br />Le mode de paiement le moins cher et le plus simple au sein de l\'UE est le virement bancaire utilisant les codes IBAN et BIC' . .
+    '<br />Le mode de paiement le moins cher et le plus simple au sein de l\'UE est le virement bancaire utilisant les codes IBAN et BIC' .
     '<br />Veuillez utiliser les coordonnées suivantes pour le transfert du montant total :<br />' .
     (defined('MODULE_PAYMENT_EUSTANDARDTRANSFER_BANKNAM') ? '<br />Nom de la banque : ' . MODULE_PAYMENT_EUSTANDARDTRANSFER_BANKNAM : '') .
     (defined('MODULE_PAYMENT_EUSTANDARDTRANSFER_BRANCH')  ? '<br />Bénéficiaire : ' . MODULE_PAYMENT_EUSTANDARDTRANSFER_BRANCH : '') .
