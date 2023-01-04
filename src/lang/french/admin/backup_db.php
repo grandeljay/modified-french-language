@@ -19,7 +19,7 @@ define('TEXT_INFO_DO_RESTORE', 'La base de données est restaurée !');
 define('TEXT_INFO_DO_RESTORE_OK', 'La base de données a été restaurée avec succès !');
 define('TEXT_INFO_DO_GUNZIP', 'Le fichier de sauvegarde est dézippé !');
 
-define('ERROR_BACKUP_DIRECTORY_DOES_NOT_EXIST', 'Erreur : le répertoire pour la sauvegarde n'existe pas. Veuillez corriger l'erreur dans votre configure.php.');
+define('ERROR_BACKUP_DIRECTORY_DOES_NOT_EXIST', 'Erreur : le répertoire pour la sauvegarde n\'existe pas. Veuillez corriger l\'erreur dans votre configure.php.');
 define('ERROR_BACKUP_DIRECTORY_NOT_WRITEABLE', 'Erreur : Impossible d\'écrire dans le répertoire de sauvegarde.');
 define('ERROR_DOWNLOAD_LINK_NOT_ACCEPTABLE', 'Erreur : Le lien de téléchargement n\'est pas acceptable.');
 define('ERROR_DECOMPRESSOR_NOT_AVAILABLE', 'Erreur : Aucun décompresseur approprié n\'est disponible.');
