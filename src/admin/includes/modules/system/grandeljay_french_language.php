@@ -20,6 +20,8 @@ class grandeljay_french_language extends StdModule
     public function __construct()
     {
         parent::__construct();
+
+        $this->checkForUpdate(true);
     }
 
     public function display()
@@ -46,6 +48,17 @@ class grandeljay_french_language extends StdModule
         xtc_db_perform(TABLE_LANGUAGES, $sql_data_array);
 
         $lID = xtc_db_insert_id();
+    }
+
+    protected function updateSteps()
+    {
+        if (version_compare($this->getVersion(), self::VERSION, '<')) {
+            $this->setVersion(self::VERSION);
+
+            return self::UPDATE_SUCCESS;
+        }
+
+        return self::UPDATE_NOTHING;
     }
 
     public function remove()
