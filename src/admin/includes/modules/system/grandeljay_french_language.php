@@ -6,6 +6,9 @@
  * @author  Jay Trees <french-language@grandels.email>
  * @link    https://github.com/grandeljay/modified-french-language
  * @package GrandelJayFrenchLanguage
+ *
+ * @phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ * @phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
  */
 
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
