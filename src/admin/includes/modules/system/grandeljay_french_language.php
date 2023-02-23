@@ -10,8 +10,6 @@
 
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
-require_once DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/autoload.php';
-
 class grandeljay_french_language extends StdModule
 {
     public const VERSION = '0.1.1';
