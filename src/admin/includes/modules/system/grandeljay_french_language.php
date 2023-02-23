@@ -19,11 +19,7 @@ class grandeljay_french_language extends StdModule
 
     public function __construct()
     {
-        if (function_exists('parent::__construct()')) {
-            parent::__construct();
-        } else {
-            $this->init('MODULE_' . strtoupper(self::class));
-        }
+        parent::__construct();
     }
 
     public function display()
