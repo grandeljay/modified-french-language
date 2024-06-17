@@ -260,7 +260,7 @@ define('NO', 'pas de');
 define('SAVE_ENTRY', 'Enregistrer les changements ?');
 define('TEXT_CHOOSE_INFO_TEMPLATE', 'Modèle de détail d\'article');
 define('TEXT_CHOOSE_OPTIONS_TEMPLATE', 'Modèle d\'options d\'articles');
-define('TEXT_SELECT', 'Veuillez sélectionner -- Veuillez sélectionner -- Veuillez sélectionner -- Veuillez sélectionner -- Veuillez sélectionner -- Veuillez sélectionner');
+define('TEXT_SELECT', '-- Veuillez sélectionner --');
 define('PULL_DOWN_DEFAULT', 'Veuillez sélectionner');
 
 define('ICON_ARROW_RIGHT', 'marques');
