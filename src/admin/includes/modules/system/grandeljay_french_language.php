@@ -34,7 +34,7 @@ class grandeljay_french_language extends StdModule
         parent::install();
 
         /** Insert French language */
-        $sql_data_array = array(
+        $sql_data_array = [
             'name'             => 'French',
             'code'             => 'fr',
             'image'            => 'fr.svg',
@@ -43,7 +43,7 @@ class grandeljay_french_language extends StdModule
             'language_charset' => 'utf-8',
             'status'           => '1',
             'status_admin'     => '1',
-        );
+        ];
 
         xtc_db_perform(TABLE_LANGUAGES, $sql_data_array);
 
