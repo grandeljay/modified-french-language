@@ -37,7 +37,7 @@ class grandeljay_french_language extends StdModule
         $sql_data_array = [
             'name'             => 'French',
             'code'             => 'fr',
-            'image'            => 'fr.svg',
+            'image'            => 'icon.png',
             'directory'        => 'french',
             'sort_order'       => '3',
             'language_charset' => 'utf-8',
