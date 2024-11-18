@@ -1,7 +1,7 @@
 <?php
 
 /**
- * French Language
+ * French language
  *
  * @author  Jay Trees <french-language@grandels.email>
  * @link    https://github.com/grandeljay/modified-french-language
