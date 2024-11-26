@@ -51,6 +51,7 @@ define('ENTRY_SHIPPING_UNALLOWED', 'L\'envoi de modules n\'est pas autorisé :')
 define('ENTRY_NEW_PASSWORD', 'Nouveau mot de passe :');
 
 define('TABLE_HEADING_UMSATZ', 'Facturation');
+
 define('TABLE_HEADING_EMAIL', 'Adresse e-mail');
 
 define('TEXT_INFO_HEADING_ADRESS_BOOK', 'Carnet d\'adresses');

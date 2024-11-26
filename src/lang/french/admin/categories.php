@@ -9,10 +9,11 @@
  */
 
 define('TEXT_EDIT_STATUS', 'Statut actif');
-
 define('HEADING_TITLE', 'Catégories');
 define('HEADING_TITLE_SEARCH', 'Busque: ');
 define('HEADING_TITLE_GOTO', 'Aller à :');
+define('HEADING_TITLE_MANUFACTURERS', 'fabricant :');
+define('HEADING_TITLE_SHOW_CATEGORIES', 'Afficher les catégories :');
 
 define('TABLE_HEADING_ID', 'ID');
 define('TABLE_HEADING_CATEGORIES_PRODUCTS', 'Catégories / Articles');
@@ -23,17 +24,23 @@ define('TABLE_HEADING_STOCK', 'Stock');
 define('TABLE_HEADING_SORT', 'Destination.');
 define('TABLE_HEADING_EDIT', 'Edite');
 define('TABLE_HEADING_PRODUCTS_MODEL', 'Numéro d\'article');
+
 define('TABLE_HEADING_IMAGE', 'Imagen');
 
 define('TEXT_ACTIVE_ELEMENT', 'Élément actif');
 define('TEXT_MARKED_ELEMENTS', 'Éléments marqués');
 define('TEXT_INFORMATIONS', 'Information');
 define('TEXT_INSERT_ELEMENT', 'Nouvel élément');
+define('TEXT_SHOW_NO_MANUFACTURERS', 'Sans fabricant');
+define('TEXT_SHOW_ALL_MANUFACTURERS', 'Tous les fabricants');
+define('TEXT_SHOW_ALL_PRODUCTS', 'Tous les articles');
+define('TEXT_SHOW_ALL_ACTIVE', 'actif');
+define('TEXT_SHOW_ALL_INACTIVE', 'inactif');
 
 define('TEXT_WARN', 'Avis de stock :');
 define('TEXT_WARN_MAIN', 'Article principal');
-define('TEXT_NEW_PRODUCT', 'Nouvel article dans &quot;%s');
-define('TEXT_EDIT_PRODUCT', 'Editer l\'article dans &quot;%s');
+define('TEXT_NEW_PRODUCT', 'Nouvel article dans "%s"');
+define('TEXT_EDIT_PRODUCT', 'Editer l\'article dans "%s"');
 define('TEXT_CATEGORIES', 'Catégories :');
 define('TEXT_PRODUCTS', 'Produits :');
 define('TEXT_PRODUCTS_PRICE_INFO', 'Precio :');
@@ -45,6 +52,7 @@ define('TEXT_PRODUCTS_DISCOUNT_ALLOWED_INFO', 'Remise maximale autorisée :');
 define('TEXT_DATE_ADDED', 'Ajouté le :');
 define('TEXT_DATE_AVAILABLE', 'Date de publication :');
 define('TEXT_LAST_MODIFIED', 'Dernière modification :');
+define('TEXT_PRODUCTS_ORDERED', 'Articles vendus :');
 define('TEXT_IMAGE_NONEXISTENT', 'L\'image n\'existe pas');
 define('TEXT_NO_CHILD_CATEGORIES_OR_PRODUCTS', 'Veuillez ajouter une nouvelle catégorie ou un nouvel article dans <strong>%s</strong>. ');
 define('TEXT_PRODUCT_MORE_INFORMATION', 'Pour plus d\'informations, veuillez consulter le site <a href="http://%s" target="_blank"><u>Page d\'accueil</u></a> le site Web du fabricant.');
@@ -56,6 +64,7 @@ define('TEXT_EDIT_CATEGORIES_ID', 'ID de la catégorie :');
 define('TEXT_EDIT_CATEGORIES_NAME', 'Nom de la catégorie :');
 define('TEXT_EDIT_CATEGORIES_HEADING_TITLE', 'Titre de la catégorie :');
 define('TEXT_EDIT_CATEGORIES_DESCRIPTION', 'Description de la catégorie :');
+define('TEXT_EDIT_CATEGORIES_SHORT_DESCRIPTION', 'Catégorie Description courte :');
 define('TEXT_EDIT_CATEGORIES_IMAGE', 'Image de la catégorie :');
 define('TEXT_EDIT_CATEGORIES_IMAGE_LIST', 'Liste des images de la catégorie :');
 define('TEXT_EDIT_CATEGORIES_IMAGE_MOBILE', 'Catégorie Image mobile :');
@@ -65,8 +74,8 @@ define('TEXT_EDIT_SORT_ORDER', 'Ordre de classement :');
 define('TEXT_INFO_COPY_TO_INTRO', 'Sélectionnez une nouvelle catégorie dans laquelle vous souhaitez copier l\'article :');
 define('TEXT_INFO_CURRENT_CATEGORIES', 'Catégories actuelles :');
 
-define('TEXT_INFO_HEADING_NEW_CATEGORY', 'Nouvelle catégorie dans &quot;%s');
-define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Modifier la catégorie dans &quot;%s');
+define('TEXT_INFO_HEADING_NEW_CATEGORY', 'Nouvelle catégorie dans "%s"');
+define('TEXT_INFO_HEADING_EDIT_CATEGORY', 'Modifier la catégorie dans "%s"');
 define('TEXT_INFO_HEADING_DELETE_CATEGORY', 'Supprimer la catégorie');
 define('TEXT_INFO_HEADING_MOVE_CATEGORY', 'Déplacer la catégorie');
 define('TEXT_INFO_HEADING_DELETE_PRODUCT', 'Supprimer l\'article');
@@ -115,6 +124,8 @@ define('TEXT_PRODUCTS_DESCRIPTION', 'Description de l\'article :');
 define('TEXT_PRODUCTS_QUANTITY', 'Stock :');
 define('TEXT_PRODUCTS_MODEL', 'Article n');
 define('TEXT_PRODUCTS_IMAGE', 'Image de l\'article :');
+define('TEXT_PRODUCTS_IMAGE_TITLE', 'Titre :');
+define('TEXT_PRODUCTS_IMAGE_ALT', 'Description :');
 define('TEXT_PRODUCTS_URL', 'Lien du fabricant :');
 define('TEXT_PRODUCTS_URL_WITHOUT_HTTP', '<small>(sans l\'adresse http://)</small>');
 define('TEXT_PRODUCTS_PRICE', 'Prix de l\'article :');
@@ -149,7 +160,7 @@ define('TABLE_HEADING_PRICE', 'Prix');
 define('TEXT_FSK18', 'FSK 18 :');
 define('TEXT_CHOOSE_INFO_TEMPLATE_CATEGORIE', 'Modèle de résumé de catégorie');
 define('TEXT_CHOOSE_INFO_TEMPLATE_LISTING', 'Modèle de résumé d\'article');
-define('TEXT_PRODUCTS_SORT', 'Ordre de classement :');
+define('TEXT_PRODUCTS_SORT', 'Classement :');
 define('TEXT_EDIT_PRODUCT_SORT_ORDER', 'Classification des articles');
 define('TXT_PRICES', 'Prix');
 define('TXT_NAME', 'Nom de l\'article');
@@ -184,12 +195,17 @@ define('HEADING_CATEGORY', 'Catégorie');
 define('HEADING_IMAGE', 'Imagen');
 
 define('TEXT_PRODUCTS_DATE_FORMAT', 'AAAA-MM-DD');
+
 define('TEXT_CHARACTERS', 'Personnages');
+
 define('TEXT_ATTRIBUTE_COPY', 'Copier les attributs de l\'élément');
 define('TEXT_ATTRIBUTE_COPY_INFO', 'Copie les attributs de l\'article<br/ >Uniquement recommandé pour une copie unique (1 article)');
+
 define('TEXT_PRODUCTS_ORDER_DESCRIPTION', 'Description de la commande - Affichage à la fin de la commande, dans l\'e-mail de commande, l\'impression de la commande.');
+
 define('TEXT_HOW_TO_LINK', '<b>Affichage de la page après avoir copié/lié</b>');
 define('TEXT_HOW_TO_LINK_INFO', 'Masque de saisie de l\'article<br/ >(S\'il y a plusieurs articles, passez au dernier de la liste)');
+
 define('TEXT_SET_GROUP_PERMISSIONS', 'Supposons que les permissions du groupe de clients pour tous les sous-dossiers et éléments ?');
 
 define('HEADING_TITLE_ONLY_INACTIVE_PRODUCTS', 'Afficher uniquement les éléments inactifs');
@@ -210,7 +226,7 @@ define('TEXT_IN', 'en :');
 
 define('TEXT_PRODUCTS_ATTRIBUTES_RECALCULATE', 'Recalculer les attributs lorsque le taux d\'imposition change');
 
-define('HEADING_TITLE_CAT_BREADCRUMB', ' en &quot;%s&quot;');
+define('HEADING_TITLE_CAT_BREADCRUMB', ' en "%s"');
 
 define('TEXT_PRODUCTS_TAGS', 'Propriétés de l\'article');
 

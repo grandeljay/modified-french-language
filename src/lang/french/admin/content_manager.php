@@ -11,7 +11,7 @@
 defined('HEADING_TITLE') || define('HEADING_TITLE', 'Système de gestion de contenu');
 define('HEADING_CONTENT', 'Pages de contenu');
 define('HEADING_PRODUCTS_CONTENT', 'Annexes de l\'article');
-define('HEADING_CONTENT_MANAGER_CONTENT', 'Contenu Anh&auml;nge');
+define('HEADING_CONTENT_MANAGER_CONTENT', 'Pièces jointes au contenu');
 define('HEADING_EMAIL_CONTENT', 'Pièces jointes aux e-mails');
 define('TABLE_HEADING_CONTENT_ID', 'ID');
 define('TABLE_HEADING_CONTENT_TITLE', 'Titre');
@@ -95,6 +95,7 @@ define('TEXT_CONTENT_META_ROBOTS', 'Meta Robot');
 
 define('TABLE_HEADING_STATUS_ACTIVE', 'État');
 define('TEXT_STATUS_ACTIVE', 'Statut actif :');
+
 define('TEXT_STATUS_ACTIVE_DESCRIPTION', 'Activer le contenu ?');
 
 define('TEXT_CONTENT_DOUBLE_GROUP_INDEX', 'Index du groupe de contenu dupliqué ! Veuillez enregistrer à nouveau. Cela réglera automatiquement le problème.');

@@ -23,7 +23,7 @@ define('TEXT_BANNERS_TITLE', 'Titre de la bannière :');
 define('TEXT_BANNERS_URL', 'URL de la bannière :');
 define('TEXT_BANNERS_URL_NOTE', 'URL de destination lorsque la bannière est cliquée.');
 define('TEXT_BANNERS_REDIRECT', 'Lien direct :');
-define('TEXT_BANNERS_REDIRECT_NOTE', 'La bannière est liée directement à l\'URL de la bannière spécifiée et non en utilisant "redirect.php?action=banner&amp;goto=xxx".<br /><strong>ATTENTION :</strong> Les "annonces / clics" ne peuvent plus être comptabilisés si le "lien direct" est activé !');
+define('TEXT_BANNERS_REDIRECT_NOTE', 'La bannière est liée directement à l\'URL de la bannière spécifiée et non en utilisant "redirect.php?action=banner&goto=xxx".<br /><strong>ATTENTION :</strong> Les "annonces / clics" ne peuvent plus être comptabilisés si le "lien direct" est activé !');
 define('TEXT_BANNERS_GROUP', 'Groupe de bannières :');
 define('TEXT_BANNERS_NEW_GROUP', 'Sélectionnez le groupe de bannières souhaité dans la liste déroulante (si disponible) ou saisissez un nouveau groupe de bannières ci-dessous.');
 define('TEXT_BANNERS_NEW_GROUP_NOTE', 'Pour qu\'une bannière apparaisse dans le modèle, le modèle doit être développé.<br/>Exemple : le groupe Banner est banner, il peut donc être affiché dans le modèle dans l\'index.html avec {$BANNER}.');
@@ -41,6 +41,10 @@ define('TEXT_BANNERS_BANNER_NOTE', '<b>Commentaire de la bannière :</b><ul><li>
 define('TEXT_BANNERS_INSERT_NOTE', '<b>Remarque :</b><ul><li>Vous devez avoir un accès en écriture au répertoire des images.</li><li>Ne remplissez pas le champ "Destination de l\'image (enregistrer sur)" si vous ne souhaitez pas copier une image sur votre serveur (par exemple, si l\'image est déjà sur le serveur).</li><li>Le champ "Image destination (save to)" doit être un répertoire existant avec "/" à la fin (par exemple, banners/).</li></ul>');
 define('TEXT_BANNERS_EXPIRCY_NOTE', '<b>Commentaire sur la validité :</b><ul><li>Ne remplissez qu\'un seul champ.</li><li>Si la bannière doit être affichée indéfiniment, ne saisissez rien dans ces champs.</li></ul>');
 define('TEXT_BANNERS_SCHEDULE_NOTE', '<b>Valable à partir du commentaire :</b><ul><li>Lorsque vous utilisez cette fonction, la bannière ne sera affichée qu\'à partir de la date spécifiée.</li><li>Toutes les bannières dotées de cette fonction sont affichées comme désactivées jusqu\'à ce qu\'elles soient activées.</li></ul>');
+define('TEXT_BANNERS_IMAGE_TITLE', 'Titre de l\'image');
+define('TEXT_BANNERS_IMAGE_TITLE_NOTE', '');
+define('TEXT_BANNERS_IMAGE_ALT', 'Image Description');
+define('TEXT_BANNERS_IMAGE_ALT_NOTE', '');
 
 define('TEXT_BANNERS_DATE_ADDED', 'ajouté sur :');
 define('TEXT_BANNERS_SCHEDULED_AT_DATE', 'Validité à partir de : <b>%s</b>');
@@ -76,6 +80,7 @@ define('ERROR_GRAPHS_DIRECTORY_DOES_NOT_EXIST', 'Erreur : Le répertoire \'graph
 define('ERROR_GRAPHS_DIRECTORY_NOT_WRITEABLE', 'Erreur : Le répertoire \'graphs\' est protégé en écriture !');
 
 define('TEXT_BANNERS_DATE_FORMAT', 'AAAA-MM-DD');
+
 define('TEXT_BANNERS_LANGUAGE', 'Langue :');
 define('TEXT_BANNERS_LANGUAGE_NOTE', 'Dans quelle langue la bannière doit-elle apparaître ?');
 define('TEXT_NO_FILE', '-- aucun fichier --');

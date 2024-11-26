@@ -13,7 +13,7 @@ define('HEADING_TITLE', 'Configurer les autorisations de groupes de clients');
 define('TEXT_CATEGORIES', 'Catégories');
 define('TEXT_PRODUCTS', 'Article');
 define('TEXT_CONTENT_MANAGER', 'Pages de contenu');
-define('TEXT_CONTENT_MANAGER_CONTENT', 'Contenu Anh&auml;nge');
+define('TEXT_CONTENT_MANAGER_CONTENT', 'Pièces jointes au contenu');
 define('TEXT_PRODUCTS_CONTENT', 'Annexes de l\'article');
 define('TEXT_EMAIL_CONTENT', 'Pièces jointes aux e-mails');
 define('TEXT_PERMISSION', '<div class="error_message">ATTENTION : Toutes les permissions établies seront écrasées !</div><br/>Autorisation');

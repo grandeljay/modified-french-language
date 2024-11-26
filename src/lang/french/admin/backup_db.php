@@ -36,3 +36,6 @@ define('SUCCESS_BACKUP_DELETED', 'Réussi : la sauvegarde a été supprimée.');
 define('TEXT_BACKUP_UNCOMPRESSED', 'Le fichier de sauvegarde a été décompressé : ');
 
 define('TEXT_SIMULATION', '<br>(Simulation avec fichier journal)');
+
+defined('YES') || define('YES', 'oui');
+defined('NO') || define('NO', 'non');

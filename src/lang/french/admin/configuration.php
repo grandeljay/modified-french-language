@@ -50,7 +50,7 @@ define('USE_DEFAULT_LANGUAGE_CURRENCY_TITLE', 'Passage automatique à la monnaie
 define('USE_DEFAULT_LANGUAGE_CURRENCY_DESC', 'Convertissez automatiquement dans la devise nationale du client, si disponible.');
 
 define('SEND_EXTRA_ORDER_EMAILS_TO_TITLE', 'Envoyez un courriel de commande supplémentaire à :');
-define('SEND_EXTRA_ORDER_EMAILS_TO_DESC', 'Si une copie de l\'e-mail de commande doit également être envoyée, veuillez indiquer les adresses de réception comme suit : Nom 1 &lt;email@address1&gt;, Nom 2 &lt;email@address2&gt;.');
+define('SEND_EXTRA_ORDER_EMAILS_TO_DESC', 'Si une copie de l\'e-mail de commande doit également être envoyée, veuillez indiquer les adresses de réception comme suit : Nom 1 <email@address1>, Nom 2 <email@address2>.');
 
 define('SEARCH_ENGINE_FRIENDLY_URLS_TITLE', 'Utiliser des URL conviviales pour les moteurs de recherche ?');
 define('SEARCH_ENGINE_FRIENDLY_URLS_DESC', 'Les URL des pages peuvent être automatiquement optimisées pour les moteurs de recherche.<br /><br /><strong>Attention :</strong> Pour des URL optimisées pour les moteurs de recherche, le fichier _.htaccess dans le répertoire principal de la boutique doit être activé ou renommé en .htaccess ! En outre, le serveur Web doit prendre en charge <a href="http://www.modrewrite.de/" target="_blank">mod_rewrite</a>! (Demandez à votre fournisseur d\'hébergement Web si vous ne pouvez pas le vérifier).');
@@ -153,6 +153,10 @@ define('MAX_DISPLAY_ALSO_PURCHASED_TITLE', 'Elle a également acheté');
 define('MAX_DISPLAY_ALSO_PURCHASED_DESC', 'Nombre maximum d\'articles également achetés à afficher dans la vue des articles.');
 define('MAX_DISPLAY_ALSO_PURCHASED_ORDERS_TITLE', 'Nombre de commandes Également acheté');
 define('MAX_DISPLAY_ALSO_PURCHASED_ORDERS_DESC', 'Nombre maximum de commandes recherchées pour déterminer les articles également achetés.');
+define('MAX_DISPLAY_CROSS_SELLS_TITLE', 'Ventes croisées');
+define('MAX_DISPLAY_CROSS_SELLS_DESC', 'Nombre maximum d\'articles de vente croisée à afficher lors de l\'affichage des articles.<br><b>Remarque :</b> Avec 0, tous les articles attribués sont affichés.');
+define('MAX_DISPLAY_REVERSE_CROSS_SELLS_TITLE', 'Vente croisée inversée');
+define('MAX_DISPLAY_REVERSE_CROSS_SELLS_DESC', 'Nombre maximum d\'articles de vente croisée inversée à afficher lors de l\'affichage des articles.<br><b>Remarque :</b> Avec 0, tous les articles attribués sont affichés.');
 define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_TITLE', 'Tableau récapitulatif des commandes');
 define('MAX_DISPLAY_PRODUCTS_IN_ORDER_HISTORY_BOX_DESC', 'Nombre maximum d\'articles à afficher dans le tableau récapitulatif de la commande personnelle du client.');
 define('MAX_DISPLAY_ORDER_HISTORY_TITLE', 'Résumé des ordonnances');
@@ -246,8 +250,10 @@ define('PRODUCT_IMAGE_POPUP_MERGE_TITLE', 'Images pop-up d\'articles : fusionner
 define('PRODUCT_IMAGE_POPUP_MERGE_DESC', 'Artikel-Popup Bilder:Merge<br /><br />Standard Wert : (overlay.gif,10,-50,60,FF0000)<br /><br />merge image overlay<br />Verwendung :<br />(merge image,start x [neg = from right],start y [neg = from bottom],opacity,transparent colour in the merge image)');
 
 define('IMAGE_MANIPULATOR_TITLE', 'Traitement GDlib');
-define('IMAGE_MANIPULATOR_DESC', 'Manipulateur d\'images pour GD2 ou GD1<br /><br /><b>HINWEIS :</b> image_manipulator_GD2_advanced.php unterst&uuml;tzt transparente PNG\'s');
+define('IMAGE_MANIPULATOR_DESC', 'Manipulateur d\'images pour GD2 ou GD1<br /><br /><b>REMARQUE :</b> image_manipulator_GD2_advanced.php supporte les PNG transparents');
 
+define('IMAGE_TYPE_EXTENSION_TITLE', 'Type d\'image');
+define('IMAGE_TYPE_EXTENSION_DESC', 'Quel type d\'image doit être fourni ?<br /><br /><b>REMARQUE :</b> Après la conversion, le traitement des images doit être lancé pour la <a href="' . xtc_href_link(FILENAME_MODULE_EXPORT, 'set=system&module=image_processing_step') . '"><b>génération des images</b></a>.');
 define('ACCOUNT_GENDER_TITLE', 'Saludo');
 define('ACCOUNT_GENDER_DESC', 'Demander un message d\'accueil lors de l\'ouverture/du traitement d\'un compte');
 define('ACCOUNT_DOB_TITLE', 'Date de naissance');
@@ -362,12 +368,15 @@ define('SMTP_PASSWORD_TITLE', 'Mot de passe SMTP');
 define('SMTP_PASSWORD_DESC', 'Saisissez ici le mot de passe de votre compte SMTP.');
 define('SMTP_AUTH_TITLE', 'SMTP-Auth');
 define('SMTP_AUTH_DESC', 'Le serveur SMTP nécessite-t-il une authentification sécurisée ?');
+define('SMTP_AUTH_TYPE_TITLE', 'SMTP AuthType');
+define('SMTP_AUTH_TYPE_DESC', 'Geben Sie den Typ der SMTP Authentifizierung an.');
 define('SMTP_PORT_TITLE', 'Port SMTP');
 define('SMTP_PORT_DESC', 'Entrez le port SMTP de votre serveur SMTP (par défaut : 25) ?');
 define('SMTP_AUTO_TLS_TITLE', 'Connexion automatique TLS SMTP');
 define('SMTP_AUTO_TLS_DESC', 'Connexion automatique avec STARTTLS si SMTP-SECURE est désactivé ?<br>En cas de problèmes d\'envoi, désactivez la connexion automatique TLS !</br>');
 define('SMTP_DEBUG_TITLE', 'Niveau du journal de débogage SMTP');
 define('SMTP_DEBUG_DESC', '<b>0</b>: aucune sortie ; <b>1</b>: commandes uniquement ; <b>2</b>: données et commandes ; <b>3</b>: comme 2 plus état de la connexion ; <b>4</b>: comme 3 plus informations Si<br>la valeur est fixée à 2, en</br>cas de problèmes de<br>transmission, un journal sera créé dans le répertoire des journaux</br>.');
+define('CFG_TXT_DEFAULT', 'Défaut');
 
 define('EMAIL_SQL_ERRORS_TITLE', 'Envoyer les messages d\'erreur SQL par e-mail');
 define('EMAIL_SQL_ERRORS_DESC', 'Si "true", un e-mail contenant le message d\'erreur SQL est envoyé à l\'adresse e-mail de l\'opérateur du magasin. Au lieu de cela, le message d\'erreur SQL est caché au client.<br />Si "false" est sélectionné, le message d\'erreur correspondant est envoyé directement et est visible par tous (par défaut).');
@@ -432,20 +441,21 @@ define('GZIP_LEVEL_TITLE', 'Niveau de compression');
 define('GZIP_LEVEL_DESC', 'Sélectionnez un niveau de compression entre 0 et 9 (0 = minimum, 9 = maximum).');
 
 define('SESSION_WARNING', '<br /><br /><span class="col-red"><strong>ATTENTION :</strong></span> Cette fonction peut éventuellement influencer la fonctionnalité de la boutique. Ne changez que si vous êtes conscient des conséquences possibles et si le serveur supporte réellement cette fonction !');
+
 define('SESSION_WRITE_DIRECTORY_TITLE', 'Lieu de la session');
 define('SESSION_WRITE_DIRECTORY_DESC', 'Si les sessions doivent être enregistrées sous forme de fichiers, utilisez le dossier suivant.');
 define('SESSION_FORCE_COOKIE_USE_TITLE', 'Forcier le cookie de session');
-define('SESSION_FORCE_COOKIE_USE_DESC', 'Se connecter si les cookies sont autorisés par le navigateur (par défaut &quot;true&quot;).<br/><br/><span class="col-red"><strong>ATTENTION :</strong></span> Cette fonction empêche l\'identifiant de session d\'être présent dans l\'URL.');
+define('SESSION_FORCE_COOKIE_USE_DESC', 'Se connecter si les cookies sont autorisés par le navigateur (par défaut "true").<br/><br/><span class="col-red"><strong>ATTENTION :</strong></span> Cette fonction empêche l\'identifiant de session d\'être présent dans l\'URL.');
 define('SESSION_CHECK_SSL_SESSION_ID_TITLE', 'Vérification de l\'identifiant de session SSL');
-define('SESSION_CHECK_SSL_SESSION_ID_DESC', 'Vérifiez le SSL_SESSION_ID pour chaque appel à la page HTTPS (par défaut &quot;false&quot;).' . SESSION_WARNING);
+define('SESSION_CHECK_SSL_SESSION_ID_DESC', 'Vérifiez le SSL_SESSION_ID pour chaque appel à la page HTTPS (par défaut "false").' . SESSION_WARNING);
 define('SESSION_CHECK_USER_AGENT_TITLE', 'Vérification de l\'agent utilisateur');
-define('SESSION_CHECK_USER_AGENT_DESC', 'Vérifie l\'agent utilisateur du navigateur de l\'utilisateur à chaque affichage de page (par défaut &quot;false&quot;).' . SESSION_WARNING);
+define('SESSION_CHECK_USER_AGENT_DESC', 'Vérifie l\'agent utilisateur du navigateur de l\'utilisateur à chaque affichage de page (par défaut "false").' . SESSION_WARNING);
 define('SESSION_CHECK_IP_ADDRESS_TITLE', 'Vérification de l\'adresse IP');
-define('SESSION_CHECK_IP_ADDRESS_DESC', 'Vérifier l\'adresse IP de l\'utilisateur à chaque accès à la page (par défaut &quot;false&quot;).' . SESSION_WARNING);
+define('SESSION_CHECK_IP_ADDRESS_DESC', 'Vérifier l\'adresse IP de l\'utilisateur à chaque accès à la page (par défaut "false").' . SESSION_WARNING);
 define('SESSION_RECREATE_TITLE', 'Renouveler la session');
-define('SESSION_RECREATE_DESC', 'Rafraîchissez la session et attribuez un nouvel ID de session dès qu\'un utilisateur se connecte ou s\'enregistre (PHP &gt;=4.1 requis). (par défaut &quot;false&quot;)' . SESSION_WARNING);
-define('SESSION_DELETE_OLD_COOKIES_TITLE', 'L&ouml;schen du cookie de session');
-define('SESSION_DELETE_OLD_COOKIES_DESC', 'Les anciens cookies de session doivent-ils être supprimés ? Après une mise à niveau de la version de la boutique &lt;= 2.0.1.0, il est recommandé d\'activer cette option (par défaut &quot;false&quot;).' . SESSION_WARNING);
+define('SESSION_RECREATE_DESC', 'Rafraîchissez la session et attribuez un nouvel ID de session dès qu\'un utilisateur se connecte ou s\'enregistre (PHP >=4.1 requis). (par défaut "false")' . SESSION_WARNING);
+define('SESSION_DELETE_OLD_COOKIES_TITLE', 'Supprimer le cookie de session');
+define('SESSION_DELETE_OLD_COOKIES_DESC', 'Les anciens cookies de session doivent-ils être supprimés ? Après une mise à niveau de la version de la boutique <= 2.0.1.0, il est recommandé d\'activer cette option (par défaut "false").' . SESSION_WARNING);
 
 define('DISPLAY_CONDITIONS_ON_CHECKOUT_TITLE', 'Visualisation de la CTG');
 define('DISPLAY_CONDITIONS_ON_CHECKOUT_DESC', 'Consultez les CGV au cours du processus de commande.');
@@ -514,9 +524,9 @@ define('SECURITY_CODE_LENGTH_TITLE', 'Longueur du code de bon d\'achat');
 define('SECURITY_CODE_LENGTH_DESC', 'Saisissez ici la longueur du code du bon d\'achat (16 caractères maximum).');
 
 define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_TITLE', 'Valeur du chèque-cadeau de bienvenue');
-define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_DESC', 'Valeur du bon d\'achat du cadeau de bienvenue : Si vous ne souhaitez pas envoyer de bon d\'achat dans votre e-mail de bienvenue, entrez 0 ici, sinon entrez la valeur du bon d\'achat, par exemple 10.00 ou 50.00, mais sans les symboles monétaires. Le code de bon d\'achat sera créé automatiquement par la boutique.<br /><b>Remarque :</b> Sous "Paramètres" -&gt; <a href="' . xtc_href_link(FILENAME_CONFIGURATION, 'gID=12') . '"><strong>Options e-mail", vous devez régler "E-mail à la création du compte" sur "Oui".</strong></a> vous devez régler "Email à la création du compte" sur "Oui".');
+define('NEW_SIGNUP_GIFT_VOUCHER_AMOUNT_DESC', 'Valeur du bon d\'achat du cadeau de bienvenue : Si vous ne souhaitez pas envoyer de bon d\'achat dans votre e-mail de bienvenue, entrez 0 ici, sinon entrez la valeur du bon d\'achat, par exemple 10.00 ou 50.00, mais sans les symboles monétaires. Le code de bon d\'achat sera créé automatiquement par la boutique.<br /><b>Remarque :</b> Sous "Paramètres" -> <a href="' . xtc_href_link(FILENAME_CONFIGURATION, 'gID=12') . '"><strong>Options e-mail", vous devez régler "E-mail à la création du compte" sur "Oui".</strong></a> vous devez régler "Email à la création du compte" sur "Oui".');
 define('NEW_SIGNUP_DISCOUNT_COUPON_TITLE', 'Code de réduction de bienvenue');
-define('NEW_SIGNUP_DISCOUNT_COUPON_DESC', 'Code de coupon de réduction de bienvenue : Si vous ne souhaitez pas envoyer de coupon dans votre e-mail de bienvenue, laissez ce champ vide ; sinon, saisissez le code de coupon que vous souhaitez utiliser.<br /><b>Remarque :</b> Sous "Paramètres" -&gt; <a href="' . xtc_href_link(FILENAME_CONFIGURATION, 'gID=12') . '"><strong>"Options d\'e-mail".</strong></a> vous devez régler "Email à la création du compte" sur "Oui" et le code du bon d\'achat doit être créé au préalable dans l\'application <a href="' . xtc_href_link(FILENAME_COUPON_ADMIN) . '"><b>Administration des bons d\'achat</b></a> doit être créé.');
+define('NEW_SIGNUP_DISCOUNT_COUPON_DESC', 'Code de coupon de réduction de bienvenue : Si vous ne souhaitez pas envoyer de coupon dans votre e-mail de bienvenue, laissez ce champ vide ; sinon, saisissez le code de coupon que vous souhaitez utiliser.<br /><b>Remarque :</b> Sous "Paramètres" -> <a href="' . xtc_href_link(FILENAME_CONFIGURATION, 'gID=12') . '"><strong>"Options d\'e-mail".</strong></a> vous devez régler "Email à la création du compte" sur "Oui" et le code du bon d\'achat doit être créé au préalable dans l\'application <a href="' . xtc_href_link(FILENAME_COUPON_ADMIN) . '"><b>Administration des bons d\'achat</b></a> doit être créé.');
 
 define('ACTIVATE_SHIPPING_STATUS_TITLE', 'Activer l\'affichage du statut de l\'envoi ?');
 define('ACTIVATE_SHIPPING_STATUS_DESC', 'Activer l\'affichage de l\'état de la livraison ? (Il est possible de définir des délais de livraison différents pour chaque article. Après l\'activation, un nouveau poste <b>Statut de livraison</b> apparaît dans la saisie du poste).');
@@ -604,19 +614,19 @@ define('DISPLAY_REVOCATION_ON_CHECKOUT_DESC', 'Afficher le droit de rétractatio
 
 define('USE_ADMIN_TOP_MENU_TITLE', 'Admin Navigation supérieure');
 define('USE_ADMIN_TOP_MENU_DESC', 'Activer la navigation supérieure de l\'administrateur ? Sinon, le menu apparaît sur le bord gauche (classique).');
+
 define('USE_ADMIN_LANG_TABS_TITLE', 'Fiches linguistiques pour les catégories/articles');
 define('USE_ADMIN_LANG_TABS_DESC', 'Activer les onglets de langue dans les champs de saisie des catégories/articles ?');
+
 define('USE_ADMIN_THUMBS_IN_LIST_TITLE', 'Images de listes de produits');
 define('USE_ADMIN_THUMBS_IN_LIST_DESC', 'Afficher une colonne supplémentaire avec les images des catégories / articles dans la liste de produits de l\'administrateur ?');
 define('USE_ADMIN_THUMBS_IN_LIST_STYLE_TITLE', 'Listes de produits Images Style CSS');
 define('USE_ADMIN_THUMBS_IN_LIST_STYLE_DESC', 'Des spécifications de style CSS simples peuvent être saisies ici - par exemple, pour la largeur maximale : max-width:90px ;');
-
 define('DELETE_CACHE_SUCCESSFUL', 'Cache supprimé avec succès.');
 define('DELETE_TEMP_CACHE_SUCCESSFUL', 'Cache du modèle supprimé avec succès.');
 
 define('PRODUCT_IMAGE_NO_ENLARGE_UNDER_DEFAULT_TITLE', 'Mise à l\'échelle des images à faible résolution');
 define('PRODUCT_IMAGE_NO_ENLARGE_UNDER_DEFAULT_DESC', 'Activez l\'option <strong>Non</strong> pour empêcher que les images de produits à faible résolution soient mises à l\'échelle des valeurs de largeur et de hauteur par défaut. Si vous activez l\'option <strong>Oui</strong>, les images de résolution inférieure seront également mises à l\'échelle en fonction des valeurs de taille d\'image standard définies. Dans ce cas, cependant, ces images peuvent être très floues et pixellisées.');
-
 define('SHOW_BUTTON_BUY_NOW_TITLE', 'Afficher le bouton "panier" dans les listes de produits');
 define('SHOW_BUTTON_BUY_NOW_DESC', '<span class="col-red"><strong>AVERTISSEMENT :</strong></span> Cela peut entraîner des avertissements si toutes les caractéristiques essentielles de l\'article ne sont pas présentées au client sur les pages de la liste des produits.');
 
@@ -627,9 +637,9 @@ define('WHOS_ONLINE_TIME_LAST_CLICK_TITLE', 'Qui est en ligne - période d\'affi
 define('WHOS_ONLINE_TIME_LAST_CLICK_DESC', 'Affiche la durée des utilisateurs connectés dans le tableau "Qui est en ligne", après ce temps les entrées sont supprimées (valeur minimale : 900).');
 
 define('SESSION_LIFE_ADMIN_TITLE', 'Durée de la session Admin');
-define('SESSION_LIFE_ADMIN_DESC', 'Durée en secondes après laquelle le temps de session pour les admins expire (la session sera déconnectée) - par défaut 7200<br />La valeur définie ici ne s\'applique que si la gestion des sessions est basée sur la base de données. (configure.php =&gt; define(\'STORE_SESSIONS\', \'mysql\') ;)<br />Valeur maximale : 14400');
+define('SESSION_LIFE_ADMIN_DESC', 'Durée en secondes après laquelle le temps de session pour les admins expire (la session sera déconnectée) - par défaut 7200<br />La valeur définie ici ne s\'applique que si la gestion des sessions est basée sur la base de données. (configure.php => define(\'STORE_SESSIONS\', \'mysql\') ;)<br />Valeur maximale : 14400');
 define('SESSION_LIFE_CUSTOMERS_TITLE', 'Durée de la session Clients');
-define('SESSION_LIFE_CUSTOMERS_DESC', 'Durée en secondes après laquelle le délai d\'expiration de la session pour les clients expire (la session sera fermée) - par défaut 1440<br />La valeur définie ici ne s\'applique que si la gestion de la session est basée sur la base de données. (configure.php =&gt; define(\'STORE_SESSIONS\', \'mysql\') ;)<br />Valeur maximale : 14400');
+define('SESSION_LIFE_CUSTOMERS_DESC', 'Durée en secondes après laquelle le délai d\'expiration de la session pour les clients expire (la session sera fermée) - par défaut 1440<br />La valeur définie ici ne s\'applique que si la gestion de la session est basée sur la base de données. (configure.php => define(\'STORE_SESSIONS\', \'mysql\') ;)<br />Valeur maximale : 14400');
 
 define('CHECKOUT_USE_PRODUCTS_SHORT_DESCRIPTION_TITLE', 'Brève description dans la commande/confirmation de la commande et sur la page de confirmation de la commande ?');
 define('CHECKOUT_USE_PRODUCTS_SHORT_DESCRIPTION_DESC', 'Si "Oui" est sélectionné, la description courte sera affichée aux points ci-dessus si la description de la commande est vide.<br />Si la description courte est également vide, la description longue est utilisée, raccourcie au nombre de caractères indiqué ci-dessous sous "Longueur de la description si la description courte est vide".');
@@ -651,40 +661,26 @@ define('SHOW_IMAGES_IN_EMAIL_STYLE_TITLE', 'Style CSS des images des e-mails');
 define('SHOW_IMAGES_IN_EMAIL_STYLE_DESC', 'Des spécifications de style CSS simples peuvent être saisies ici - par exemple, pour la largeur maximale : max-width:90px ;');
 
 define('POPUP_SHIPPING_LINK_PARAMETERS_TITLE', 'Paramètres URL de la fenêtre pop-up des frais d\'expédition');
-define('POPUP_SHIPPING_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=600');
+define('POPUP_SHIPPING_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &KeepThis=true&TB_iframe=true&height=400&width=600');
 define('POPUP_SHIPPING_LINK_CLASS_TITLE', 'Classe CSS de la fenêtre pop-up des frais de port');
 define('POPUP_SHIPPING_LINK_CLASS_DESC', 'Les classes CSS peuvent être saisies ici - par défaut : thickbox');
 define('POPUP_CONTENT_LINK_PARAMETERS_TITLE', 'Pages de contenu Fenêtre pop-up Paramètres URL');
-define('POPUP_CONTENT_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=600');
+define('POPUP_CONTENT_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &KeepThis=true&TB_iframe=true&height=400&width=600');
 define('POPUP_CONTENT_LINK_CLASS_TITLE', 'Classe CSS de la fenêtre pop-up des pages de contenu');
 define('POPUP_CONTENT_LINK_CLASS_DESC', 'Les classes CSS peuvent être saisies ici - par défaut : thickbox');
 define('POPUP_PRODUCT_LINK_PARAMETERS_TITLE', 'Paramètres URL de la fenêtre pop-up sur les pages de produits');
-define('POPUP_PRODUCT_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &amp;KeepThis=true&amp;TB_iframe=true&amp;height=450&amp;width=750');
+define('POPUP_PRODUCT_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &KeepThis=true&TB_iframe=true&height=450&width=750');
 define('POPUP_PRODUCT_LINK_CLASS_TITLE', 'Classe CSS pour la fenêtre pop-up des pages de produits');
 define('POPUP_PRODUCT_LINK_CLASS_DESC', 'Les classes CSS peuvent être saisies ici - par défaut : thickbox');
 define('POPUP_COUPON_HELP_LINK_PARAMETERS_TITLE', 'Paramètres URL de la pop-up d\'aide aux coupons');
-define('POPUP_COUPON_HELP_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &amp;KeepThis=true&amp;TB_iframe=true&amp;height=400&amp;width=600');
+define('POPUP_COUPON_HELP_LINK_PARAMETERS_DESC', 'Les paramètres URL peuvent être saisis ici - par défaut : &KeepThis=true&TB_iframe=true&height=400&width=600');
 define('POPUP_COUPON_HELP_LINK_CLASS_TITLE', 'Classe CSS pour la fenêtre pop-up d\'aide aux coupons');
 define('POPUP_COUPON_HELP_LINK_CLASS_DESC', 'Les classes CSS peuvent être saisies ici - par défaut : thickbox');
+
 define('POPUP_PRODUCT_PRINT_SIZE_TITLE', 'Produit Vue d\'impression Taille de la fenêtre');
 define('POPUP_PRODUCT_PRINT_SIZE_DESC', 'Vous pouvez définir ici la taille de la fenêtre pop-up - par défaut : width=640, height=600');
 define('POPUP_PRINT_ORDER_SIZE_TITLE', 'Taille de la fenêtre d\'impression de la commande');
 define('POPUP_PRINT_ORDER_SIZE_DESC', 'Vous pouvez définir ici la taille de la fenêtre pop-up - par défaut : width=640, height=600');
-
-define('TRACKING_COUNT_ADMIN_ACTIVE_TITLE', 'Compter les impressions de page de l\'exploitant de la boutique');
-define('TRACKING_COUNT_ADMIN_ACTIVE_DESC', 'Si cette option est activée, tous les accès de l\'administrateur sont également comptabilisés, ce qui (en raison de la fréquence plus élevée des accès à la boutique) peut fausser les statistiques des visiteurs.');
-define('TRACKING_GOOGLEANALYTICS_ACTIVE_TITLE', 'Activez le suivi Google Analytics');
-define('TRACKING_GOOGLEANALYTICS_ACTIVE_DESC', 'Si cette option est activée, toutes les visites du site web sont transmises à Google Analytics et peuvent être évaluées ultérieurement. Cela nécessite la création préalable d\'un compte avec <a href="http://www.google.com/analytics/" target="_blank"><b>Google Analytics</b></a> est nécessaire.');
-define('TRACKING_GOOGLEANALYTICS_ID_TITLE', 'Numéro de compte Google Analytics');
-define('TRACKING_GOOGLEANALYTICS_ID_DESC', 'Veuillez saisir votre numéro de compte Google Analytics au format "UA-XXXXXXXX-X" que vous avez reçu après avoir créé un compte avec succès.');
-define('TRACKING_PIWIK_ACTIVE_TITLE', 'Activez le suivi de Matomo Web Analytics');
-define('TRACKING_PIWIK_ACTIVE_DESC', 'Pour utiliser Matomo, vous devez d\'abord le télécharger et l\'installer sur votre espace web, voir aussi <a href="https://matomo.org/" target="_blank"><b>Matomo Web Analytics</b></a>. Contrairement à Google Analytics, les données sont stockées localement, c\'est-à-dire que vous, en tant qu\'exploitant de la boutique, avez la souveraineté sur ces données.');
-define('TRACKING_PIWIK_LOCAL_PATH_TITLE', 'Répertoire d\'installation de Matomo (sans "http://")');
-define('TRACKING_PIWIK_LOCAL_PATH_DESC', 'Entrez le répertoire ici une fois que Matomo a été installé avec succès. Saisissez le nom de domaine complet sans "http://" comme chemin, par exemple "www.example.com/matomo".');
-define('TRACKING_PIWIK_ID_TITLE', 'Page ID Matomo');
-define('TRACKING_PIWIK_ID_DESC', 'Dans l\'interface d\'administration de Matomo, un ID est attribué à chaque domaine créé (généralement "1").');
-define('TRACKING_PIWIK_GOAL_TITLE', 'Numéro de campagne Matomo (facultatif)');
-define('TRACKING_PIWIK_GOAL_DESC', 'Saisissez un numéro de campagne ici si vous souhaitez suivre des objectifs prédéfinis. Détails voir <a href="https://matomo.org/docs/tracking-goals-web-analytics/" target="_blank"><b>Matomo : Suivi des conversions ciblées</b></a>');
 
 define('CONFIRM_SAVE_ENTRY_TITLE', 'Avis de confirmation lors de l\'enregistrement des articles/catégories');
 define('CONFIRM_SAVE_ENTRY_DESC', 'Doit-il y avoir une demande de confirmation lors de l\'enregistrement des articles/catégories ? Valeur par défaut : true (oui)');
@@ -709,12 +705,14 @@ define('SMTP_SECURE_DESC', 'Le serveur SMTP nécessite-t-il une connexion sécur
 define('DISPLAY_ERROR_REPORTING_TITLE', 'Notification des erreurs');
 define('DISPLAY_ERROR_REPORTING_DESC', 'Le rapport de bogue doit-il être affiché sous forme de liste formatée dans le pied de page ?');
 
+define('DISPLAY_ERROR_REPORTING_LEVEL_TITLE', 'Niveau de déclaration des erreurs');
+define('DISPLAY_ERROR_REPORTING_LEVEL_DESC', 'Pour quelles erreurs faut-il écrire un journal ?');
+
 define('DISPLAY_BREADCRUMB_OPTION_TITLE', 'Navigation avec fil d\'Ariane');
 define('DISPLAY_BREADCRUMB_OPTION_DESC', '<strong>name</strong><strong>:</strong> Le nom complet de l\'article est affiché dans la navigation par fil d\'Ariane.<br /><strong>model :</strong> Le numéro de l\'article est affiché dans la navigation par fil d\'Ariane si disponible. Sinon, retour au nom de l\'élément.');
 
 define('EMAIL_WORD_WRAP_TITLE', 'WordWrap pour les courriers électroniques textuels');
 define('EMAIL_WORD_WRAP_DESC', 'Entrez le nombre de caractères sur une ligne dans les e-mails de texte avant que le texte ne soit enveloppé (uniquement les nombres entiers).<br /><strong>Attention :</strong> Un nombre de caractères supérieur à 76 peut faire que les emails de la boutique soient classés comme SPAM par SpamAssassin ! Plus d\'informations <a href="http://wiki.apache.org/spamassassin/Rules/MIME_QP_LONG_LINE" target="_blank">ici</a>.');
-
 define('ORDER_STATUSES_FOR_SALES_STATISTICS_TITLE', 'Filtre de statistiques sur les rotations');
 define('ORDER_STATUSES_FOR_SALES_STATISTICS_DESC', 'Sélectionnez les statuts de commande à prendre en compte pour les statistiques de rotation sur la page d\'accueil de l\'administrateur et dans la liste déroulante des statuts lorsque vous utilisez le statut "Filtre des statistiques de rotation".<br />(Pour n\'afficher que la facturation réelle, sélectionnez le statut qui est utilisé lorsque la commande est terminée).<br /><b>Remarque :</b> Au moins deux statuts doivent être sélectionnés pour que le "Filtre des statistiques de facturation" apparaisse dans la liste déroulante des statistiques de facturation. Sinon, le statut souhaité peut être sélectionné directement via la liste déroulante.');
 
@@ -723,7 +721,7 @@ define('SAVE_IP_LOG_DESC', 'L\'adresse IP doit-elle être stockée dans la base 
 
 define('META_MAX_KEYWORD_LENGTH_TITLE', 'Longueur maximale des méta-mots-clés');
 define('META_MAX_KEYWORD_LENGTH_DESC', 'Longueur maximale des méta-mots-clés générés automatiquement (description de l\'article)');
-define('META_DESCRIPTION_LENGTH_TITLE', 'L&auml;nge Meta-Description');
+define('META_DESCRIPTION_LENGTH_TITLE', 'Longueur de la méta-description');
 define('META_DESCRIPTION_LENGTH_DESC', 'Longueur maximale de la description (en lettres)');
 define('META_STOP_WORDS_TITLE', 'Mots clés');
 define('META_STOP_WORDS_DESC', 'Entrez ici les mots-clés sous forme de liste séparée par des virgules qui ne doivent pas être utilisés.');
@@ -767,6 +765,13 @@ define('MAX_DISPLAY_ADVANCED_SEARCH_RESULTS_TITLE', 'Nombre de résultats de rec
 define('MAX_DISPLAY_ADVANCED_SEARCH_RESULTS_DESC', 'Nombre maximal d\'éléments à afficher par page dans les résultats de la recherche (advanced_search_result.php).');
 define('MAX_DISPLAY_PRODUCTS_HISTORY_TITLE', 'Numéro d\'historique');
 define('MAX_DISPLAY_PRODUCTS_HISTORY_DESC', 'Affiche le nombre maximum d\'éléments qui ont été visités en dernier dans le compte.');
+define('MAX_DISPLAY_SEARCH_AC_RESULTS_TITLE', 'Nombre de résultats de recherche autocomplete');
+define('MAX_DISPLAY_SEARCH_AC_RESULTS_DESC', 'Nombre maximum de résultats de la recherche par saisie semi-automatique.');
+
+define('SEARCH_RESULTS_SORT_TITLE', 'Ordre des résultats de recherche');
+define('SEARCH_RESULTS_SORT_DESC', 'C\'est l\'ordre dans lequel les résultats de recherche sont affichés.');
+define('SEARCH_RESULTS_FIELD_TITLE', 'Zone de tri pour les résultats de recherche');
+define('SEARCH_RESULTS_FIELD_DESC', 'Il s\'agit de la colonne utilisée pour trier les résultats de la recherche.');
 
 define('PRODUCT_IMAGE_SHOW_NO_IMAGE_TITLE', 'Article noimage.gif');
 define('PRODUCT_IMAGE_SHOW_NO_IMAGE_DESC', 'Affichage du fichier noimage.gif si aucune image de l\'article n\'a été spécifiée.');
@@ -776,7 +781,7 @@ define('MANUFACTURER_IMAGE_SHOW_NO_IMAGE_TITLE', 'Fabricant noimage.gif');
 define('MANUFACTURER_IMAGE_SHOW_NO_IMAGE_DESC', 'Affichage de l\'image noimage.gif si aucune image du producteur n\'a été spécifiée.');
 
 define('MODULE_SMALL_BUSINESS_TITLE', 'Petites entreprises');
-define('MODULE_SMALL_BUSINESS_DESC', 'Le magasin doit-il être transformé en une petite entreprise conformément à l\'article 19 UStG ?<br /><b>Important :</b> Sous "Modules" -&gt; "Aperçu", le module "ot_tax" doit être <a href="' . xtc_href_link(FILENAME_MODULES, 'set=ordertotal&module=ot_tax') . '"><b>aquí</b></a> doit être désactivé ou désinstallé. En outre, dans l\'individu <a href="' . xtc_href_link(FILENAME_CUSTOMERS_STATUS, '') . '"><b>Groupes de clients</b></a> "Prix incluant la TVA" doit être réglé sur "Non".');
+define('MODULE_SMALL_BUSINESS_DESC', 'Le magasin doit-il être transformé en une petite entreprise conformément à l\'article 19 UStG ?<br /><b>Important :</b> Sous "Modules" -> "Aperçu", le module "ot_tax" doit être <a href="' . xtc_href_link(FILENAME_MODULES, 'set=ordertotal&module=ot_tax') . '"><b>aquí</b></a> doit être désactivé ou désinstallé. En outre, dans l\'individu <a href="' . xtc_href_link(FILENAME_CUSTOMERS_STATUS, '') . '"><b>Groupes de clients</b></a> "Prix incluant la TVA" doit être réglé sur "Non".');
 
 define('COMPRESS_HTML_OUTPUT_TITLE', 'Compression HTML');
 define('COMPRESS_HTML_OUTPUT_DESC', 'La sortie HTML du modèle doit-elle être livrée compressée ?');
@@ -827,19 +832,6 @@ define('SHOW_SHIPPING_EXCL_DESC', 'Affichage des frais d\'expédition en plus ou
 define('ACCOUNT_TELEPHONE_OPTIONAL_TITLE', 'Numéro de téléphone facultatif');
 define('ACCOUNT_TELEPHONE_OPTIONAL_DESC', 'Le numéro de téléphone doit-il être demandé uniquement en option ?');
 
-define('TRACKING_GOOGLEANALYTICS_UNIVERSAL_TITLE', 'Google Universal Analytics');
-define('TRACKING_GOOGLEANALYTICS_UNIVERSAL_DESC', 'Faut-il utiliser le code Google Universal Analytics ?<br/><b>Attention :</b> ne fonctionne qu\'avec un modèle compatible avec la version 2.0.0.0 ou supérieure de la boutique !');
-define('TRACKING_GOOGLEANALYTICS_DOMAIN_TITLE', 'Domaine du cookie Google Universal Analytics');
-define('TRACKING_GOOGLEANALYTICS_DOMAIN_DESC', 'Entrez ici le domaine de votre cookie<i>(auto</i> ou <i>exemple.com</i> ou <i>www.example.com)</i>. Ne fonctionne que pour Google Universal Analytics.');
-define('TRACKING_GOOGLE_LINKID_TITLE', 'Google Universal Analytics/Google Analytics GTAG LinkID');
-define('TRACKING_GOOGLE_LINKID_DESC', 'Vous pouvez afficher des informations distinctes pour plusieurs liens sur une page qui ont tous la même destination. Par exemple, s\'il y a deux liens sur la même page qui mènent tous deux à la page Contact, vous verrez des informations de clic distinctes pour chaque lien. Fonctionne uniquement pour Google Universal Analytics et Google Analytics GTAG.');
-define('TRACKING_GOOGLE_DISPLAY_TITLE', 'Google Universal Analytics/Google Analytics GTAG Displayfeature');
-define('TRACKING_GOOGLE_DISPLAY_DESC', 'Les sections démographiques et d\'intérêt comprennent un aperçu et de nouveaux rapports sur les performances par âge, sexe et catégories d\'intérêt. Fonctionne uniquement pour Google Universal Analytics et Google Analytics GTAG.');
-define('TRACKING_GOOGLE_ECOMMERCE_TITLE', 'Suivi du commerce électronique par Google');
-define('TRACKING_GOOGLE_ECOMMERCE_DESC', 'Utilisez le suivi du commerce électronique pour savoir ce que les visiteurs achètent sur votre site Web ou votre application. Vous obtiendrez également les informations suivantes :<br><br><strong>Produits :</strong> Les produits achetés, ainsi que les quantités et les ventes générées par ces produitsTransactions<br><strong>:</strong> Informations sur les ventes, les taxes, les frais d\'expédition et les quantités pour chaque transactionTime to<br><strong>purchase :</strong> nombre de jours et de visites, depuis la campagne actuelle jusqu\'à la fin de la transaction</br>.</br>');
-define('TRACKING_GOOGLEANALYTICS_GTAG_TITLE', 'Google Analytics GTAG');
-define('TRACKING_GOOGLEANALYTICS_GTAG_DESC', 'Faut-il utiliser la balise Google global site ?');
-
 define('NEW_ATTRIBUTES_STYLING_TITLE', 'Stylisation de la gestion des attributs');
 define('NEW_ATTRIBUTES_STYLING_DESC', 'Activer le style des cases à cocher/descentes dans la gestion des attributs ? Définissez no/false s\'il y a de nombreux attributs et des problèmes de performance.');
 
@@ -870,11 +862,6 @@ define('META_GOOGLE_VERIFICATION_KEY_TITLE', 'Clé de vérification Google');
 define('META_GOOGLE_VERIFICATION_KEY_DESC', '<meta name="google-site-verification">');
 define('META_BING_VERIFICATION_KEY_TITLE', 'Clé de vérification Bing');
 define('META_BING_VERIFICATION_KEY_DESC', '<meta name="msvalidate.01">');
-
-define('TRACKING_FACEBOOK_ACTIVE_TITLE', 'Activez le suivi des conversions Facebook');
-define('TRACKING_FACEBOOK_ACTIVE_DESC', 'Si cette option est activée, tous les achats sont transmis à Facebook et peuvent être évalués ultérieurement. Cela nécessite la création préalable d\'un compte avec <a href="https://www.facebook.com" target="_blank"><b>Facebook</b></a> est nécessaire.<br/><b>Attention :</b> ne fonctionne qu\'avec un modèle compatible avec la version 2.0.0.0 ou supérieure de la boutique !');
-define('TRACKING_FACEBOOK_ID_TITLE', 'ID de conversion Facebook');
-define('TRACKING_FACEBOOK_ID_DESC', 'Votre ID de conversion Facebook');
 
 define('NEW_SELECT_CHECKBOX_TITLE', 'Style de la zone d\'administration');
 define('NEW_SELECT_CHECKBOX_DESC', 'Dans l\'espace d\'administration, activez le style pour les cases à cocher/downs ?');
@@ -970,3 +957,9 @@ define('REVIEWS_PURCHASED_ONLY_TITLE', 'Vérifier les classements');
 define('REVIEWS_PURCHASED_ONLY_DESC', 'Les avis ne devraient-ils être possibles que si un client a également acheté l\'article ?');
 define('REVIEWS_PURCHASED_INFOS_TITLE', 'Information');
 define('REVIEWS_PURCHASED_INFOS_DESC', 'Sélectionnez le contenu que vous souhaitez afficher en tant qu\'information de notation sur son authenticité.');
+
+define('CAT_VIEW_DROPDOWN_TITLE', 'Catégorie Dropdown pour les catégories/articles');
+define('CAT_VIEW_DROPDOWN_DESC', 'Activer le menu déroulant de navigation pour les catégories/articles ?');
+
+define('DISPLAY_PRODUCTS_ADDED_TITLE', 'Annonce Article ajouté');
+define('DISPLAY_PRODUCTS_ADDED_DESC', 'Voulez-vous que l\'article indique la date à laquelle il a été ajouté au catalogue ?');

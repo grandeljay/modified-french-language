@@ -32,7 +32,7 @@ define('TEXT_CAMPAIGNS_REFID', 'RefID de la campagne :');
 define('TEXT_DISPLAY_NUMBER_OF_CAMPAIGNS', 'Campagnes poursuivies :');
 
 define('TEXT_DELETE_INTRO', 'Êtes-vous sûr de vouloir supprimer cette campagne ?');
-define('TEXT_DELETE_REFFERERS', 'Les conversions l&ouml;schen');
+define('TEXT_DELETE_REFFERERS', 'Supprimer les conversions');
 define('TEXT_DELETE_WARNING_REFFERERS', 'Faut-il supprimer toutes les conversions de cette campagne ?');
 
 define('TEXT_CAMPAIGNS_ERROR_REFID', 'Entrez un refID valide');

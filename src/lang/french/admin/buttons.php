@@ -76,3 +76,4 @@ define('BUTTON_VIEW_MANUFACTURER', 'Voir le fabricant');
 define('BUTTON_VALUES', 'Valeurs');
 define('BUTTON_DELETE_BANKTRANSFER', 'Supprimer les coordonnées bancaires');
 define('BUTTON_BLACKLIST', 'Liste des Noirs');
+define('BUTTON_REVIEWS', 'Critiques');

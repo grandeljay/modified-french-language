@@ -40,9 +40,9 @@ define('TEXT_INFO_HEADING_DELETE_VALUE', 'Supprimer le cookie/groupe');
 define('TABLE_HEADING_VALUES_PURPOSEID', 'PURPOSE-ID');
 define('TEXT_INFO_HEADING_JSCRIPT_SRC', 'Balise Javascript pour charger les scripts');
 define('TEXT_INFO_HEADING_JSCRIPT_DIRECT', 'Etiqueta Javascript para scripts directos');
-define('TEXT_INFO_HEADING_JSCRIPT_OTHER_CODE', 'Code f&uuml;r andere Tracking-Elemente');
+define('TEXT_INFO_HEADING_JSCRIPT_OTHER_CODE', 'Code pour les autres éléments de suivi');
 define('TEXT_INFO_DELETE_VALUE_INTRO', 'Êtes-vous sûr de vouloir supprimer ce cookie ?');
-define('TEXT_INFO_HEADING_EXTERNAL_TRIGGER', '&quot;MODOilTrack&quot; contient');
+define('TEXT_INFO_HEADING_EXTERNAL_TRIGGER', '"MODOilTrack" contient');
 
 define('TEXT_DISPLAY_NUMBER_OF_VALUES', 'Montré de <b>%d</b> à <b>%d</b> (sur un total de <b>%d</b> cookies/groupes)');
 define('TEXT_INFO_WARNING_COOKIES', '<b>AVERTISSEMENT :</b> Il y a encore %s cookies associés à cette catégorie ! Ces cookies seront supprimés en même temps que la catégorie.');
