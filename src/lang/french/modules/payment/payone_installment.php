@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_INSTALLMENT_TEXT_TITLE', 'Location-vente/Financement');
 define('MODULE_PAYMENT_PAYONE_INSTALLMENT_TEXT_DESCRIPTION', 'Achat/financement par tranches via PayOne');

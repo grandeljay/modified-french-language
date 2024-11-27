@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_PAYDIREKT_TEXT_TITLE', 'PayDirect');
 define('MODULE_PAYMENT_PAYONE_PAYDIREKT_TEXT_DESCRIPTION', 'Paiement par PayDirect via PayOne');

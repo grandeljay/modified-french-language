@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_CC_TEXT_TITLE', 'Cartes de crédit');
 define('MODULE_PAYMENT_PAYONE_CC_TEXT_DESCRIPTION', 'Paiement par carte de crédit via PayOne');

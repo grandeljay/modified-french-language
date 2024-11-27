@@ -27,7 +27,6 @@ define('MODULE_SHIPPING_UPSE_SORT_ORDER_TITLE', 'Ordre d\'affichage');
 define('MODULE_SHIPPING_UPSE_SORT_ORDER_DESC', 'Le plus bas est affiché en premier.');
 define('MODULE_SHIPPING_UPSE_ALLOWED_TITLE', 'Zones d\'expédition individuelles');
 define('MODULE_SHIPPING_UPSE_ALLOWED_DESC', 'Spécifiez <b>individuellement</b> les zones vers lesquelles l\'expédition doit être possible, par exemple AT,DE.');
-
 define('MODULE_SHIPPING_UPSE_COUNTRIES_1_TITLE', 'Etats pour UPS Express Zone 1');
 define('MODULE_SHIPPING_UPSE_COUNTRIES_1_DESC', 'Abréviations ISO, séparées par des virgules, des États de la zone 1 (entrez WORLD pour le reste du monde) :');
 define('MODULE_SHIPPING_UPSE_COST_1_TITLE', 'Tarif UPS Express Zone 1');

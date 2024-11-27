@@ -95,7 +95,6 @@ define('TEXT_CONTENT_META_ROBOTS', 'Meta Robot');
 
 define('TABLE_HEADING_STATUS_ACTIVE', 'État');
 define('TEXT_STATUS_ACTIVE', 'Statut actif :');
-
 define('TEXT_STATUS_ACTIVE_DESCRIPTION', 'Activer le contenu ?');
 
 define('TEXT_CONTENT_DOUBLE_GROUP_INDEX', 'Index du groupe de contenu dupliqué ! Veuillez enregistrer à nouveau. Cela réglera automatiquement le problème.');

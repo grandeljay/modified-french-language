@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_PREPAY_TEXT_TITLE', 'Paiement anticipé');
 define('MODULE_PAYMENT_PAYONE_PREPAY_TEXT_DESCRIPTION', 'Payez à l\'avance via PayOne');

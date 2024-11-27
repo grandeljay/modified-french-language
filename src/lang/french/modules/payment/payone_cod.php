@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_COD_TEXT_TITLE', 'Contre-remboursement');
 define('MODULE_PAYMENT_PAYONE_COD_TEXT_DESCRIPTION', 'Contre-remboursement via PayOne');

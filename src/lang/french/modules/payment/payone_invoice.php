@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_INVOICE_TEXT_TITLE', 'Factura');
 define('MODULE_PAYMENT_PAYONE_INVOICE_TEXT_DESCRIPTION', 'Paiement sur le compte via PayOne');

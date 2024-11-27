@@ -40,7 +40,6 @@ define('MODULE_PAYMENT_WORLDPAY_JUNIOR_TESTMODE_DESC', 'Effectuer des transactio
 
 define('MODULE_PAYMENT_WORLDPAY_JUNIOR_SORT_ORDER_TITLE', 'Ordre d\'affichage');
 define('MODULE_PAYMENT_WORLDPAY_JUNIOR_SORT_ORDER_DESC', 'Ordre d\'affichage. Le plus petit chiffre est affiché en premier.');
-
 define('MODULE_PAYMENT_WORLDPAY_JUNIOR_ZONE_TITLE', 'Zone de paiement');
 define('MODULE_PAYMENT_WORLDPAY_JUNIOR_ZONE_DESC', 'Lorsqu\'une zone est sélectionnée, le mode de paiement ne s\'applique qu\'à cette zone.');
 

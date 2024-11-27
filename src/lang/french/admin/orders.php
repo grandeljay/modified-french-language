@@ -165,8 +165,6 @@ define('BUTTON_ORDER_MAIL_STEP', 'Envoyer la confirmation de la commande');
 define('COMMENT_SEND_ORDER_MAIL_STEP', 'Envoi de la confirmation de la commande');
 define('SUCCESS_ORDER_MAIL_STEP_SEND', 'Confirmation de commande envoyée avec succès');
 
-define('BILLPAY_ORDER_UPDATE_HIGH', 'Erreur : Pour un ordre de paiement par facture, la valeur du nouvel ordre ne doit pas dépasser la valeur de l\'ordre précédent.');
-
 define('TABLE_HEADING_INVOICE_NUMBER', 'Rg.Nr.');
 define('BUTTON_BILL', 'Créer un numéro de facture');
 define('NOT_ASSIGNED', 'pas encore alloué !');

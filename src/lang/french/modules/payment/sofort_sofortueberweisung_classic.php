@@ -10,4 +10,4 @@
 
 $sofort_code = 'SOFORT_SOFORTUEBERWEISUNG_CLASSIC';
 
-include DIR_FS_CATALOG . 'lang/french/modules/payment/sofort_payment.php';
+include(DIR_FS_CATALOG.'lang/french/modules/payment/sofort_payment.php');

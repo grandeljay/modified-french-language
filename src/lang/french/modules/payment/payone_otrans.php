@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_OTRANS_TEXT_TITLE', 'Virement bancaire en ligne');
 define('MODULE_PAYMENT_PAYONE_OTRANS_TEXT_DESCRIPTION', 'Paiement par virement en ligne via PayOne');

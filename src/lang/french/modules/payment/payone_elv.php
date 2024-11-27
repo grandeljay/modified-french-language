@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once dirname(__FILE__) . '/payone.php';
+require_once (dirname(__FILE__).'/payone.php');
 
 define('MODULE_PAYMENT_PAYONE_ELV_TEXT_TITLE', 'Débit direct');
 define('MODULE_PAYMENT_PAYONE_ELV_TEXT_DESCRIPTION', 'Paiement VFU par PayOne');

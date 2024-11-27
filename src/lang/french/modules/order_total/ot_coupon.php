@@ -29,5 +29,3 @@ define('MODULE_ORDER_TOTAL_COUPON_CALC_TAX_TITLE', 'Recalculer la TVA');
 define('MODULE_ORDER_TOTAL_COUPON_CALC_TAX_DESC', 'Recalculer la TVA');
 define('MODULE_ORDER_TOTAL_COUPON_TAX_CLASS_TITLE', 'Type de TVA');
 define('MODULE_ORDER_TOTAL_COUPON_TAX_CLASS_DESC', 'Utilisez le taux de TVA suivant lorsque vous utilisez le coupon de réduction comme crédit.');
-define('MODULE_ORDER_TOTAL_COUPON_SPECIAL_PRICES_TITLE', 'Remise sur les offres spéciales');
-define('MODULE_ORDER_TOTAL_COUPON_SPECIAL_PRICES_DESC', 'Autorisez les remises sur les offres spéciales');
