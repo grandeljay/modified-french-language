@@ -160,7 +160,7 @@ define('TABLE_HEADING_PRICE', 'Prix');
 define('TEXT_FSK18', 'FSK 18 :');
 define('TEXT_CHOOSE_INFO_TEMPLATE_CATEGORIE', 'Modèle de résumé de catégorie');
 define('TEXT_CHOOSE_INFO_TEMPLATE_LISTING', 'Modèle de résumé d\'article');
-define('TEXT_PRODUCTS_SORT', 'Classement :');
+define('TEXT_PRODUCTS_SORT', 'Ordre de tri :');
 define('TEXT_EDIT_PRODUCT_SORT_ORDER', 'Classification des articles');
 define('TXT_PRICES', 'Prix');
 define('TXT_NAME', 'Nom de l\'article');
