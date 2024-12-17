@@ -254,6 +254,7 @@ define('IMAGE_MANIPULATOR_DESC', 'Manipulateur d\'images pour GD2 ou GD1<br /><b
 
 define('IMAGE_TYPE_EXTENSION_TITLE', 'Type d\'image');
 define('IMAGE_TYPE_EXTENSION_DESC', 'Quel type d\'image doit être fourni ?<br /><br /><b>REMARQUE :</b> Après la conversion, le traitement des images doit être lancé pour la <a href="' . xtc_href_link(FILENAME_MODULE_EXPORT, 'set=system&module=image_processing_step') . '"><b>génération des images</b></a>.');
+
 define('ACCOUNT_GENDER_TITLE', 'Saludo');
 define('ACCOUNT_GENDER_DESC', 'Demander un message d\'accueil lors de l\'ouverture/du traitement d\'un compte');
 define('ACCOUNT_DOB_TITLE', 'Date de naissance');
@@ -622,11 +623,13 @@ define('USE_ADMIN_THUMBS_IN_LIST_TITLE', 'Images de listes de produits');
 define('USE_ADMIN_THUMBS_IN_LIST_DESC', 'Afficher une colonne supplémentaire avec les images des catégories / articles dans la liste de produits de l\'administrateur ?');
 define('USE_ADMIN_THUMBS_IN_LIST_STYLE_TITLE', 'Listes de produits Images Style CSS');
 define('USE_ADMIN_THUMBS_IN_LIST_STYLE_DESC', 'Des spécifications de style CSS simples peuvent être saisies ici - par exemple, pour la largeur maximale : max-width:90px ;');
+
 define('DELETE_CACHE_SUCCESSFUL', 'Cache supprimé avec succès.');
 define('DELETE_TEMP_CACHE_SUCCESSFUL', 'Cache du modèle supprimé avec succès.');
 
 define('PRODUCT_IMAGE_NO_ENLARGE_UNDER_DEFAULT_TITLE', 'Mise à l\'échelle des images à faible résolution');
 define('PRODUCT_IMAGE_NO_ENLARGE_UNDER_DEFAULT_DESC', 'Activez l\'option <strong>Non</strong> pour empêcher que les images de produits à faible résolution soient mises à l\'échelle des valeurs de largeur et de hauteur par défaut. Si vous activez l\'option <strong>Oui</strong>, les images de résolution inférieure seront également mises à l\'échelle en fonction des valeurs de taille d\'image standard définies. Dans ce cas, cependant, ces images peuvent être très floues et pixellisées.');
+
 define('SHOW_BUTTON_BUY_NOW_TITLE', 'Afficher le bouton "panier" dans les listes de produits');
 define('SHOW_BUTTON_BUY_NOW_DESC', '<span class="col-red"><strong>AVERTISSEMENT :</strong></span> Cela peut entraîner des avertissements si toutes les caractéristiques essentielles de l\'article ne sont pas présentées au client sur les pages de la liste des produits.');
 
@@ -713,6 +716,7 @@ define('DISPLAY_BREADCRUMB_OPTION_DESC', '<strong>name</strong><strong>:</strong
 
 define('EMAIL_WORD_WRAP_TITLE', 'WordWrap pour les courriers électroniques textuels');
 define('EMAIL_WORD_WRAP_DESC', 'Entrez le nombre de caractères sur une ligne dans les e-mails de texte avant que le texte ne soit enveloppé (uniquement les nombres entiers).<br /><strong>Attention :</strong> Un nombre de caractères supérieur à 76 peut faire que les emails de la boutique soient classés comme SPAM par SpamAssassin ! Plus d\'informations <a href="http://wiki.apache.org/spamassassin/Rules/MIME_QP_LONG_LINE" target="_blank">ici</a>.');
+
 define('ORDER_STATUSES_FOR_SALES_STATISTICS_TITLE', 'Filtre de statistiques sur les rotations');
 define('ORDER_STATUSES_FOR_SALES_STATISTICS_DESC', 'Sélectionnez les statuts de commande à prendre en compte pour les statistiques de rotation sur la page d\'accueil de l\'administrateur et dans la liste déroulante des statuts lorsque vous utilisez le statut "Filtre des statistiques de rotation".<br />(Pour n\'afficher que la facturation réelle, sélectionnez le statut qui est utilisé lorsque la commande est terminée).<br /><b>Remarque :</b> Au moins deux statuts doivent être sélectionnés pour que le "Filtre des statistiques de facturation" apparaisse dans la liste déroulante des statistiques de facturation. Sinon, le statut souhaité peut être sélectionné directement via la liste déroulante.');
 

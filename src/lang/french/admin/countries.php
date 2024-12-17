@@ -29,6 +29,7 @@ define('TEXT_INFO_HEADING_EDIT_COUNTRY', 'Modifier le pays');
 define('TEXT_INFO_HEADING_DELETE_COUNTRY', 'Pays du flou');
 
 define('TABLE_HEADING_REQUIRED_ZONES', 'États fédéraux');
+
 define('TEXT_INFO_ADDRESS_FORMAT_HEADING', 'Format de l\'adresse');
 define('TEXT_INFO_FIRSTNAME', 'Max');
 define('TEXT_INFO_LASTNAME', 'Mustermann');
