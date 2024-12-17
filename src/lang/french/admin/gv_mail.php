@@ -39,7 +39,7 @@ define('TEXT_REDEEM_COUPON_MESSAGE_AMOUNT', "\n" . 'La valeur de votre bon d\'ac
 define('TEXT_REDEEM_COUPON_MESSAGE_BODY', "\n" . 'Vous pouvez maintenant envoyer le bon d\'achat à quelqu\'un via votre compte personnel.');
 define('TEXT_REDEEM_COUPON_MESSAGE_FOOTER', "\n\n");
 
-define('COUPON_INFO', "\N- Couponwert : ");
+define('COUPON_INFO', "\nValeur du coupon : ");
 define('COUPON_FREE_SHIPPING', 'Expédition gratuite');
-define('COUPON_MINORDER_INFO', "\N- Valeur minimale de la commande : ");
-define('COUPON_RESTRICT_INFO', "\Ce bon est uniquement valable pour les articles sélectionnés !");
+define('COUPON_MINORDER_INFO', "\nValeur minimale de commande : ");
+define('COUPON_RESTRICT_INFO', "\nCe coupon n'est valable que pour certains articles !");

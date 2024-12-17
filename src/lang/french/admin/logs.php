@@ -12,7 +12,7 @@ define('HEADING_TITLE', 'Fichiers journaux');
 
 define('TABLE_HEADING_TITLE', 'Titre');
 define('TABLE_HEADING_FILE_DATE', 'Date');
-define('TABLE_HEADING_FILE_SIZE', 'Gr&ouml;sse');
+define('TABLE_HEADING_FILE_SIZE', 'Taille');
 
 define('TEXT_LOG_DIRECTORY', 'Annuaire d\'inscription :');
 define('TEXT_DELETE_INTRO', 'Êtes-vous sûr de vouloir supprimer ce fichier journal ?');

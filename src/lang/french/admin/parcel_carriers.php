@@ -9,6 +9,7 @@
  */
 
 define('HEADING_TITLE', 'Suivi des fournisseurs de services de colis');
+
 define('TABLE_HEADING_CARRIER_NAME', 'Nom du fournisseur de services de colis');
 define('TABLE_HEADING_TRACKING_LINK', 'URL du système de suivi des envois du fournisseur de services de colis.');
 define('TABLE_HEADING_SORT_ORDER', 'Ordre de classement');

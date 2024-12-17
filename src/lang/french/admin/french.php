@@ -8,10 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-/**
- * Locale
- */
-define('HTML_PARAMS', 'dir="ltr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml"');
+@setlocale(LC_TIME, 'fr_FR.UTF-8', 'fr_FR@euro', 'fr_FR', 'fr-FR', 'fr', 'fr_FR.ISO_8859-1', 'German', 'fr_FR.ISO_8859-15');
 
 define('DATE_LOCALE', 'fr_FR');
 define('DATE_FORMAT_SHORT', 'd.m.Y');
@@ -19,11 +16,8 @@ define('DATE_FORMAT_LONG', 'l d F, Y');
 define('DATE_FORMAT', DATE_FORMAT_SHORT);
 define('PHP_DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
-define('LANGUAGE_CURRENCY', 'EUR');
 
-setlocale(LC_ALL, DATE_LOCALE);
-
-function xtc_date_raw($date, $reverse = false): string
+function xtc_date_raw($date, $reverse = false)
 {
     if ($reverse) {
         return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
@@ -32,20 +26,13 @@ function xtc_date_raw($date, $reverse = false): string
     }
 }
 
-/**
- * Extra files
- */
-require_once DIR_FS_INC . 'auto_include.inc.php';
-
-$extra_files = auto_include(DIR_FS_LANGUAGES . 'french/extra/admin/', 'php');
-
-foreach ($extra_files as $extra_file) {
-    require $extra_file;
+require_once(DIR_FS_INC . 'auto_include.inc.php');
+foreach (auto_include(DIR_FS_LANGUAGES . 'french/extra/admin/', 'php') as $file) {
+    require($file);
 }
 
-/**
- * Translations
- */
+define('HTML_PARAMS', 'dir="ltr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml"');
+
 define('TITLE', defined('PROJECT_VERSION') ? PROJECT_VERSION : 'indéfini');
 
 define('HEADER_TITLE_TOP', 'Administration');
@@ -58,7 +45,6 @@ define('FEMALE', 'Mme.');
 define('DIVERSE', 'Suckers');
 
 define('DOB_FORMAT_STRING', 'tt.mm.jjjj');
-
 define('BOX_HEADING_CONFIGURATION', 'Konfiguración');
 define('BOX_HEADING_MODULES', 'Module');
 define('BOX_HEADING_PARTNER_MODULES', 'Modules associés');
@@ -158,9 +144,6 @@ define('BOX_PRODUCTS_VPE', 'Unité d\'emballage');
 define('BOX_CAMPAIGNS_REPORT', 'Rapport de campagne');
 define('BOX_ORDERS_XSELL_GROUP', 'Groupes de marketing croisé');
 define('BOX_REMOVEOLDPICS', 'Supprimer les anciennes images');
-define('BOX_JANOLAW', 'janolaw Hébergement AGB');
-define('BOX_HAENDLERBUND', 'Servicio H&auml;ndlerbund Conditions générales');
-define('BOX_SHOP', 'Boutique');
 define('BOX_LOGOUT', 'Déconnexion');
 define('BOX_CREDITS', 'Créditos');
 define('BOX_UPDATE', 'Vérification de la version');
@@ -183,9 +166,21 @@ define('BOX_COOKIE_CONSENT', 'Consentement aux cookies');
 define('BOX_SEMKNOX', 'Recherche de site Recherche de produits à 360');
 define('BOX_PAGES_CONTENT', 'Pages de contenu');
 define('BOX_PRODUCTS_CONTENT', 'Annexes de l\'article');
-define('BOX_CONTENT_CONTENT', 'Contenu Anh&auml;nge');
+define('BOX_CONTENT_CONTENT', 'Pièces jointes au contenu');
 define('BOX_EMAIL_CONTENT', 'Pièces jointes aux e-mails');
 define('BOX_DHL', 'Expédition DHL et création d\'étiquettes');
+define('BOX_SCHEDULED_TASKS', 'Tâches planifiées');
+define('BOX_AVALEX', 'Textes juridiques avalex');
+define('BOX_GOOGLE_ANALYTICS', 'Google Analytics');
+define('BOX_MATOMO_ANALYTICS', 'Matomo Analytics');
+define('BOX_FACEBOOK_PIXEL', 'Pixel Facebook');
+define('BOX_MODULE_CATEGORIES', 'Catégories');
+define('BOX_MODULE_CHECKOUT', 'Checkout');
+define('BOX_MODULE_MAIN', 'Principal');
+define('BOX_MODULE_ORDER', 'Commandes');
+define('BOX_MODULE_PRODUCT', 'Article');
+define('BOX_MODULE_SHOPPING_CART', 'Panier d\'achat');
+define('BOX_MODULE_XTCPRICE', 'Tarifs');
 
 define('TXT_GROUPS', '<b>Groupes</b>:');
 define('TXT_SYSTEM', 'Système');
@@ -210,6 +205,21 @@ define('JS_PRODUCTS_IMAGE', '* Vous devez attribuer une image à l\'article.');
 
 define('JS_SPECIALS_PRODUCTS_PRICE', '* Un nouveau prix doit être fixé pour cet article.');
 
+define('JS_GENDER', '* L\'appellation doit être sélectionnée.\n');
+define('JS_FIRST_NAME', '* Le \'prénom\' doit être composé d\'au moins ' . (defined('ENTRY_FIRST_NAME_MIN_LENGTH') ? ENTRY_FIRST_NAME_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_LAST_NAME', 'Le \'nom de famille\' doit être composé d\'au moins ' . (defined('ENTRY_LAST_NAME_MIN_LENGTH') ? ENTRY_LAST_NAME_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_DOB', '* La \'date de naissance\' doit avoir le format suivant : xx.xx.xxxx (jour/mois/année).\n');
+define('JS_EMAIL_ADDRESS', '* \'L\'adresse e-mail\' doit comporter au moins ' . (defined('ENTRY_EMAIL_ADDRESS_MIN_LENGTH') ? ENTRY_EMAIL_ADDRESS_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_ADDRESS', '* La \'rue\' doit être composée d\'au moins ' . (defined('ENTRY_STREET_ADDRESS_MIN_LENGTH') ? ENTRY_STREET_ADDRESS_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_POST_CODE', '* Le \'code postal\' doit être composé d\'au moins ' . (defined('ENTRY_POSTCODE_MIN_LENGTH') ? ENTRY_POSTCODE_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_CITY', '* La \'ville\' doit être composée d\'au moins ' . (defined('ENTRY_CITY_MIN_LENGTH') ? ENTRY_CITY_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_STATE', '* \'L\'État\' doit être sélectionné.\n');
+define('JS_STATE_SELECT', '-- Sélectionnez au-dessus de --');
+define('JS_ZONE', '* \'L\'État\' doit être sélectionné dans la liste pour ce pays.');
+define('JS_COUNTRY', '* Le \'pays\' doit être sélectionné.\n');
+define('JS_TELEPHONE', '* Le \'numéro de téléphone\' doit être composé d\'au moins ' . (defined('ENTRY_TELEPHONE_MIN_LENGTH') ? ENTRY_TELEPHONE_MIN_LENGTH : 0) . ' caractères.\n');
+define('JS_PASSWORD', '* Le \'mot de passe\' et la \'confirmation\' du mot de passe doivent correspondre et être composés d\'au moins ' . (defined('ENTRY_PASSWORD_MIN_LENGTH') ? ENTRY_PASSWORD_MIN_LENGTH : 0) . ' caractères.\n');
+
 define('JS_ORDER_DOES_NOT_EXIST', 'Le numéro de commande %s n\'existe pas !');
 
 define('CATEGORY_PERSONAL', 'Données personnelles');
@@ -231,7 +241,7 @@ define('ENTRY_EMAIL_ADDRESS_ERROR', ' <span class="errorText">au moins "' . (def
 define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', ' <span class="errorText">Adresse e-mail invalide ! (Actuellement, les trémas ne sont pas autorisés dans les adresses e-mail)</span>.');
 define('ENTRY_EMAIL_ADDRESS_ERROR_EXISTS', ' <span class="errorText">Cette adresse e-mail existe déjà !</span>');
 define('ENTRY_COMPANY', 'Nom de l\'entreprise :');
-define('ENTRY_STREET_ADDRESS', 'Stra&szlig;e :');
+define('ENTRY_STREET_ADDRESS', 'Rue :');
 define('ENTRY_STREET_ADDRESS_ERROR', ' <span class="errorText">au moins "' . (defined('ENTRY_STREET_ADDRESS_MIN_LENGTH') ? ENTRY_STREET_ADDRESS_MIN_LENGTH : 0) . ' lettres</span>');
 define('ENTRY_SUBURB', 'Autres adresses :');
 define('ENTRY_POST_CODE', 'Code postal :');
@@ -314,7 +324,7 @@ define('TEXT_DEFAULT', 'Standard');
 define('TEXT_SET_DEFAULT', 'Définir comme standard');
 define('TEXT_FIELD_REQUIRED', ' <span class="fieldRequired">* Requis</span>');
 
-define('ERROR_NO_DEFAULT_CURRENCY_DEFINED', 'Erreur : Aucune devise par défaut n\'a été définie. Veuillez définir une devise par défaut sous Administration -&gt; Langues/devises -&gt; Devises.');
+define('ERROR_NO_DEFAULT_CURRENCY_DEFINED', 'Erreur : Aucune devise par défaut n\'a été définie. Veuillez définir une devise par défaut sous Administration -> Langues/devises -> Devises.');
 
 define('TEXT_CACHE_CATEGORIES', 'Boîte de catégories');
 define('TEXT_CACHE_MANUFACTURERS', 'Boîte du fabricant');
@@ -336,8 +346,7 @@ define('ERROR_FILE_NOT_REMOVEABLE', 'Erreur : Le fichier n\'a pas pu être suppr
 define('DELETE_ENTRY', 'Entrée dégagée ?');
 define('TEXT_PAYMENT_ERROR', '<b>ATTENTION :</b> Activez un <a href="%s">module de paiement</a>!');
 define('TEXT_SHIPPING_ERROR', '<b>AVERTISSEMENT :</b> Activez un <a href="%s">module d\'expédition</a>!');
-define('TEXT_PAYPAL_CONFIG', '<b>AVERTISSEMENT :</b> Veuillez configurer le module de paiement PayPal en "mode actif" : <a href="%s"><strong>Partenaire -&gt; PayPal</strong></a>');
-define('TEXT_NETTO', 'Petit-fils : ');
+define('TEXT_PAYPAL_CONFIG', '<b>AVERTISSEMENT :</b> Veuillez configurer le module de paiement PayPal en "mode actif" : <a href="%s"><strong>Partenaire -> PayPal</strong></a>');
 define('TEXT_DUPLICATE_CONFIG_ERROR', '<b>AVERTISSEMENT :</b> Duplication de la clé de configuration : ');
 
 define('ENTRY_CID', 'Numéro de client :');
@@ -402,6 +411,7 @@ define('ERROR_GIF_MERGE', 'Support GDlib Gif manquant, pas de filigrane (fusion)
 define('ERROR_GIF_UPLOAD', 'Le support GDlib Gif est absent, les images GIF ne peuvent pas être téléchargées.');
 
 define('BOX_GOOGLE_SITEMAP', 'Plan du site Google');
+
 define('BOX_PAYPAL', 'PayPal');
 
 define('_PAYMENT_MONEYBOOKERS_EMAILID_TITLE', 'Adresse e-mail de Skrill');
@@ -462,10 +472,8 @@ define('TEXT_INFO_MODULE_BACKUP', 'Voulez-vous enregistrer la configuration du m
 define('MODULE_BACKUP_CONFIRM', 'Les paramètres du module ont été enregistrés avec succès !');
 define('MODULE_RESTORE_CONFIRM', 'Les paramètres du module ont été restaurés avec succès !');
 define('MODULE_UPDATE_CONFIRM', 'La configuration du module a été mise à jour avec succès !');
-
 define('BOX_HEADING_MAGNALISTER', 'magnalister');
 define('BOX_MAGNALISTER', 'magnalister Admin');
-
 define('CHARS_LEFT', 'Caractères restants');
 define('CHARS_MAX', 'de max.');
 

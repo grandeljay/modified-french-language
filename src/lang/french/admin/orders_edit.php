@@ -38,7 +38,6 @@ define('TEXT_CUSTOMER_TELEPHONE', 'Téléphone :');
 define('TEXT_CUSTOMER_UST', 'USt-IdNr :');
 define('TEXT_CUSTOMER_CID', 'Numéro de client :');
 define('TEXT_ORDERS_ADDRESS_EDIT_INFO', 'Veuillez noter que les données saisies ici ne seront modifiées que dans la commande et non dans le compte du client.');
-
 define('TEXT_SMALL_NETTO', '(Neto)');
 define('TEXT_PRODUCT_ID', 'pID :');
 define('TEXT_PRODUCTS_MODEL', 'Art.no :');
@@ -56,7 +55,6 @@ define('TEXT_INS', 'Ajouter :');
 define('TEXT_COD_COSTS', 'Contre-remboursement');
 define('TEXT_VALUE', 'Prix');
 define('TEXT_DESC', 'Annonce');
-
 define('TEXT_PAYMENT', 'Mode de paiement :');
 define('TEXT_SHIPPING', 'Méthode d\'expédition :');
 define('TEXT_LANGUAGE', 'Langue :');
