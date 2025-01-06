@@ -17,19 +17,16 @@ define('DATE_FORMAT', DATE_FORMAT_SHORT);
 define('PHP_DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
 
-function xtc_date_raw($date, $reverse = false)
-{
-    if ($reverse) {
-        return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
-    } else {
-        return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
-    }
+function xtc_date_raw($date, $reverse = false) {
+  if ($reverse) {
+    return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
+  } else {
+    return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
+  }
 }
 
-require_once(DIR_FS_INC . 'auto_include.inc.php');
-foreach (auto_include(DIR_FS_LANGUAGES . 'french/extra/admin/', 'php') as $file) {
-    require($file);
-}
+require_once(DIR_FS_INC.'auto_include.inc.php');
+foreach(auto_include(DIR_FS_LANGUAGES.'french/extra/admin/','php') as $file) require ($file);
 
 define('HTML_PARAMS', 'dir="ltr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml"');
 
