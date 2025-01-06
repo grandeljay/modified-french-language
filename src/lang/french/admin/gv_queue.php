@@ -16,13 +16,7 @@ define('TABLE_HEADING_VOUCHER_VALUE', 'Valeur du bon d\'achat');
 define('TABLE_HEADING_DATE_PURCHASED', 'Date de la commande');
 define('TABLE_HEADING_ACTION', 'Action');
 
-define(
-    'TEXT_REDEEM_COUPON_MESSAGE_HEADER',
-    'Vous avez récemment commandé un bon d\'achat dans notre boutique en ligne, ' . "\n" .
-    'qui n\'a pas été activé immédiatement pour des raisons de sécurité.' . "\n" .
-    'Ce crédit est maintenant disponible pour vous. Vous pouvez maintenant aussi visiter notre boutique en ligne' . "\n" .
-    'et envoyez un montant partiel de votre bon d\'achat à quelqu\'un par e-mail' . "\n\n"
-);
+define('TEXT_REDEEM_COUPON_MESSAGE_HEADER', 'Vous avez récemment commandé un bon d\'achat dans notre boutique en ligne, ' . "\n" . 'qui n\'a pas été activé immédiatement pour des raisons de sécurité.' . "\n" . 'Ce crédit est maintenant disponible pour vous. Vous pouvez maintenant aussi visiter notre boutique en ligne' . "\n" . 'et envoyez un montant partiel de votre bon d\'achat à quelqu\'un par e-mail' . "\n\n");
 
 define('TEXT_REDEEM_COUPON_MESSAGE_AMOUNT', 'Le bon d\'achat que vous avez commandé a une valeur de %s');
 

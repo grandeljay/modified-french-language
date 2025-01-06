@@ -66,14 +66,7 @@ define('TEXT_SAVE', 'Sauvez');
 define('TEXT_ACTUAL', 'Actuel : ');
 define('TEXT_NEW', 'Neu : ');
 
-define(
-    'TEXT_ORDERS_EDIT_INFO',
-    '<b>Remarques importantes :</b><br />
-    Veuillez sélectionner le bon groupe de clients dans les données d\'adresse/client.<br />
-    Si le groupe de clients est modifié, tous les postes de facture doivent être sauvegardés à nouveau.<br />
-    Les frais d\'expédition doivent être modifiés manuellement !<br />
-    Selon le groupe de clients, les frais d\'expédition doivent être saisis bruts ou nets.<br />'
-);
+define('TEXT_ORDERS_EDIT_INFO', '<b>Remarques importantes :</b><br /> Veuillez sélectionner le bon groupe de clients dans les données d\'adresse/client.<br /> Si le groupe de clients est modifié, tous les postes de facture doivent être sauvegardés à nouveau.<br /> Les frais d\'expédition doivent être modifiés manuellement !<br /> Selon le groupe de clients, les frais d\'expédition doivent être saisis bruts ou nets.<br />');
 
 define('TEXT_CUSTOMER_GROUP_INFO', ' Lors d\'un changement de groupe de clients, tous les postes de facture doivent être sauvegardés à nouveau !');
 
