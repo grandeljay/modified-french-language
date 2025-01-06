@@ -42,6 +42,7 @@ define('FEMALE', 'Mme.');
 define('DIVERSE', 'Suckers');
 
 define('DOB_FORMAT_STRING', 'tt.mm.jjjj');
+
 define('BOX_HEADING_CONFIGURATION', 'Konfiguración');
 define('BOX_HEADING_MODULES', 'Module');
 define('BOX_HEADING_PARTNER_MODULES', 'Modules associés');
@@ -469,8 +470,10 @@ define('TEXT_INFO_MODULE_BACKUP', 'Voulez-vous enregistrer la configuration du m
 define('MODULE_BACKUP_CONFIRM', 'Les paramètres du module ont été enregistrés avec succès !');
 define('MODULE_RESTORE_CONFIRM', 'Les paramètres du module ont été restaurés avec succès !');
 define('MODULE_UPDATE_CONFIRM', 'La configuration du module a été mise à jour avec succès !');
+
 define('BOX_HEADING_MAGNALISTER', 'magnalister');
 define('BOX_MAGNALISTER', 'magnalister Admin');
+
 define('CHARS_LEFT', 'Caractères restants');
 define('CHARS_MAX', 'de max.');
 
