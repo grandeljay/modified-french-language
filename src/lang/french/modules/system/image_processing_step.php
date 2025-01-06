@@ -8,21 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-define(
-    'MODULE_STEP_IMAGE_PROCESS_TEXT_DESCRIPTION',
-    'Toutes les images dans les répertoires<br /><br />
-        /images/product_images/popup_images/<br />
-        /images/product_images/info_images/<br />
-        /images/product_images/midi_images/<br />
-        /images/product_images/thumbnail_images/<br />
-        /images/product_images/mini_images/<br />
-        /images/categories/<br />
-        /images/manufacturers/<br />
-        /images/banner/<br />
-
-    est recréé.<br /> <br />
-    Pour ce faire, le script ne traite qu\'un nombre limité d\'images %s et se rappelle ensuite.<br /><br />'
-);
+define('MODULE_STEP_IMAGE_PROCESS_TEXT_DESCRIPTION', 'Toutes les images dans les répertoires<br /><br /> /images/product_images/popup_images/<br /> /images/product_images/info_images/<br /> /images/product_images/midi_images/<br /> /images/product_images/thumbnail_images/<br /> /images/product_images/mini_images/<br /> /images/categories/<br /> /images/manufacturers/<br /> /images/banner/<br /> est recréé.<br /> <br /> Pour ce faire, le script ne traite qu\'un nombre limité d\'images %s et se rappelle ensuite.<br /><br />');
 define('MODULE_STEP_IMAGE_PROCESS_TEXT_TITLE', 'Traitement des images');
 define('MODULE_STEP_IMAGE_PROCESS_STATUS_DESC', 'Statut du module');
 define('MODULE_STEP_IMAGE_PROCESS_STATUS_TITLE', 'État');
@@ -38,7 +24,7 @@ define('TEXT_LOGGING', '<b>Enregistrez-vous :</b>');
 define('TEXT_ONLY_MISSING_IMAGES', 'Créez uniquement les images manquantes');
 define('MODULE_STEP_READY_STYLE_TEXT', '<div class="ready_info">%s</div>');
 define('MODULE_STEP_READY_STYLE_BACK', MODULE_STEP_READY_STYLE_TEXT);
-define('TEXT_LOWER_FILE_EXT', 'Convertir l\'extension de fichier en minuscule, par exemple : <b> JPG -&gt; jpg</b>');
+define('TEXT_LOWER_FILE_EXT', 'Convertir l\'extension de fichier en minuscule, par exemple : <b> JPG -> jpg</b>');
 define('IMAGE_COUNT_INFO', 'Nombre d\'images dans %s : %s pcs. ');
 
 define('TEXT_PRODUCTS_MINI_IMAGES', 'Mini-boxes');

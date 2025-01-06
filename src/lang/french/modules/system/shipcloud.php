@@ -8,6 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
+if (defined('_VALID_XTC')) {
 define('MODULE_SHIPCLOUD_TEXT_TITLE', 'shipcloud - la nouvelle génération d\'expédition de colis');
 define('MODULE_SHIPCLOUD_TEXT_DESCRIPTION', 'Imprimez commodément des étiquettes de colis depuis la boutique.');
 define('MODULE_SHIPCLOUD_STATUS_TITLE', 'État');
@@ -43,7 +44,8 @@ define('MODULE_SHIPCLOUD_LOG_DESC', 'le fichier journal est stocké dans le doss
 define('MODULE_SHIPCLOUD_EMAIL_TITLE', '<hr noshade>Notification par e-mail');
 define('MODULE_SHIPCLOUD_EMAIL_DESC', 'Le client doit-il être informé par e-mail ?');
 define('MODULE_SHIPCLOUD_EMAIL_TYPE_TITLE', '<hr noshade>Notification');
-define('MODULE_SHIPCLOUD_EMAIL_TYPE_DESC', 'Le client doit-il être informé par le magasin ou par shipcloud ?<br><b>&lt;Note:</b>Pour recevoir une notification de la boutique, un webhook doit être défini sur cette URL:</br>' . (((defined('RUN_MODE_ADMIN') && function_exists('xtc_catalog_href_link'))) ? xtc_catalog_href_link('callback/shipcloud/callback.php', '', 'SSL', false) : '') . ' ont été définis dans shipcloud.');
+define('MODULE_SHIPCLOUD_EMAIL_TYPE_DESC', 'Le client doit-il être informé par le magasin ou par shipcloud ?<br><b><Note:</b>Pour recevoir une notification de la boutique, un webhook doit être défini sur cette URL:</br>' . (((defined('RUN_MODE_ADMIN') && function_exists('xtc_catalog_href_link'))) ? xtc_catalog_href_link('callback/shipcloud/callback.php', '', 'SSL', false) : '') . ' ont été définis dans shipcloud.');
+}
 
 define('SHIPMENT.TRACKING.SHIPCLOUD_LABEL_CREATED', 'Étiquette de colis créée dans shipcloud');
 define('SHIPMENT.TRACKING.LABEL_CREATED', 'Création d\'une étiquette de paquet');

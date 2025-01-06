@@ -13,7 +13,7 @@ define('MODULE_PAYMENT_AMONEYBOOKERS_TEXT_DESCRIPTION', 'Skrill');
 define('MODULE_PAYMENT_AMONEYBOOKERS_NOCURRENCY_ERROR', 'Aucune devise acceptée par Skrill n\'est installée.');
 define('MODULE_PAYMENT_AMONEYBOOKERS_ERRORTEXT1', 'payment_error=');
 define('MODULE_PAYMENT_AMONEYBOOKERS_TEXT_INFO', '');
-define('MODULE_PAYMENT_AMONEYBOOKERS_ERRORTEXT2', '&amp;error=Erreur lors de votre paiement Skrill !');
+define('MODULE_PAYMENT_AMONEYBOOKERS_ERRORTEXT2', '&error=Erreur lors de votre paiement Skrill !');
 define('MODULE_PAYMENT_AMONEYBOOKERS_ORDER_TEXT', 'Date de la commande : ');
 define('MODULE_PAYMENT_AMONEYBOOKERS_TEXT_ERROR', 'Erreur de paiement !');
 define('MODULE_PAYMENT_AMONEYBOOKERS_CONFIRMATION_TEXT', 'Merci pour votre commande.');

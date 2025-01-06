@@ -8,11 +8,10 @@
  * @package GrandelJayFrenchLanguage
  */
 
-require_once DIR_FS_CATALOG . 'api/it-recht-kanzlei/classes/class.api_it_recht_kanzlei.php';
-
+require_once(DIR_FS_CATALOG.'api/it-recht-kanzlei/classes/class.api_it_recht_kanzlei.php');
 $api_it_recht_kanzlei = new api_it_recht_kanzlei();
 
-define('MODULE_API_IT_RECHT_KANZLEI_TEXT_TITLE', 'IT Law Firm T&amp;C Interface v' . $api_it_recht_kanzlei->modulversion);
+define('MODULE_API_IT_RECHT_KANZLEI_TEXT_TITLE', 'IT Law Firm T&C Interface v' . $api_it_recht_kanzlei->modulversion);
 define('MODULE_API_IT_RECHT_KANZLEI_TEXT_DESCRIPTION', 'IT-Recht Kanzlei - Auto Updater pour les textes juridiques automatiques<br/><br/><b>IMPORTANT :</b> Avant d\'utiliser le module, l\'affectation des pages de contenu doit être effectuée.<hr noshade>');
 define('MODULE_API_IT_RECHT_KANZLEI_STATUS_TITLE', 'État');
 define('MODULE_API_IT_RECHT_KANZLEI_STATUS_DESC', 'Statut du module');
@@ -34,5 +33,3 @@ define('MODULE_API_IT_RECHT_KANZLEI_PDF_DSE_TITLE', 'Sélection de la protection
 define('MODULE_API_IT_RECHT_KANZLEI_PDF_DSE_DESC', 'Indiquez si le texte sur la protection des données doit être disponible au format PDF.');
 define('MODULE_API_IT_RECHT_KANZLEI_PDF_WRB_TITLE', 'Révocation de la sélection PDF Texte juridique');
 define('MODULE_API_IT_RECHT_KANZLEI_PDF_WRB_DESC', 'Indiquez si le texte de révocation doit être disponible au format PDF.');
-define('MODULE_API_IT_RECHT_KANZLEI_PDF_FILE_TITLE', '<hr noshade>Entrepôt PDF');
-define('MODULE_API_IT_RECHT_KANZLEI_PDF_FILE_DESC', 'Indication de l\'emplacement des textes juridiques en PDF.');

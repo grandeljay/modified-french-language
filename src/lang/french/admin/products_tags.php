@@ -43,6 +43,7 @@ define('TEXT_INFO_HEADING_DELETE_VALUE', 'Valorisation du forage');
 define('TEXT_INFO_DELETE_VALUE_INTRO', 'Êtes-vous sûr de vouloir supprimer cette valeur ?');
 
 define('TEXT_DISPLAY_NUMBER_OF_VALUES', 'Montré de <b>%d</b> à <b>%d</b> (sur un total de <b>%d</b> valeurs)');
+
 define('TEXT_INFO_OPTION_NAME', 'Nom :');
 define('TEXT_INFO_OPTION_DESCRIPTION', 'Description :');
 define('TEXT_INFO_OPTION_CONTENT', 'Contenu :');

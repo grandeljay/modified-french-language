@@ -9,17 +9,7 @@
  */
 
 define('HEADING_TITLE', 'Supprimer les anciennes images d\'articles');
-define(
-    'LINK_INFO_TEXT',
-    '<p>Cette fonction peut être utilisée pour supprimer les images d\'éléments superflus dans les répertoires :</p>
-    - /images/product_images/info_images<br/>
-    - /images/product_images/midi_images<br/>
-    - /images/product_images/mini_images<br/>
-    - /images/product_images/original_images<br/>
-    - /images/product_images/popup_images<br/>
-    - /images/product_images/thumbnail_images<br/>
-   <p>seront supprimés du serveur web s\'il n\'y a plus de référence à ces images d\'articles dans la base de données.<br/>Si une image n\'est plus utilisée par aucun produit, elle peut être supprimée du serveur Web en toute sécurité.</p><br/>'
-);
+define('LINK_INFO_TEXT', '<p>Cette fonction peut être utilisée pour supprimer les images d\'éléments superflus dans les répertoires :</p> - /images/product_images/info_images<br/> - /images/product_images/midi_images<br/> - /images/product_images/mini_images<br/> - /images/product_images/original_images<br/> - /images/product_images/popup_images<br/> - /images/product_images/thumbnail_images<br/> <p>seront supprimés du serveur web s\'il n\'y a plus de référence à ces images d\'articles dans la base de données.<br/>Si une image n\'est plus utilisée par aucun produit, elle peut être supprimée du serveur Web en toute sécurité.</p><br/>');
 define('LINK_ORIGINAL', 'Supprimer les anciennes images originales');
 define('LINK_POPUP', 'Supprimer les anciennes images pop-up');
 define('LINK_INFO', 'Supprimer les anciennes photos informatives');

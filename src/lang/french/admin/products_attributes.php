@@ -51,7 +51,7 @@ define('ATTR_WEIGHT', 'Poids');
 define('ATTR_PREFIXWEIGHT', 'Préfixe de poids');
 define('ATTR_PRICE', 'Prix');
 define('ATTR_PREFIXPRICE', 'Prix préétabli');
-define('DL_COUNT', 'M&ouml;gl. Téléchargements :');
+define('DL_COUNT', 'Téléchargements possibles :');
 define('DL_EXPIRE', 'Temps de décharge (jours) :');
 define('TEXT_OPTION_ID', 'Options d\'identification');
 define('TEXT_OPTION_NAME', 'Nom de l\'option');
