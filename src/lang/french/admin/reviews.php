@@ -16,6 +16,7 @@ define('TABLE_HEADING_RATING', 'Évaluation');
 define('TABLE_HEADING_DATE_ADDED', 'a ajouté le');
 define('TABLE_HEADING_ACTION', 'Action');
 define('TABLE_HEADING_STATUS', 'État');
+define('TABLE_HEADING_LANGUAGE', 'Langue');
 
 define('ENTRY_PRODUCT', 'Article :');
 define('ENTRY_FROM', 'De :');
@@ -29,11 +30,14 @@ define('TEXT_INFO_DELETE_REVIEW_INTRO', 'Êtes-vous sûr de vouloir supprimer ce
 define('TEXT_INFO_DATE_ADDED', 'ajouté sur :');
 define('TEXT_INFO_LAST_MODIFIED', 'dernier changement :');
 define('TEXT_IMAGE_NONEXISTENT', 'L\'IMAGE N\'EXISTE PAS');
+
 define('TEXT_INFO_REVIEW_AUTHOR', 'écrit par :');
 define('TEXT_INFO_REVIEW_RATING', 'Valorisation :');
 define('TEXT_INFO_REVIEW_READ', 'cuir :');
-define('TEXT_INFO_REVIEW_SIZE', 'Gr&ouml;sse :');
+define('TEXT_INFO_REVIEW_SIZE', 'Taille :');
 define('TEXT_INFO_PRODUCTS_AVERAGE_RATING', 'score moyen :');
+define('TEXT_INFO_HEADING_EDIT_REVIEW', 'Modifier les avis sur les produits');
+define('TEXT_INFO_EDIT_REVIEW_INTRO', 'Veuillez effectuer les modifications nécessaires');
 
 define('TEXT_OF_5_STARS', '5% de 5 étoiles !');
 define('TEXT_GOOD', '<span class="smallText colorRed"><b>GUT</b></span>');

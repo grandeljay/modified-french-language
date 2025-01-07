@@ -27,5 +27,4 @@ define('TEXT_DELETE_IMAGE', 'Flou de l\'image');
 define('TEXT_INFO_SHIPPING_STATUS_SORT_ORDER', 'Classification :');
 
 define('ERROR_REMOVE_DEFAULT_SHIPPING_STATUS', 'Erreur : Le statut de livraison par défaut ne peut pas être supprimé. Veuillez définir un nouveau statut de livraison par défaut et répéter le processus.');
-define('ERROR_STATUS_USED_IN_ORDERS', 'Erreur : Ce statut de livraison est actuellement encore utilisé pour les articles.');
-define('ERROR_STATUS_USED_IN_HISTORY', 'Erreur : Ce statut de livraison est actuellement encore utilisé pour les articles.');
+define('ERROR_STATUS_USED_IN_PRODUCTS', 'Erreur : Ce statut de livraison est actuellement encore utilisé pour les articles.');
