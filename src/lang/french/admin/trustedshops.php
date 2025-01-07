@@ -65,40 +65,6 @@ define('TEXT_CENTER', 'centré');
 
 define('TEXT_DISPLAY_NUMBER_OF_TRUSTEDSHOPS', 'Montré de <b>%d</b> à <b>%d</b> (sur un total de <b>%d</b> TS-IDs)');
 
-define(
-    'TEXT_TS_MAIN_INFO',
-    '<img src="images/trustedshops/illustration-ts-products-profile-page.png" style="width:160px;float:right;margin-top:30px;padding-left:30px;"/>
-    <h2>Magasins de confiance</h2>
-    Plus de 30 000 entreprises à travers l\'Europe utilisent le sceau d\'approbation Trusted Shops, la protection des acheteurs et les avis authentiques pour obtenir plus de trafic, des ventes plus élevées et de meilleurs taux de conversion. Avec le Trustbadge de Trusted Shops, vous pouvez intégrer rapidement et facilement des solutions de confiance dans le logiciel modifié de votre boutique en ligne.<br/>
-    <br/>
-    <b>Établissez la confiance - en seulement 5 minutes !</b><br/>
-    <br/>
-    Le label de qualité Trusted Shops, la protection des acheteurs et les avis authentiques sont synonymes de confiance depuis plus de 20 ans et sont le levier de plus de 30 000 boutiques en ligne en Europe pour obtenir plus de trafic, des ventes plus élevées et de meilleurs taux de conversion.
-    <br/>
-    Ce module Trusted Shops permet de convaincre rapidement et facilement les visiteurs de la fiabilité de votre boutique en ligne. Grâce à son installation simple, le produit peut être utilisé en 5 minutes seulement et ne nécessite généralement aucune connaissance technique préalable. Avec notre module, vous êtes toujours techniquement à jour et vous ne devez pas faire d\'efforts de maintenance supplémentaires.<br/>
-    <br/>
-    <b>Votre avantage :</b> en quelques clics, les visiteurs de votre boutique en ligne peuvent voir des éléments de confiance tels que le badge de confiance ou d\'autres widgets sur le site, peuvent bénéficier de la protection des acheteurs et sont automatiquement invités à donner leur avis après avoir passé une commande.'
-);
-define(
-    'TEXT_TS_FEATURES_INFO',
-    '<img src="images/trustedshops/illustration-ts-badge.png" style="width:160px;float:right;margin-top:30px;padding-left:30px;"/>
-    <h2>Fonctions</h2>
-    <b>Les fonctions en un coup d\'œil :</b><br/>
-    <br/>
-    <ul>
-        <li>Affichez le badge de confiance, intégrez la protection des acheteurs et recueillez les avis des clients.</li>
-        <li>Recueillir et afficher les avis sur les produits</li>
-        <li>Configurer des boutiques multiples (par exemple, des boutiques en plusieurs langues) avec différents ID de boutiques de confiance</li>
-    </ul>
-    <br/>
-    Remarque : pour utiliser le module Trusted Shops, vous devez disposer d\'un abonnement Trusted Shops existant. Vous pouvez en savoir plus sur les produits et les avantages de Trusted Shops sur notre site Web ou en nous appelant au +49 221 7753658.<br/>
-    <br/>
-    Avez-vous besoin d\'aide pour l\'intégration ? Vous trouverez des instructions détaillées sur l\'intégration dans notre Centre d\'aide.<br/>
-    <br/>
-    Lien <a href="https://help.etrusted.com/hc/de/articles/360045842852-Trusted-Shops-nutzen-mit-modified" target="_blank" style="text-decoration:underline">: https://help.etrusted.com/hc/de/articles/360045842852-Trusted-Shops-nutzen-mit-modified</a>'
-);
-define(
-    'TEXT_TS_SPECIAL_INFO',
-    '<b>Notre spécial pour vous :<br/>définitivement moins cher pour les utilisateurs modifiés !</b><br/>
-    <a class="btnSmall btnCuracao fitting" target="_blank" href="https://checkout.trustedshops.com/?a_aid=modified-shop">Devenez membre maintenant</a>'
-);
+define('TEXT_TS_MAIN_INFO', '<img src="images/trustedshops/illustration-ts-products-profile-page.png" style="width:160px;float:right;margin-top:30px;padding-left:30px;"/> <h2>Magasins de confiance</h2> Plus de 30 000 entreprises à travers l\'Europe utilisent le sceau d\'approbation Trusted Shops, la protection des acheteurs et les avis authentiques pour obtenir plus de trafic, des ventes plus élevées et de meilleurs taux de conversion. Avec le Trustbadge de Trusted Shops, vous pouvez intégrer rapidement et facilement des solutions de confiance dans le logiciel modifié de votre boutique en ligne.<br/> <br/> <b>Établissez la confiance - en seulement 5 minutes !</b><br/> <br/> Le label de qualité Trusted Shops, la protection des acheteurs et les avis authentiques sont synonymes de confiance depuis plus de 20 ans et sont le levier de plus de 30 000 boutiques en ligne en Europe pour obtenir plus de trafic, des ventes plus élevées et de meilleurs taux de conversion. <br/> Ce module Trusted Shops permet de convaincre rapidement et facilement les visiteurs de la fiabilité de votre boutique en ligne. Grâce à son installation simple, le produit peut être utilisé en 5 minutes seulement et ne nécessite généralement aucune connaissance technique préalable. Avec notre module, vous êtes toujours techniquement à jour et vous ne devez pas faire d\'efforts de maintenance supplémentaires.<br/> <br/> <b>Votre avantage :</b> en quelques clics, les visiteurs de votre boutique en ligne peuvent voir des éléments de confiance tels que le badge de confiance ou d\'autres widgets sur le site, peuvent bénéficier de la protection des acheteurs et sont automatiquement invités à donner leur avis après avoir passé une commande.');
+define('TEXT_TS_FEATURES_INFO', '<img src="images/trustedshops/illustration-ts-badge.png" style="width:160px;float:right;margin-top:30px;padding-left:30px;"/> <h2>Fonctions</h2> <b>Les fonctions en un coup d\'œil :</b><br/> <br/> <ul> <li>Affichez le badge de confiance, intégrez la protection des acheteurs et recueillez les avis des clients.</li> <li>Recueillir et afficher les avis sur les produits</li> <li>Configurer des boutiques multiples (par exemple, des boutiques en plusieurs langues) avec différents ID de boutiques de confiance</li> </ul> <br/> Remarque : pour utiliser le module Trusted Shops, vous devez disposer d\'un abonnement Trusted Shops existant. Vous pouvez en savoir plus sur les produits et les avantages de Trusted Shops sur notre site Web ou en nous appelant au +49 221 7753658.<br/> <br/> Avez-vous besoin d\'aide pour l\'intégration ? Vous trouverez des instructions détaillées sur l\'intégration dans notre Centre d\'aide.<br/> <br/> Lien <a href="https://help.etrusted.com/hc/de/articles/360045842852-Trusted-Shops-nutzen-mit-modified" target="_blank" style="text-decoration:underline">: https://help.etrusted.com/hc/de/articles/360045842852-Trusted-Shops-nutzen-mit-modified</a>');
+define('TEXT_TS_SPECIAL_INFO', '<b>Notre spécial pour vous :<br/>définitivement moins cher pour les utilisateurs modifiés !</b><br/> <a class="btnSmall btnCuracao fitting" target="_blank" href="https://checkout.trustedshops.com/?a_aid=modified-shop">Devenez membre maintenant</a>');

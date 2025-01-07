@@ -8,5 +8,5 @@
  * @package GrandelJayFrenchLanguage
  */
 
-define('TAX_ADD_TAX', 'incl. ');
-define('TAX_NO_TAX', 'plus ');
+  define('TAX_ADD_TAX', 'incl. ');
+  define('TAX_NO_TAX', 'plus ');

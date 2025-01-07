@@ -11,11 +11,10 @@
 define('ATTENTION_TITLE', 'Attention !');
 
 if (!defined('APS_INSTALL')) {
-    define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. ( <b>444 )</b> sur unix, <b>(lecture seule)</b> sur Win32.');
+  define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. ( <b>444 )</b> sur unix, <b>(lecture seule)</b> sur Win32.');
 } else {
-    define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. <b>(444)</b> sur unix, <b>(lecture seule)</b> sur Win32.<br />Si l\'installation a été effectuée via un progiciel d\'un fournisseur, les droits d\'accès peuvent devoir être définis différemment (HostEurope : <b>CHMOD 400</b> ou <b>CHMOD 440</b>).');
+  define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. <b>(444)</b> sur unix, <b>(lecture seule)</b> sur Win32.<br />Si l\'installation a été effectuée via un progiciel d\'un fournisseur, les droits d\'accès peuvent devoir être définis différemment (HostEurope : <b>CHMOD 400</b> ou <b>CHMOD 440</b>).');
 }
-
 define('TEXT_FILE_WARNING', '<b>AVERTISSEMENT :</b><br />Le serveur doit pouvoir écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ces fichiers. <b>(777)</b> sur unix, <b>(read-write)</b> sur Win32.');
 define('TEXT_FOLDER_WARNING', '<b>AVERTISSEMENT :</b><br />Le serveur doit pouvoir écrire dans les répertoires suivants. Veuillez modifier les droits d\'accès (permissions) de ces répertoires : <b>(777)</b> sur unix, <b>(read-write)</b> sur Win32.');
 define('REPORT_GENERATED_FOR', 'Informe para:');
@@ -90,7 +89,6 @@ define('TURNOVER_LAST_MONTH_PAID', 'le mois dernier (payé)');
 define('TOTAL_TURNOVER', 'Chiffre d\'affaires total');
 
 define('HEADING_TITLE', 'Bienvenue dans la zone d\'administration');
-
 define('TABLE_CAPTION_USERS_ONLINE', 'En ligne');
 define('TABLE_CAPTION_USERS_ONLINE_HINT', '***Pour obtenir des informations sur un utilisateur, cliquez sur son nom***.');
 define('TABLE_HEADING_USERS_ONLINE_SINCE', 'En ligne à partir de');
@@ -98,7 +96,6 @@ define('TABLE_HEADING_USERS_ONLINE_NAME', 'Nombre');
 define('TABLE_HEADING_USERS_ONLINE_LAST_CLICK', 'Dernier clic');
 define('TABLE_HEADING_USERS_ONLINE_INFO', 'Information');
 define('TABLE_CELL_USERS_ONLINE_INFO', 'plus...');
-
 define('TABLE_CAPTION_NEW_CUSTOMERS', 'Clients');
 define('TABLE_CAPTION_NEW_CUSTOMERS_COMMENT', '(les 15 derniers)');
 define('TABLE_HEADING_NEW_CUSTOMERS_LASTNAME', 'Nombre');
@@ -109,7 +106,6 @@ define('TABLE_HEADING_NEW_CUSTOMERS_ORDERS', 'Demandes');
 define('TABLE_CELL_NEW_CUSTOMERS_EDIT', 'éditer...');
 define('TABLE_CELL_NEW_CUSTOMERS_DELETE', 'les exercices...');
 define('TABLE_CELL_NEW_CUSTOMERS_ORDERS', 'montrer...');
-
 define('TABLE_CAPTION_NEW_ORDERS', 'Demandes');
 define('TABLE_CAPTION_NEW_ORDERS_COMMENT', '(les 20 derniers)');
 define('TABLE_HEADING_NEW_ORDERS_ORDER_NUMBER', 'Numéro de commande');
@@ -117,22 +113,22 @@ define('TABLE_HEADING_NEW_ORDERS_ORDER_DATE', 'Date de la commande');
 define('TABLE_HEADING_NEW_ORDERS_CUSTOMERS_NAME', 'Nom du client');
 define('TABLE_HEADING_NEW_ORDERS_EDIT', 'éditer');
 define('TABLE_HEADING_NEW_ORDERS_DELETE', 'forets');
-
 define('TABLE_CAPTION_NEWSFEED', 'Visite el');
-
 define('TABLE_CAPTION_BIRTHDAYS', 'Liste d\'anniversaires');
 define('TABLE_CELL_BIRTHDAYS_TODAY', 'Les clients fêtent leur anniversaire aujourd\'hui');
 define('TABLE_CELL_BIRTHDAYS_THIS_MONTH', 'Clients ayant un anniversaire ce mois-ci');
-
 define('HEADING_CAPTION_STATISTIC', 'Statistiques');
+
 define('ERROR_DB_VERSION_UPDATE', '<strong>AVERTISSEMENT :</strong> Votre BD doit être mise à jour, veuillez exécuter le <a href="' . DIR_WS_CATALOG . '_installer/">programme d\'installation</a>:');
 define('ERROR_DB_VERSION_UPDATE_INFO', 'La base de données doit être mise à jour de la version %s à %s.');
 
 define('ERROR_EMAIL_CHECK', '<strong>AVERTISSEMENT :</strong> Les adresses e-mail suivantes semblent être incorrectes :');
-define('ERROR_EMAIL_CHECK_INFO', '%s : &lt;%s&gt;');
+define('ERROR_EMAIL_CHECK_INFO', '%s : <%s>');
 
 define('WARNING_DB_FILE_PRIVILEGES', '<strong>WARNING :</strong> les privilèges FILE sont activés sur la base de données ' . DB_DATABASE . ' pour l\'utilisateur du magasin ' . DB_SERVER_USERNAME . ' !');
 
-define('WARNING_REGISTER_GLOBALS', '<strong>AVERTISSEMENT :</strong> Cette fonctionnalité est <strong>dépréciée</strong> à partir de PHP 5.3.0 et <strong>supprimée</strong> à partir de PHP 5.4.0. Contactez votre hébergeur pour désactiver &quot;register_globals&quot;.');
+define('WARNING_REGISTER_GLOBALS', '<strong>AVERTISSEMENT :</strong> Cette fonctionnalité est <strong>dépréciée</strong> à partir de PHP 5.3.0 et <strong>supprimée</strong> à partir de PHP 5.4.0. Contactez votre hébergeur pour désactiver "register_globals".');
 
 define('WARNING_DOMAIN_INVALID', '<strong>AVERTISSEMENT :</strong> Le domaine de votre boutique n\'a pas pu être validé (Causes possibles : Erreur de format du domaine ou nom de domaine internationalisé (IDN) - domaine avec trémas).');
+
+define('WARNING_REQUIREMENTS', '<b>%s installé</b>:%s <b>Min</b>:%s <b>Max</b>:%s');

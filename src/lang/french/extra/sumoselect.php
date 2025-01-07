@@ -8,5 +8,5 @@
  * @package GrandelJayFrenchLanguage
  */
 
-define('TEXT_SUMOSELECT_SEARCH', 'Terme de recherche...');
-define('TEXT_SUMOSELECT_NO_RESULT', 'Aucun résultat trouvé pour "{0}".');
+ define('TEXT_SUMOSELECT_SEARCH', 'Terme de recherche...');
+ define('TEXT_SUMOSELECT_NO_RESULT', 'Aucun résultat trouvé pour "{0}".');
