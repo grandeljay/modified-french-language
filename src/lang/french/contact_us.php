@@ -8,7 +8,7 @@
  * @package GrandelJayFrenchLanguage
  */
 
-define('EMAIL_COMPANY', 'Signature : ');
+define('EMAIL_COMPANY', 'Société :');
 define('EMAIL_STREET', 'Rue : ');
 define('EMAIL_POSTCODE', 'PLZ : ');
 define('EMAIL_CITY', 'Ville : ');
