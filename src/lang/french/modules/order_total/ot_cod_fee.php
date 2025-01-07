@@ -41,7 +41,7 @@
         $shipping_code = ($shipping_code == 'FREEAMOUNT') ? 'FREEAMOUNT_FREE' : 'FEE_' . $shipping_code;
 
         define('MODULE_ORDER_TOTAL_COD_'.$shipping_code.'_TITLE', $title);
-        define('MODULE_ORDER_TOTAL_COD_'.$shipping_code.'_DESC', '<ISO2-Code>:<Preis>, ....<br /> 00 comme code ISO2 permet l\'envoi contre remboursement dans tous les pays. Si 00 est utilisé, il doit être saisi comme dernier argument. Si aucun 00:9.99 n\'est saisi, l\'envoi contre remboursement à l\'étranger ne sera pas facturé (impossible). Pour exclure un seul pays, ne saisissez aucun coût pour ce pays. Exemple : DE:4.00,CH :,00:9.99<br />-&gt; Explication : Expédition vers DE : 4€ / Expédition vers CH : pas possible / Expédition vers le reste du monde : 9,99€.');
+        define('MODULE_ORDER_TOTAL_COD_'.$shipping_code.'_DESC', '<ISO2-Code>:<Preis>, ....<br /> 00 comme code ISO2 permet l\'envoi contre remboursement dans tous les pays. Si 00 est utilisé, il doit être saisi comme dernier argument. Si aucun 00:9.99 n\'est saisi, l\'envoi contre remboursement à l\'étranger ne sera pas facturé (impossible). Pour exclure un seul pays, ne saisissez aucun coût pour ce pays. Exemple : DE:4.00,CH :,00:9.99<br />-> Explication : Expédition vers DE : 4€ / Expédition vers CH : pas possible / Expédition vers le reste du monde : 9,99€.');
       }
     }
   }
