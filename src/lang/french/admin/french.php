@@ -142,6 +142,9 @@ define('BOX_PRODUCTS_VPE', 'Unité d\'emballage');
 define('BOX_CAMPAIGNS_REPORT', 'Rapport de campagne');
 define('BOX_ORDERS_XSELL_GROUP', 'Groupes de marketing croisé');
 define('BOX_REMOVEOLDPICS', 'Supprimer les anciennes images');
+define('BOX_JANOLAW', 'janolaw CGV Hébergement');
+define('BOX_HAENDLERBUND', 'Service CGV de l\'association des commerçants');
+define('BOX_SHOP', 'Boutique');
 define('BOX_LOGOUT', 'Déconnexion');
 define('BOX_CREDITS', 'Créditos');
 define('BOX_UPDATE', 'Vérification de la version');
@@ -345,6 +348,7 @@ define('DELETE_ENTRY', 'Entrée dégagée ?');
 define('TEXT_PAYMENT_ERROR', '<b>ATTENTION :</b> Activez un <a href="%s">module de paiement</a>!');
 define('TEXT_SHIPPING_ERROR', '<b>AVERTISSEMENT :</b> Activez un <a href="%s">module d\'expédition</a>!');
 define('TEXT_PAYPAL_CONFIG', '<b>AVERTISSEMENT :</b> Veuillez configurer le module de paiement PayPal en "mode actif" : <a href="%s"><strong>Partenaire -> PayPal</strong></a>');
+define('TEXT_NETTO', 'Net : ');
 define('TEXT_DUPLICATE_CONFIG_ERROR', '<b>AVERTISSEMENT :</b> Duplication de la clé de configuration : ');
 
 define('ENTRY_CID', 'Numéro de client :');
