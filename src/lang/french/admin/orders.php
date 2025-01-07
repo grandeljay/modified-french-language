@@ -96,7 +96,7 @@ define('ERROR_ORDER_DOES_NOT_EXIST', 'Erreur : La commande n\'existe pas !');
 define('SUCCESS_ORDER_UPDATED', 'Succès : La commande a été mise à jour avec succès.');
 define('WARNING_ORDER_NOT_UPDATED', 'Note : Rien n\'a été modifié. Par conséquent, cet ordre n\'a pas été mis à jour.');
 
-define('TABLE_HEADING_DISCOUNT', 'Rabatt');
+define('TABLE_HEADING_DISCOUNT', 'Réduction');
 define('ENTRY_CUSTOMERS_GROUP', 'Groupe de clients :');
 define('TEXT_VALIDATING', 'Non confirmé');
 

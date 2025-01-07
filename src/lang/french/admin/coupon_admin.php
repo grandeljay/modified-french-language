@@ -9,7 +9,7 @@
  */
 
 define('TOP_BAR_TITLE', 'Statistiques');
-define('HEADING_TITLE', 'Cupones Rabatt');
+define('HEADING_TITLE', 'Cupones Réduction');
 define('HEADING_TITLE_STATUS', 'Statut : ');
 define('TEXT_CUSTOMER', 'Client :');
 define('TEXT_COUPON', 'Nom du coupon');

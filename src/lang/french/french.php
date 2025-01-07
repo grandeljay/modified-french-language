@@ -8,10 +8,8 @@
  * @package GrandelJayFrenchLanguage
  */
 
-/**
- * Locale
- */
 define('HTML_PARAMS', 'dir="ltr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml"');
+@setlocale(LC_TIME, 'fr_FR.UTF-8' ,'fr_FR@euro', 'fr_FR', 'fr-FR', 'fr', 'fr_FR.ISO_8859-1', 'French','fr_FR.ISO_8859-15');
 
 define('DATE_LOCALE', 'fr_FR');
 define('DATE_FORMAT_SHORT', 'd.m.Y');
@@ -19,44 +17,29 @@ define('DATE_FORMAT_LONG', 'l d F, Y');
 define('DATE_FORMAT', DATE_FORMAT_SHORT);
 define('PHP_DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
 define('DATE_TIME_FORMAT', DATE_FORMAT_SHORT . ' H:i:s');
-define('LANGUAGE_CURRENCY', 'EUR');
+define('DOB_FORMAT_STRING', 'tt.mm.jjjj');
 
-setlocale(LC_ALL, DATE_LOCALE);
-
-function xtc_date_raw($date, $reverse = false): string
-{
-    if ($reverse) {
-        return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
-    } else {
-        return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
-    }
+function xtc_date_raw($date, $reverse = false) {
+  if ($reverse) {
+    return substr($date, 0, 2) . substr($date, 3, 2) . substr($date, 6, 4);
+  } else {
+    return substr($date, 6, 4) . substr($date, 3, 2) . substr($date, 0, 2);
+  }
 }
 
-/**
- * Extra files
- */
-require_once DIR_FS_INC . 'auto_include.inc.php';
+require_once(DIR_FS_INC.'auto_include.inc.php');
+foreach(auto_include(DIR_WS_LANGUAGES.'french/extra/','php') as $file) require ($file);
 
-$extra_files = auto_include(DIR_WS_LANGUAGES . 'french/extra/', 'php');
-
-foreach ($extra_files as $extra_file) {
-    require $extra_file;
-}
-
-/**
- * Translations
- */
 define('TITLE', STORE_NAME);
 define('HEADER_TITLE_TOP', 'Page d\'accueil');
 define('HEADER_TITLE_CATALOG', 'Catalogue');
+
+defined('LANGUAGE_CURRENCY') || define('LANGUAGE_CURRENCY', 'EUR');
 
 define('MALE', 'Sr.');
 define('FEMALE', 'Mme/Mme.');
 define('DIVERSE', 'Différents');
 
-/**
- * Boxes
- */
 define('IMAGE_REDEEM_GIFT', 'Échangez votre chèque-cadeau');
 
 define('BOX_TITLE_STATISTICS', 'Statistiques :');
@@ -82,17 +65,21 @@ define('BOX_REVIEWS_TEXT_OF_5_STARS', '5 étoiles%s !');
 define('PULL_DOWN_DEFAULT', 'Veuillez choisir');
 
 define('JS_ERROR', 'Les informations nécessaires sont manquantes. Veuillez tout remplir.');
+
 define('JS_REVIEW_TEXT', '* Le texte doit être composé d\'au moins ' . REVIEW_TEXT_MIN_LENGTH . ' des personnages.');
+define('JS_REVIEW_RATING', '* Donnez votre évaluation.\n\n');
 define('JS_ERROR_NO_PAYMENT_MODULE_SELECTED', '* Choisissez un mode de paiement pour votre commande.');
-define('ERROR_NO_PAYMENT_MODULE_SELECTED', '* Choisissez un mode de paiement pour votre commande.');
+define('JS_ERROR_SUBMITTED', 'Cette page a déjà été validée. Veuillez cliquer sur OK et attendre que le processus soit terminé.');
 define('JS_ERROR_NO_SHIPPING_MODULE_SELECTED', '* Choisissez un mode d\'expédition pour votre commande.');
 define('JS_ERROR_CONDITIONS_NOT_ACCEPTED', '* Si vous ne respectez pas nos conditions générales, nous regrettons de ne pouvoir accepter votre commande.');
 define('JS_ERROR_REVOCATION_NOT_ACCEPTED', '* Si vous n\'acceptez pas la renonciation au droit de rétractation pour les biens virtuels, nous regrettons de ne pouvoir accepter votre commande.');
 define('JS_ERROR_PRIVACY_NOTICE_NOT_ACCEPTED', '* Si vous ne vous conformez pas à nos règles de protection des données, nous regrettons de ne pouvoir accepter votre commande.');
+define('JS_REVIEW_AUTHOR', '* Veuillez saisir votre nom.\n\n');
 
-/**
- * Account forms
- */
+define('ERROR_NO_PAYMENT_MODULE_SELECTED', '* Choisissez un mode de paiement pour votre commande.');
+define('ERROR_NO_SHIPPING_MODULE_SELECTED', 'Veuillez choisir un mode d\'expédition pour votre commande.');
+
+define('ENTRY_COMPANY_ERROR', '');
 define('ENTRY_COMPANY_TEXT', '');
 define('ENTRY_GENDER_ERROR', 'Sélectionnez votre message d\'accueil.');
 define('ENTRY_GENDER_TEXT', '*');
@@ -102,6 +89,7 @@ define('ENTRY_LAST_NAME_ERROR', 'Votre nom de famille doit être composé d\'au 
 define('ENTRY_LAST_NAME_TEXT', '*');
 define('ENTRY_DATE_OF_BIRTH_ERROR', 'Votre date de naissance doit être saisie au format JJ.MM.AAAA (par exemple, 21.05.1970).');
 define('ENTRY_DATE_OF_BIRTH_TEXT', '* (par exemple, 21.05.1970)');
+define('ENTRY_DATE_OF_BIRTH_NOTE', 'par ex. 21.05.1970');
 define('ENTRY_EMAIL_ADDRESS_ERROR', 'Votre adresse e-mail doit avoir au moins ' . ENTRY_EMAIL_ADDRESS_MIN_LENGTH . ' des personnages.');
 define('ENTRY_EMAIL_ADDRESS_CHECK_ERROR', 'L\'adresse e-mail saisie est incorrecte ou déjà enregistrée.');
 define('ENTRY_EMAIL_ERROR_NOT_MATCHING', 'Vos adresses e-mail ne sont pas correctes.');
@@ -138,9 +126,6 @@ define('ENTRY_PASSWORD_NEW_TEXT', '*');
 define('ENTRY_PASSWORD_NEW_ERROR', 'Votre nouveau mot de passe doit être au moins ' . ENTRY_PASSWORD_MIN_LENGTH . ' des personnages.');
 define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Vos mots de passe ne sont pas corrects.');
 
-/**
- * Result pages
- */
 define('TEXT_RESULT_PAGE', 'Sites :');
 define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur un total de <strong>%d</strong> éléments)');
 define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur le total de <strong>%d</strong> commandes)');
@@ -148,24 +133,15 @@ define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <strong>%d</strong> à <stron
 define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur un total de <strong>%d</strong> nouveaux éléments)');
 define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <strong>%d</strong> à <strong>%d</strong> (sur <strong>%d</strong> offres)');
 
-/**
- * Site navigation
- */
 define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'page précédente');
 define('PREVNEXT_TITLE_NEXT_PAGE', 'page suivante');
 define('PREVNEXT_TITLE_PAGE_NO', 'Page %d');
 define('PREVNEXT_TITLE_PREV_SET_OF_NO_PAGE', 'Pages précédentes %d');
 define('PREVNEXT_TITLE_NEXT_SET_OF_NO_PAGE', 'Prochaines %d pages');
 
-/**
- * Product navigation
- */
-define('PREVNEXT_BUTTON_PREV', '&laquo;');
-define('PREVNEXT_BUTTON_NEXT', '&raquo;');
+define('PREVNEXT_BUTTON_PREV', '«');
+define('PREVNEXT_BUTTON_NEXT', '»');
 
-/**
- * Image buttons
- */
 define('IMAGE_BUTTON_ADD_ADDRESS', 'Nouvelle adresse');
 define('IMAGE_BUTTON_BACK', 'Volver');
 define('IMAGE_BUTTON_CHANGE_ADDRESS', 'Changement d\'adresse');
@@ -185,6 +161,8 @@ define('IMAGE_BUTTON_SEND', 'Envoyer');
 define('IMAGE_BUTTON_CONTINUE_SHOPPING', 'Continuer les achats');
 define('IMAGE_BUTTON_CHECKOUT_STEP2', 'Passez à l\'étape 2');
 define('IMAGE_BUTTON_CHECKOUT_STEP3', 'Passez à l\'étape 3');
+define('IMAGE_BUTTON_RESULTS', 'Afficher les résultats');
+define('IMAGE_BUTTON_SAVE', 'Enregistrer');
 
 define('SMALL_IMAGE_BUTTON_DELETE', 'Forets');
 define('SMALL_IMAGE_BUTTON_EDIT', 'Changement');
@@ -197,13 +175,11 @@ define('ICON_WARNING', 'Avertissement');
 define('ICON_ERROR', 'Erreur');
 
 define('TEXT_PRINT', 'Imprimir');
+define('TEXT_BUTTON_RESULTS', 'Afficher %s résultats');
 
 define('BUTTON_RESET', 'Réinitialiser');
 define('BUTTON_UPDATE', 'Mise à jour');
 
-/**
- * Greetings
- */
 define('TEXT_GREETING_PERSONAL', 'C\'est bon de vous revoir, <span class="greetUser">%s !</span> Voulez-vous voir nos <a href="%s">nouveaux articles</a>?');
 define('TEXT_GREETING_PERSONAL_RELOGON', '<small>Si vous n\'êtes pas %s, veuillez vous <a href="%s">connecter ici</a> avec vos données d\'accès.</small>');
 define('TEXT_GREETING_GUEST', 'Bienvenue à <span class="greetUser">vous</span>, voulez-vous <a href="%s">vous inscrire</a> ou ouvrir un <a href="%s">compte client</a>?');
@@ -222,9 +198,6 @@ define('TEXT_NO_REVIEWS', 'Il n\'y a pas encore d\'avis disponibles.');
 define('TEXT_NO_NEW_PRODUCTS', 'Aucun nouvel élément n\'est apparu dans le dernier ' . MAX_DISPLAY_NEW_PRODUCTS_DAYS . ' jours. Au lieu de cela, vous pouvez voir ici les articles les plus récemment publiés.');
 define('TEXT_UNKNOWN_TAX_RATE', 'Taux d\'imposition inconnu');
 
-/**
- * Warnings
- */
 define('WARNING_INSTALL_DIRECTORY_EXISTS', 'Avertissement : Le répertoire d\'installation existe toujours dans : %s. Veuillez supprimer le répertoire pour des raisons de sécurité.');
 define('WARNING_CONFIG_FILE_WRITEABLE', 'Avertissement : Ce logiciel de boutique en ligne modifié peut écrire dans le fichier de configuration : %s. Il s\'agit d\'un risque potentiel pour la sécurité - veuillez définir les autorisations d\'utilisateur correctes sur ce fichier.');
 define('WARNING_SESSION_DIRECTORY_NON_EXISTENT', 'Attention : Le répertoire pour les sessions n\'existe pas : ' . xtc_session_save_path() . '. Les sessions ne fonctionneront pas tant que le répertoire n\'aura pas été créé.');
@@ -261,9 +234,6 @@ define('TEXT_NOW', 'L\'ordre ');
 define('TEXT_GUEST', ' Invité :');
 define('TEXT_SEARCH_ENGINE_AGENT', 'Moteur de recherche');
 
-/**
- * Advanced search
- */
 define('TEXT_AC_ALL_CATEGORIES', 'Tous');
 define('TEXT_ALL_CATEGORIES', 'Toutes les catégories');
 define('TEXT_ALL_MANUFACTURERS', 'Tous les fabricants');
@@ -297,9 +267,12 @@ define('MAXIMUM_ORDER_VALUE_REACHED_2', 'dépassé.<br /> Veuillez réduire votr
 define('ERROR_INVALID_PRODUCT', 'L\'article sélectionné n\'a pas été trouvé.');
 define('JS_KEYWORDS_MIN_LENGTH', 'Le terme de recherche doit avoir au moins ' . SEARCH_MIN_LENGTH . ' des personnages.');
 
-/**
- * Navbar title
- */
+define('TEXT_SEARCH_HELP', 'La fonction de recherche vous permet d\'effectuer une recherche dans les noms%s d\'articles et les numéros d\'articles.<br /><br />Vous avez la possibilité d\'utiliser des opérateurs logiques tels que "AND" (et) et "OR" (ou).<br /><br />Par exemple, vous pouvez indiquer : <span class="underline">Microsoft ET souris</span>.<br /><br />Vous pouvez également utiliser des parenthèses pour imbriquer la recherche, par exemple :<br /><br /><span class="underline">Microsoft AND (souris OR clavier OR "Visual Basic")</span>.<br /><br />Les guillemets vous permettent de combiner plusieurs mots en un seul terme de recherche.');
+define('TEXT_SEARCH_MANUFACTURERS', 'Producteurs');
+define('TEXT_SEARCH_DESCRIPTION', 'Descriptions des articles');
+define('TEXT_SEARCH_ATTRIBUTES', 'Caractéristiques de l\'article');
+define('TEXT_SEARCH_TAGS', 'Caractéristiques de l\'article');
+
 define('NAVBAR_TITLE_ACCOUNT', 'Votre compte');
 define('NAVBAR_TITLE_1_ACCOUNT_EDIT', 'Votre compte');
 define('NAVBAR_TITLE_2_ACCOUNT_EDIT', 'Modifier vos données personnelles');
@@ -350,9 +323,6 @@ define('NAVBAR_GV_REDEEM', 'Canjear vale');
 define('NAVBAR_GV_SEND', 'Envoyer un bon d\'achat');
 define('NAVBAR_TITLE_DOWNLOAD', 'Téléchargements');
 
-/**
- * Miscellaneous
- */
 define('TEXT_NEWSLETTER', 'Voulez-vous toujours être à la page ?<br />Pas de problème, inscrivez-vous à notre newsletter et vous serez toujours au courant.');
 define('TEXT_EMAIL_INPUT', 'Votre adresse e-mail a été saisie dans notre système.<br />En même temps, le système vous a envoyé un e-mail avec un lien d\'activation. Après avoir reçu l\'e-mail, cliquez sur le lien pour confirmer votre inscription. Dans le cas contraire, vous ne recevrez pas notre bulletin d\'information.');
 
@@ -379,7 +349,7 @@ define('TEXT_EMAIL_PASSWORD_FORGOTTEN', 'Courriel de confirmation de changement 
 define('TEXT_EMAIL_PASSWORD_NEW_PASSWORD', 'Votre nouveau mot de passe');
 define('ERROR_MAIL', 'Veuillez vérifier les données que vous avez saisies dans le formulaire.');
 
-define('CATEGORIE_NOT_FOUND', 'Catégorie non trouvée');
+define('TEXT_CATEGORIE_NOT_FOUND', 'Catégorie non trouvée');
 
 define('GV_FAQ', 'Vales FAQ');
 define('ERROR_NO_REDEEM_CODE', 'Désolé, vous n\'avez pas saisi de code.');
@@ -389,12 +359,14 @@ define('EMAIL_GV_TEXT_SUBJECT', 'Un cadeau de %s');
 define('MAIN_MESSAGE', 'Vous avez choisi d\'envoyer un bon d\'achat d\'une valeur de %s à %s, dont l\'adresse e-mail est %s.<br /><br />Le texte suivant apparaît dans votre e-mail :<br /><br />Bonjour %s,<br /><br /> %s vous a envoyé un bon d\'achat d\'une valeur de %s.');
 define('REDEEMED_AMOUNT', 'Votre bon d\'achat a été crédité avec succès sur votre compte. Valeur du bon d\'achat : %s');
 define('REDEEMED_COUPON', 'Votre bon a été soumis avec succès et sera échangé automatiquement lorsque vous passerez votre commande.');
+define('REDEEMED_COUPON_NO_SPECIALS', 'Votre coupon a été enregistré avec succès et sera automatiquement validé lors de votre commande, mais ne peut pas être utilisé pour les offres spéciales.');
 
 define('ERROR_INVALID_USES_USER_COUPON', 'Vous pouvez uniquement utiliser le coupon ');
 define('ERROR_INVALID_USES_COUPON', 'Les clients peuvent uniquement utiliser ce coupon ');
 define('TIMES', ' temps.');
 define('ERROR_INVALID_STARTDATE_COUPON', 'Votre coupon n\'est pas encore disponible.');
 define('ERROR_INVALID_FINISDATE_COUPON', 'Votre coupon a expiré.');
+define('ERROR_INVALID_CUSTOMERS_STATUS_COUPON', 'Seuls les clients d\'un certain groupe de clients peuvent utiliser ce coupon.');
 define('ERROR_INVALID_MINIMUM_ORDER_COUPON', 'Ce bon d\'achat ne peut être utilisé qu\'à partir d\'une valeur de commande minimale de %s !');
 define('ERROR_INVALID_MINIMUM_ORDER_COUPON_ADD', '<br/>Vous devrez saisir à nouveau le code du bon lorsque vous atteindrez la valeur minimale de la commande.');
 define('ERROR_COUPON_REQUIRES_ACCOUNT', 'Vous avez besoin d\'un compte client pour échanger le bon d\'achat.');
@@ -402,9 +374,6 @@ define('PERSONAL_MESSAGE', '%s écrit :');
 
 define('TEXT_LINK_TITLE_INFORMATION', 'Information');
 
-/**
- * Coupon popup
- */
 define('TEXT_CLOSE_WINDOW', 'Cerrar ventana [x]');
 define('TEXT_COUPON_HELP_HEADER', 'Votre bon/coupon a été réservé avec succès.');
 define('TEXT_COUPON_HELP_NAME', '<br /><br />Nom du bon/coupon : %s');
@@ -417,12 +386,15 @@ define('TEXT_COUPON_HELP_DATE', '<br /><br />Ce coupon est valable de %s à %s')
 define('TEXT_COUPON_HELP_RESTRICT', '<br /><br />Restrictions d\'articles / de catégories');
 define('TEXT_COUPON_HELP_CATEGORIES', 'Catégorie');
 define('TEXT_COUPON_HELP_PRODUCTS', 'Article');
+define('TEXT_COUPON_HELP_MANUFACTURERS', 'Fabricant');
 define('ERROR_ENTRY_AMOUNT_CHECK', 'Montant du bon non valide');
 define('ERROR_ENTRY_EMAIL_ADDRESS_CHECK', 'Adresse e-mail non valide');
 define('TEXT_COUPON_PRODUCTS_RESTRICT', 'Le bon d\'achat est limité à une sélection d\'articles.');
 define('TEXT_COUPON_CATEGORIES_RESTRICT', 'Le coupon est limité à une sélection de catégories.');
+define('TEXT_COUPON_MANUFACTURERS_RESTRICT', 'Le coupon est limité à une sélection de fabricants.');
 
 define('ENTRY_VAT_TEXT', 'Seulement pour l\'Allemagne et l\'UE');
+define('ENTRY_VAT_NOTE', 'Pour l\'Allemagne et l\'UE uniquement !');
 define('ENTRY_VAT_ERROR', 'L\'identifiant saisi n\'est pas valide ou ne peut être vérifié pour le moment. Veuillez saisir un identifiant valide ou laissez le champ vide pour le moment.');
 define('MSRP', 'UVP');
 define('YOUR_PRICE', 'Son prix ');
@@ -495,11 +467,13 @@ define('TEXT_SITE_NOT_FOUND', 'Cette page n\'a pas été trouvée.');
 define('MAX_PROD_QTY_EXCEEDED', 'Le nombre maximum autorisé d\'articles par montant de ' . MAX_PRODUCTS_QTY . ' pour <span style="font-style:italic;">\'%s\'</span> a été dépassée.<br />Le nombre d\'articles a été automatiquement réduit au nombre autorisé.');
 
 define('IMAGE_BUTTON_CONTENT_EDIT', 'Modifier le contenu');
-define('PRINTVIEW_INFO', 'Imprimer la fiche technique de l\'article');
-define('PRODUCTS_REVIEW_LINK', 'Écrire un commentaire');
+define('PRINTVIEW_INFO_TITLE', 'Imprimer la fiche article');
+define('PRINTVIEW_INFO_TEXT', 'Imprimer la fiche article');
+define('PRODUCTS_REVIEW_LINK_TITLE', 'Écrire une critique');
+define('PRODUCTS_REVIEW_LINK_TEXT', 'Écrire une critique');
 
-define('TAX_INFO_SMALL_BUSINESS', 'Prix final selon le &sect; 19 UStG.');
-define('TAX_INFO_SMALL_BUSINESS_FOOTER', 'En raison du statut de petite entreprise conformément au &sect; 19 UStG, nous ne facturons pas la TVA et ne l\'indiquons donc pas.');
+define('TAX_INFO_SMALL_BUSINESS', 'Prix final selon le § 19 UStG.');
+define('TAX_INFO_SMALL_BUSINESS_FOOTER', 'En raison du statut de petite entreprise conformément au § 19 UStG, nous ne facturons pas la TVA et ne l\'indiquons donc pas.');
 
 define('NEED_CHANGE_PWD', 'Veuillez changer votre mot de passe.');
 define('TEXT_REQUEST_NOT_VALID', 'Le lien a expiré. Veuillez demander un nouveau mot de passe.');
@@ -539,14 +513,14 @@ define('AC_SHOW_PAGE_OF', ' de ');
 
 define('FREE_SHIPPING_INFO', 'à partir de %s de la valeur de la commande nous expédions votre commande sans frais de port');
 
-define('MANUFACTURER_NOT_FOUND', 'Fabricant non trouvé');
+define('TEXT_MANUFACTURER_NOT_FOUND', 'Fabricant non trouvé');
+define('TEXT_PRODUCTS_NEW_NOT_FOUND', 'Aucun nouvel article trouvé dans les %s derniers jours');
+define('TEXT_SPECIALS_NOT_FOUND', 'Aucune offre spéciale trouvée');
+define('TEXT_SEARCH_NOT_FOUND', 'Aucun résultat de recherche trouvé');
 define('ENTRY_TOKEN_ERROR', 'Veuillez vérifier vos entrées.');
 
 define('IMAGE_BUTTON_CONFIRM', 'Confirmez');
 
-/**
- * Bank account
- */
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_0', 'Coordonnées bancaires OK.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1', 'Le numéro de compte et/ou le code de tri ne sont pas valides ou ne correspondent pas.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2', 'Le numéro de compte n\'est pas automatiquement vérifiable.');
@@ -557,16 +531,18 @@ define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_8', 'Erreur dans le code de banque ou 
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_9', 'Aucun numéro de compte n\'est indiqué');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_10', 'Vous n\'avez pas spécifié de titulaire de compte.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_128', 'Erreur interne lors de la vérification des coordonnées bancaires.');
+
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1000', 'Code pays contenu dans l\'IBAN (1er et 2ème chiffre) inconnu.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1010', 'Longueur incorrecte de l\'IBAN : trop de chiffres ont été saisis.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1020', 'Longueur incorrecte de l\'IBAN : trop peu de chiffres ont été saisis.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1030', 'L\'IBAN ne correspond pas au format spécifié pour le pays.');
-define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1040', 'Les chiffres de contrôle de l\'IBAN (chiffres 3 et 4) ne sont pas corrects -&gt; erreur de frappe dans l\'IBAN.');
+define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1040', 'Les chiffres de contrôle de l\'IBAN (chiffres 3 et 4) ne sont pas corrects -> erreur de frappe dans l\'IBAN.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1050', 'Le BIC a un format invalide.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1060', 'Longueur du BIC incorrecte : Trop de caractères ont été saisis. Il faut 8 ou 11 caractères.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1070', 'Longueur du BIC incorrecte : Entrez trop peu de caractères. Il faut 8 ou 11 caractères.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1080', 'La longueur du BIC n\'est pas valable : 8 ou 11 caractères sont nécessaires.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_1200', 'Malheureusement, nous ne pouvons pas accepter les IBAN du pays spécifié (1er et 2ème chiffre de l\'IBAN).');
+
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2001', 'Le numéro de compte (chiffres 13 à 22) et/ou le code bancaire (chiffres 5 à 12) contenus dans l\'IBAN ne sont pas valides ou ne correspondent pas.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2002', 'Le numéro de compte dans l\'IBAN (chiffres 13 à 22) ne peut pas être vérifié automatiquement.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2003', 'Aucune procédure de vérification des chiffres n\'est définie pour les numéros de compte contenus dans l\'IBAN (chiffres 13 à 22).');
@@ -577,6 +553,7 @@ define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2009', 'Le numéro de compte (chiffres
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2010', 'Le titulaire du compte n\'a pas été spécifié.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2020', 'BIC invalide : Il n\'y a pas de banque avec ce BIC.');
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_2128', 'Erreur interne lors de la vérification des coordonnées bancaires.');
+
 define('BANKACCOUNT_CHECK_TEXT_BANK_ERROR_UNKNOWN', 'Erreur inconnue lors de la vérification des coordonnées bancaires.');
 
 define('PRODUCT_REVIEWS_SUCCESS', 'Merci pour votre commentaire.');
@@ -585,10 +562,25 @@ define('PRODUCT_REVIEWS_SUCCESS_WAITING', 'Merci pour votre commentaire. Il va m
 define('TITLE_PRODUCTS_NEW', 'Nouveaux articles');
 define('TITLE_SPECIALS', 'Ofertas');
 
-define('SITEMAP_ERROR_400', 'Erreur 400 : La demande était syntaxiquement incorrecte.');
-define('SITEMAP_ERROR_401', 'Erreur 401 : Erreur d\'authentification.');
-define('SITEMAP_ERROR_403', 'Erreur 403 : Le serveur refuse l\'exécution.');
-define('SITEMAP_ERROR_404', 'Erreur 404 : La page que vous recherchez n\'a pas été trouvée !');
-define('SITEMAP_ERROR_500', 'Erreur 500 : Une erreur de serveur interne s\'est produite.');
+define('TEXT_SHOW_CATEGORY', 'Tout afficher de ');
+define('TEXT_MENU_TITLE', 'Catégories');
+
+define('NAVBAR_TITLE_ERROR', 'Erreur');
+
+define('TEXT_ERROR_HANDLER_400', 'Erreur 400 : La requête était syntaxiquement incorrecte.');
+define('TEXT_ERROR_HANDLER_401', 'Erreur 401 : erreur d\'authentification.');
+define('TEXT_ERROR_HANDLER_403', 'Erreur 403 : Le serveur refuse de s\'exécuter.');
+define('TEXT_ERROR_HANDLER_404', 'Erreur 404 : La page recherchée n\'a pas été trouvée !');
+define('TEXT_ERROR_HANDLER_500', 'Erreur 500 : Une erreur interne s\'est produite sur le serveur.');
 
 define('ERROR_PRODUCTS_MISSING_CONFIGURATION_NOT_ADDED', 'Certains articles de votre commande ne sont plus disponibles dans la configuration souhaitée et n\'ont pas été ajoutés à votre panier.');
+
+define('TEXT_MAX_ADDRESS_NOTE', 'Attention, aucune nouvelle adresse n\'est disponible. Vous avez atteint le nombre maximal de %s adresses. Cette adresse est également reprise comme adresse d\'expédition. Si vous avez besoin d\'une autre adresse de facturation, choisissez une adresse dans votre carnet d\'adresses.');
+
+define('TEXT_FILTER_SET_LABEL', 'Articles par page');
+define('TEXT_FILTER_SORT_LABEL', 'Triage');
+define('TEXT_FILTER_MANUFACTURERS_LABEL', 'Fabricant');
+define('TEXT_COUNTRY_LABEL', 'Pays');
+define('TEXT_STATE_LABEL', 'État fédéral');
+
+define('TEXT_IMG_VVCODE', 'Code de sécurité');

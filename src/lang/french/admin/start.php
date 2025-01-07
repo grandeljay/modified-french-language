@@ -13,7 +13,7 @@ define('ATTENTION_TITLE', 'Attention !');
 if (!defined('APS_INSTALL')) {
   define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. ( <b>444 )</b> sur unix, <b>(lecture seule)</b> sur Win32.');
 } else {
-  define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. <b>(444)</b> sur unix, <b>(lecture seule)</b> sur Win32.<br />Si l\'installation a été effectuée via un progiciel d\'un fournisseur, les droits d\'accès peuvent devoir être définis différemment (HostEurope : <b>CHMOD 400</b> ou <b>CHMOD 440</b>).');
+  define('TEXT_FILE_WARNING_WRITABLE', '<b>AVERTISSEMENT :</b><br />Le serveur peut écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ce fichier pour des raisons de sécurité. ( <b>444 )</b> sur unix, <b>(lecture seule)</b> sur Win32.');
 }
 define('TEXT_FILE_WARNING', '<b>AVERTISSEMENT :</b><br />Le serveur doit pouvoir écrire dans les fichiers suivants. Veuillez modifier les droits d\'accès (permissions) de ces fichiers. <b>(777)</b> sur unix, <b>(read-write)</b> sur Win32.');
 define('TEXT_FOLDER_WARNING', '<b>AVERTISSEMENT :</b><br />Le serveur doit pouvoir écrire dans les répertoires suivants. Veuillez modifier les droits d\'accès (permissions) de ces répertoires : <b>(777)</b> sur unix, <b>(read-write)</b> sur Win32.');

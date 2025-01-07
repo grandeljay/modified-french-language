@@ -18,7 +18,7 @@ define('ENTRY_CUSTOMERS_STATUS_MAX_ORDER', 'Valeur maximale de la commande :');
 define('ENTRY_CUSTOMERS_STATUS_BT_PERMISSION', 'Par débit direct');
 define('ENTRY_CUSTOMERS_STATUS_CC_PERMISSION', 'Par carte de crédit');
 define('ENTRY_CUSTOMERS_STATUS_COD_PERMISSION', 'Contre-remboursement');
-define('ENTRY_CUSTOMERS_STATUS_DISCOUNT_ATTRIBUTES', 'Rabatt');
+define('ENTRY_CUSTOMERS_STATUS_DISCOUNT_ATTRIBUTES', 'Réduction');
 define('ENTRY_CUSTOMERS_STATUS_PAYMENT_UNALLOWED', 'Introduire des méthodes de paiement non autorisées');
 define('ENTRY_CUSTOMERS_STATUS_PUBLIC', 'Public');
 define('ENTRY_CUSTOMERS_STATUS_SHIPPING_UNALLOWED', 'Introduire des méthodes d\'expédition non autorisées');
@@ -41,7 +41,7 @@ define('TABLE_HEADING_CUSTOMERS_GRADUATED', 'Prix échelonné');
 define('TABLE_HEADING_CUSTOMERS_STATUS', 'Groupe de clients');
 define('TABLE_HEADING_CUSTOMERS_UNALLOW', 'Méthodes de paiement non autorisées');
 define('TABLE_HEADING_CUSTOMERS_UNALLOW_SHIPPING', 'Méthodes d\'expédition non autorisées');
-define('TABLE_HEADING_DISCOUNT', 'Rabatt');
+define('TABLE_HEADING_DISCOUNT', 'Réduction');
 define('TABLE_HEADING_TAX_PRICE', 'Prix/TVA');
 
 define('TAX_NO', 'excl.');
