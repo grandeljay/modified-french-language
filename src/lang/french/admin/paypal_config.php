@@ -94,9 +94,9 @@ foreach ($lang_array as $key => $val) {
   defined($key) || define($key, $val);
 }
 
-$PAYPAL_INST_ORDER_STATUS_TMP_NAME      = 'PayPal annulé';
-$PAYPAL_INST_ORDER_STATUS_SUCCESS_NAME  = 'Payé avec PayPal';
-$PAYPAL_INST_ORDER_STATUS_PENDING_NAME  = 'PayPal wartend';
+$PAYPAL_INST_ORDER_STATUS_TMP_NAME = 'PayPal annulé';
+$PAYPAL_INST_ORDER_STATUS_SUCCESS_NAME = 'Payé avec PayPal';
+$PAYPAL_INST_ORDER_STATUS_PENDING_NAME = 'PayPal wartend';
 $PAYPAL_INST_ORDER_STATUS_CAPTURED_NAME = 'Inscription à PayPal';
 $PAYPAL_INST_ORDER_STATUS_REFUNDED_NAME = 'Remboursements PayPal';
 $PAYPAL_INST_ORDER_STATUS_REJECTED_NAME = 'PayPal rejeté';
