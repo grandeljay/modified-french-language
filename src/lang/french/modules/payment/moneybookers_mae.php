@@ -9,18 +9,15 @@
  */
 
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_TEXT_TITLE', 'Maestro');
-
 $_var = 'Maestro a través de Skrill';
-
-if ('' === _PAYMENT_MONEYBOOKERS_EMAILID) {
-    $_var .= '<br /><br /><b><font color="red">Veuillez d\'abord effectuer les réglages sur<br /> Paramètres avancés -&gt; Partenaire -&gt; Skrill.com !</font></b>';
+if (_PAYMENT_MONEYBOOKERS_EMAILID=='') {
+  $_var .= '<br /><br /><b><font color="red">Veuillez d\'abord effectuer les réglages sur<br /> Paramètres avancés -> Partenaire -> Skrill.com !</font></b>';
 }
-
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_TEXT_DESCRIPTION', $_var);
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_NOCURRENCY_ERROR', 'Aucune devise acceptée par Skrill n\'est installée.');
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_ERRORTEXT1', 'payment_error=');
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_TEXT_INFO', '');
-define('MODULE_PAYMENT_MONEYBOOKERS_MAE_ERRORTEXT2', '&amp;error=Erreur lors de votre paiement Skrill !');
+define('MODULE_PAYMENT_MONEYBOOKERS_MAE_ERRORTEXT2', '&error=Erreur lors de votre paiement Skrill !');
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_ORDER_TEXT', 'Date de la commande : ');
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_TEXT_ERROR', 'Erreur de paiement !');
 define('MODULE_PAYMENT_MONEYBOOKERS_MAE_CONFIRMATION_TEXT', 'Merci pour votre commande.');
