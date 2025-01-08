@@ -28,14 +28,14 @@ define('MODULE_SHIPPING_CHP_SORT_ORDER_DESC', 'Le plus bas est affiché en premi
 define('MODULE_SHIPPING_CHP_ALLOWED_TITLE', 'Zones d\'expédition individuelles');
 define('MODULE_SHIPPING_CHP_ALLOWED_DESC', 'Spécifiez <b>individuellement</b> les zones vers lesquelles l\'expédition doit être possible, par exemple AT,DE');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_1_TITLE', 'Tarifzone 0 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_1_TITLE', 'Zone tarifaire 0 Pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_1_DESC', 'Zone intérieure');
 define('MODULE_SHIPPING_CHP_COST_ECO_1_TITLE', 'Tableau des prix pour la zone 0 à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_1_DESC', 'Liste des tarifs pour la zone domestique, basée sur <b>"ECO</b> " jusqu\'à 30 kg de poids d\'expédition.');
 define('MODULE_SHIPPING_CHP_COST_PRI_1_TITLE', 'Tableau des tarifs pour la zone PRI de 0 à 30 kg');
 define('MODULE_SHIPPING_CHP_COST_PRI_1_DESC', 'Liste des tarifs pour la zone domestique, basée sur <b>"PRI</b> " jusqu\'à un poids d\'expédition de 30 kg.');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_2_TITLE', 'Zone tarifaire 1 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_2_TITLE', 'Zone tarifaire 1 pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_2_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 1 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_CHP_COST_ECO_2_TITLE', 'Tableau des tarifs pour la zone 1 jusqu\'à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_2_DESC', 'Tableau des tarifs pour la zone 1, basé sur <b>ECO</b> jusqu\'à 30 kg de poids d\'expédition.');
@@ -44,7 +44,7 @@ define('MODULE_SHIPPING_CHP_COST_PRI_2_DESC', 'Tableau des tarifs pour la zone 1
 define('MODULE_SHIPPING_CHP_COST_URG_2_TITLE', 'Tableau des tarifs pour la zone 1 jusqu\'à 30 kg URG');
 define('MODULE_SHIPPING_CHP_COST_URG_2_DESC', 'Tableau des tarifs pour la zone 1, basé sur un <b> poids d\'</b> expédition de 30 kg maximum.');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_3_TITLE', 'Tarifzone 2 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_3_TITLE', 'Zone tarifaire 2 Pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_3_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 2 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_CHP_COST_ECO_3_TITLE', 'Tableau des tarifs pour la zone 2 jusqu\'à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_3_DESC', 'Grille tarifaire pour la zone 2, basée sur <b>"ECO</b> " jusqu\'à 30 kg de poids d\'expédition.');
@@ -53,7 +53,7 @@ define('MODULE_SHIPPING_CHP_COST_PRI_3_DESC', 'Tableau des tarifs pour la zone 2
 define('MODULE_SHIPPING_CHP_COST_URG_3_TITLE', 'Tableau des tarifs pour la zone 2 jusqu\'à 30 kg URG');
 define('MODULE_SHIPPING_CHP_COST_URG_3_DESC', 'Tableau des tarifs pour la zone 2, basé sur un <b> poids d\'</b> expédition de 30 kg maximum.');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_4_TITLE', 'Tarifzone 3 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_4_TITLE', 'Zone tarifaire 3 Pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_4_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 3 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_CHP_COST_ECO_4_TITLE', 'Tableau des tarifs pour la zone 3 jusqu\'à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_4_DESC', 'Grille tarifaire pour la zone 3, basée sur <b>"ECO</b> " jusqu\'à 30 kg de poids d\'expédition.');
@@ -62,7 +62,7 @@ define('MODULE_SHIPPING_CHP_COST_PRI_4_DESC', 'Tableau des tarifs pour la zone 3
 define('MODULE_SHIPPING_CHP_COST_URG_4_TITLE', 'Tableau des tarifs pour la zone 3 jusqu\'à 30 kg URG');
 define('MODULE_SHIPPING_CHP_COST_URG_4_DESC', 'Tableau des tarifs pour la zone 3, basé sur un <b> poids d\'</b> expédition de 30 kg maximum.');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_5_TITLE', 'Tarifzone 4 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_5_TITLE', 'Zone tarifaire 4 pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_5_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 4 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_CHP_COST_ECO_5_TITLE', 'Tableau des tarifs pour la zone 4 jusqu\'à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_5_DESC', 'Tableau des tarifs pour la zone 4, basé sur <b>\'ECO</b> \'jusqu\'à 30 kg de poids d\'expédition.');
@@ -71,7 +71,7 @@ define('MODULE_SHIPPING_CHP_COST_PRI_5_DESC', 'Tableau des tarifs pour la zone 4
 define('MODULE_SHIPPING_CHP_COST_URG_5_TITLE', 'Tableau des tarifs pour la zone 4 jusqu\'à 30 kg URG');
 define('MODULE_SHIPPING_CHP_COST_URG_5_DESC', 'Tableau des tarifs pour la zone 4, basé sur un <b> poids d\'</b> expédition de 30 kg maximum.');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_6_TITLE', 'Tarifzone 4 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_6_TITLE', 'Zone tarifaire 4 pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_6_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 4 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_CHP_COST_ECO_6_TITLE', 'Tableau des tarifs pour la zone 4 jusqu\'à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_6_DESC', 'Tableau des tarifs pour la zone 4, basé sur <b>\'ECO</b> \'jusqu\'à 30 kg de poids d\'expédition.');
@@ -80,7 +80,7 @@ define('MODULE_SHIPPING_CHP_COST_PRI_6_DESC', 'Tableau des tarifs pour la zone 4
 define('MODULE_SHIPPING_CHP_COST_URG_6_TITLE', 'Tableau des tarifs pour la zone 4 jusqu\'à 30 kg URG');
 define('MODULE_SHIPPING_CHP_COST_URG_6_DESC', 'Tableau des tarifs pour la zone 4, basé sur un <b> poids d\'</b> expédition de 30 kg maximum.');
 
-define('MODULE_SHIPPING_CHP_COUNTRIES_7_TITLE', 'Tarifzone 5 L&auml;nder');
+define('MODULE_SHIPPING_CHP_COUNTRIES_7_TITLE', 'Zone tarifaire 5 pays');
 define('MODULE_SHIPPING_CHP_COUNTRIES_7_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 5 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_CHP_COST_ECO_7_TITLE', 'Tableau des tarifs pour la zone 5 jusqu\'à 30 kg ECO');
 define('MODULE_SHIPPING_CHP_COST_ECO_7_DESC', 'Grille tarifaire pour la zone 5, basée sur <b>"ECO</b> " jusqu\'à 30 kg de poids d\'expédition.');

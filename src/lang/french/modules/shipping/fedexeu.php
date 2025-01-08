@@ -28,7 +28,7 @@ define('MODULE_SHIPPING_FEDEXEU_SORT_ORDER_DESC', 'Le plus bas est affiché en p
 define('MODULE_SHIPPING_FEDEXEU_ALLOWED_TITLE', 'Zones d\'expédition individuelles');
 define('MODULE_SHIPPING_FEDEXEU_ALLOWED_DESC', 'Spécifiez <b>individuellement</b> les zones vers lesquelles l\'expédition doit être possible, par exemple AT,DE');
 
-define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_1_TITLE', 'Europazone 1 L&auml;nder');
+define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_1_TITLE', 'Zone Europe 1 Pays');
 define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_1_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 1 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_FEDEXEU_COST_PAK_1_TITLE', 'Tableau des tarifs pour la zone 1 jusqu\'à 2,50 kg HAP');
 define('MODULE_SHIPPING_FEDEXEU_COST_PAK_1_DESC', 'Tableau des tarifs pour la zone 1, basé sur <b>\'PAK\'</b> jusqu\'à 2,50 kg de poids d\'expédition.');
@@ -43,7 +43,7 @@ define('MODULE_SHIPPING_FEDEXEU_STEP_BOX_40_1_DESC', 'Augmentation de la surtaxe
 define('MODULE_SHIPPING_FEDEXEU_STEP_BOX_70_1_TITLE', 'Augmentation de la surcharge jusqu\'à 70 kg de BOX');
 define('MODULE_SHIPPING_FEDEXEU_STEP_BOX_70_1_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_2_TITLE', 'Europazone 2 L&auml;nder');
+define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_2_TITLE', 'Zone Europe 2 pays');
 define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_2_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 2 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_FEDEXEU_COST_PAK_2_TITLE', 'Tableau des tarifs pour la zone 2 jusqu\'à 2,50 kg de HAP');
 define('MODULE_SHIPPING_FEDEXEU_COST_PAK_2_DESC', 'Tableau des tarifs pour la zone 2, basé sur <b>\'PAK\'</b> jusqu\'à 2,50 kg de poids d\'expédition.');
@@ -58,7 +58,7 @@ define('MODULE_SHIPPING_FEDEXEU_STEP_BOX_40_2_DESC', 'Augmentation de la surtaxe
 define('MODULE_SHIPPING_FEDEXEU_STEP_BOX_70_2_TITLE', 'Augmentation de la surcharge jusqu\'à 70 kg CASE');
 define('MODULE_SHIPPING_FEDEXEU_STEP_BOX_70_2_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_3_TITLE', 'Europazone 3 L&auml;nder');
+define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_3_TITLE', 'Zone Europe 3 pays');
 define('MODULE_SHIPPING_FEDEXEU_COUNTRIES_3_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 3 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_FEDEXEU_COST_PAK_3_TITLE', 'Tableau des tarifs pour la zone 3 jusqu\'à 2,50 kg de HAP');
 define('MODULE_SHIPPING_FEDEXEU_COST_PAK_3_DESC', 'Tableau des tarifs pour la zone 3, basé sur <b>\'PAK\'</b> jusqu\'à 2,50 kg de poids d\'expédition.');

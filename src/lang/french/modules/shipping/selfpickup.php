@@ -23,7 +23,7 @@ define('MODULE_SHIPPING_SELFPICKUP_FIRSTNAME_TITLE', 'Nombre');
 define('MODULE_SHIPPING_SELFPICKUP_FIRSTNAME_DESC', 'Saisissez le prénom.');
 define('MODULE_SHIPPING_SELFPICKUP_LASTNAME_TITLE', 'Apellido');
 define('MODULE_SHIPPING_SELFPICKUP_LASTNAME_DESC', 'Entrez le nom de famille.');
-define('MODULE_SHIPPING_SELFPICKUP_STREET_ADDRESS_TITLE', 'Stra&szlig;e/Nr.');
+define('MODULE_SHIPPING_SELFPICKUP_STREET_ADDRESS_TITLE', 'Rue/numéro');
 define('MODULE_SHIPPING_SELFPICKUP_STREET_ADDRESS_DESC', 'Saisissez la rue et le numéro de la maison.');
 define('MODULE_SHIPPING_SELFPICKUP_SUBURB_TITLE', 'Suffixe de l\'adresse');
 define('MODULE_SHIPPING_SELFPICKUP_SUBURB_DESC', 'Saisissez le suffixe de l\'adresse.');

@@ -27,10 +27,10 @@ define('MODULE_SHIPPING_FREEAMOUNT_DISPLAY_TITLE', 'Activer l\'affichage');
 define('MODULE_SHIPPING_FREEAMOUNT_DISPLAY_DESC', 'Voulez-vous indiquer si l\'expédition vers le pays n\'est pas possible ou si les frais d\'expédition ne peuvent pas être calculés ?');
 
 if (defined('MODULE_SHIPPING_FREEAMOUNT_NUMBER_ZONES')) {
-    for ($i = 1; $i <= MODULE_SHIPPING_FREEAMOUNT_NUMBER_ZONES; $i++) {
-        define('MODULE_SHIPPING_FREEAMOUNT_COUNTRIES_' . $i . '_TITLE', '<hr/>Zone ' . $i . ' L&auml;nder');
-        define('MODULE_SHIPPING_FREEAMOUNT_COUNTRIES_' . $i . '_DESC', 'Liste séparée par des virgules des codes pays ISO (2 caractères) qui font partie de la ' . $i . '(Entrez WORLD pour le reste du monde).');
-        define('MODULE_SHIPPING_FREEAMOUNT_AMOUNT_' . $i . '_TITLE', 'Zone ' . $i . ' Importation minimale');
-        define('MODULE_SHIPPING_FREEAMOUNT_AMOUNT_' . $i . '_DESC', 'Valeur minimale de commande pour la zone ' . $i . ' pour une expédition gratuite.');
-    }
+  for ($module_shipping_freeamount_i = 1; $module_shipping_freeamount_i <= MODULE_SHIPPING_FREEAMOUNT_NUMBER_ZONES; $module_shipping_freeamount_i ++) {
+    define('MODULE_SHIPPING_FREEAMOUNT_COUNTRIES_'.$module_shipping_freeamount_i.'_TITLE', '<hr/>Zone '.$module_shipping_freeamount_i.' Pays');
+    define('MODULE_SHIPPING_FREEAMOUNT_COUNTRIES_'.$module_shipping_freeamount_i.'_DESC', 'Liste de codes ISO de pays (2 caractères) séparés par une virgule, qui font partie de la zone '.$module_shipping_freeamount_i.' (inscrire WORLD pour le reste du monde.).');
+    define('MODULE_SHIPPING_FREEAMOUNT_AMOUNT_'.$module_shipping_freeamount_i.'_TITLE', 'Zone '.$module_shipping_freeamount_i.' Montant minimum');
+    define('MODULE_SHIPPING_FREEAMOUNT_AMOUNT_'.$module_shipping_freeamount_i.'_DESC', 'Montant minimum de commande pour la zone '.$module_shipping_freeamount_i.' pour que la livraison soit gratuite.');
+  }
 }

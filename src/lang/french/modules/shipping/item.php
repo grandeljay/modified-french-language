@@ -29,12 +29,12 @@ define('MODULE_SHIPPING_ITEM_DISPLAY_TITLE', 'Activer l\'affichage');
 define('MODULE_SHIPPING_ITEM_DISPLAY_DESC', 'Vous souhaitez indiquer si l\'expédition vers le pays n\'est pas possible ou si les frais d\'expédition ne peuvent être calculés ?');
 
 if (defined('MODULE_SHIPPING_ITEM_NUMBER_ZONES')) {
-    for ($i = 1; $i <= MODULE_SHIPPING_ITEM_NUMBER_ZONES; $i++) {
-        define('MODULE_SHIPPING_ITEM_COUNTRIES_' . $i . '_TITLE', '<hr/>Zone ' . $i . ' L&auml;nder');
-        define('MODULE_SHIPPING_ITEM_COUNTRIES_' . $i . '_DESC', 'Liste séparée par des virgules des codes pays ISO (2 caractères) qui font partie de la ' . $i . '(Entrez WORLD pour le reste du monde).');
-        define('MODULE_SHIPPING_ITEM_COST_' . $i . '_TITLE', 'Zone ' . $i . 'Frais d\'expédition');
-        define('MODULE_SHIPPING_ITEM_COST_' . $i . '_DESC', 'Frais d\'expédition par zone ' . $i . ' sont multipliés par le nombre d\'articles d\'une commande si ce mode d\'expédition est spécifié.');
-        define('MODULE_SHIPPING_ITEM_HANDLING_' . $i . '_TITLE', 'Area ' . $i . ' Coûts de traitement');
-        define('MODULE_SHIPPING_ITEM_HANDLING_' . $i . '_DESC', 'Frais de manutention pour cette zone d\'expédition');
-    }
+  for ($module_shipping_item_i = 1; $module_shipping_item_i <= MODULE_SHIPPING_ITEM_NUMBER_ZONES; $module_shipping_item_i ++) {
+    define('MODULE_SHIPPING_ITEM_COUNTRIES_'.$module_shipping_item_i.'_TITLE', '<hr/>Zone '.$module_shipping_item_i.' Pays');
+    define('MODULE_SHIPPING_ITEM_COUNTRIES_'.$module_shipping_item_i.'_DESC', 'Liste de codes ISO de pays (2 caractères) séparés par une virgule, qui font partie de la zone '.$module_shipping_item_i.' (inscrire WORLD pour le reste du monde.).');
+    define('MODULE_SHIPPING_ITEM_COST_'.$module_shipping_item_i.'_TITLE', 'Zone '.$module_shipping_item_i.' Frais de livraison');
+    define('MODULE_SHIPPING_ITEM_COST_'.$module_shipping_item_i.'_DESC', 'Les frais de livraison par zone '.$module_shipping_item_i.' sont multipliés par le nombre d\'articles d\'une commande si ce mode de livraison est indiqué.');
+    define('MODULE_SHIPPING_ITEM_HANDLING_'.$module_shipping_item_i.'_TITLE', 'Zone '.$module_shipping_item_i.' Frais de manutention');
+    define('MODULE_SHIPPING_ITEM_HANDLING_'.$module_shipping_item_i.'_DESC', 'Frais de manutention pour cette zone d\'expédition');
+  }
 }

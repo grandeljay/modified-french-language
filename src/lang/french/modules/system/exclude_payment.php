@@ -16,10 +16,10 @@ define('MODULE_EXCLUDE_PAYMENT_NUMBER_TITLE', 'Nombre de méthodes d\'expéditio
 define('MODULE_EXCLUDE_PAYMENT_NUMBER_DESC', 'Le nombre de types d\'envois à configurer.');
 
 if (defined('MODULE_EXCLUDE_PAYMENT_NUMBER')) {
-    for ($i = 1; $i <= MODULE_EXCLUDE_PAYMENT_NUMBER; $i++) {
-        define('MODULE_EXCLUDE_PAYMENT_SHIPPING_' . $i . '_TITLE', '<hr noshade>' . $i . '. Méthode d\'envoi');
-        define('MODULE_EXCLUDE_PAYMENT_SHIPPING_' . $i . '_DESC', 'Sélectionnez la méthode d\'expédition pour laquelle vous souhaitez exclure un mode de paiement.');
-        define('MODULE_EXCLUDE_PAYMENT_PAYMENT_' . $i . '_TITLE', $i . '. Mode de paiement exclu');
-        define('MODULE_EXCLUDE_PAYMENT_PAYMENT_' . $i . '_DESC', 'Sélectionnez le mode de paiement que vous souhaitez exclure.');
-    }
+  for ($module_exclude_payment_i = 1; $module_exclude_payment_i <= (int)MODULE_EXCLUDE_PAYMENT_NUMBER; $module_exclude_payment_i ++) {
+    define('MODULE_EXCLUDE_PAYMENT_SHIPPING_'.$module_exclude_payment_i.'_TITLE', '<hr noshade>'.$module_exclude_payment_i.'. Mode d\'expédition');
+    define('MODULE_EXCLUDE_PAYMENT_SHIPPING_'.$module_exclude_payment_i.'_DESC', 'Sélectionnez le mode d\'expédition pour lequel vous souhaitez exclure un mode de paiement.');
+    define('MODULE_EXCLUDE_PAYMENT_PAYMENT_'.$module_exclude_payment_i.'_TITLE', $module_exclude_payment_i.'. mode de paiement exclu');
+    define('MODULE_EXCLUDE_PAYMENT_PAYMENT_'.$module_exclude_payment_i.'_DESC', 'Sélectionnez le mode de paiement que vous souhaitez exclure.');
+  }
 }

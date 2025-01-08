@@ -33,10 +33,10 @@ define('MODULE_SHIPPING_DP_DISPLAY_TITLE', 'Activer l\'affichage');
 define('MODULE_SHIPPING_DP_DISPLAY_DESC', 'Vous souhaitez indiquer si l\'expédition vers le pays n\'est pas possible ou si les frais d\'expédition ne peuvent être calculés ?');
 
 if (defined('MODULE_SHIPPING_DP_NUMBER_ZONES')) {
-    for ($i = 1; $i <= MODULE_SHIPPING_DP_NUMBER_ZONES; $i++) {
-        define('MODULE_SHIPPING_DP_COUNTRIES_' . $i . '_TITLE', '<hr/>Zone "DP"' . $i . ' L&auml;nder');
-        define('MODULE_SHIPPING_DP_COUNTRIES_' . $i . '_DESC', 'Liste séparée par des virgules des codes pays ISO à 2 chiffres pour la zone ' . $i . ' (Entrez WORLD pour le reste du monde).');
-        define('MODULE_SHIPPING_DP_COST_' . $i . '_TITLE', 'DP zone ' . $i . ' Table d\'expédition');
-        define('MODULE_SHIPPING_DP_COST_' . $i . '_DESC', 'Frais d\'expédition pour la région ' . $i . ' liée au poids de la commande. Beispiel: 3:8.50,7:10.50,99999:12.00... Les poids supérieurs à 0 et inférieurs à 3 coûtent 8,50, les poids inférieurs à 7 coûtent 10,50 pour la zone ' . $i . '.');
-    }
+  for ($module_shipping_dp_i = 1; $module_shipping_dp_i <= MODULE_SHIPPING_DP_NUMBER_ZONES; $module_shipping_dp_i ++) {
+    define('MODULE_SHIPPING_DP_COUNTRIES_'.$module_shipping_dp_i.'_TITLE', '<hr/>DP Zone '.$module_shipping_dp_i.' Pays');
+    define('MODULE_SHIPPING_DP_COUNTRIES_'.$module_shipping_dp_i.'_DESC', 'Liste séparée par des virgules des codes pays ISO à 2 chiffres de la zone '.$module_shipping_dp_i.' (Inscrire WORLD pour le reste du monde.)');
+    define('MODULE_SHIPPING_DP_COST_'.$module_shipping_dp_i.'_TITLE', 'DP Zone '.$module_shipping_dp_i.' Tableau d\'expédition');
+    define('MODULE_SHIPPING_DP_COST_'.$module_shipping_dp_i.'_DESC', 'Frais d\'expédition de la zone '.$module_shipping_dp_i.' par rapport au poids de la commande. Beispiel: 3:8.50,7:10.50,99999:12.00... Les poids supérieurs à 0 et inférieurs à 3 coûtent 8.50, ceux inférieurs à 7 coûtent 10.50 pour la zone '.$module_shipping_dp_i);
+  }
 }

@@ -36,9 +36,9 @@ define('MODULE_SHIPPING_GLS_POSTCODE_DESC', 'Zones de code postal');
 define('MODULE_SHIPPING_GLS_POSTCODE_EXTRA_COST_TITLE', 'Recharge des îles GLS - Costes');
 define('MODULE_SHIPPING_GLS_POSTCODE_EXTRA_COST_DESC', 'Supplément île : Indiquez ici le montant qui doit être ajouté aux frais d\'expédition si l\'adresse de livraison se trouve sur une île allemande.');
 
-for ($i = 1; $i <= 6; $i++) {
-    define('MODULE_SHIPPING_GLS_COUNTRIES_' . $i . '_TITLE', '<hr/>Zone ' . $i . ' L&auml;nder');
-    define('MODULE_SHIPPING_GLS_COUNTRIES_' . $i . '_DESC', 'Liste séparée par des virgules des codes pays ISO (2 caractères) qui font partie de la ' . $i . '(Entrez WORLD pour le reste du monde).');
-    define('MODULE_SHIPPING_GLS_COST_' . $i . '_TITLE', 'Zone ' . $i . 'Frais d\'expédition');
-    define('MODULE_SHIPPING_GLS_COST_' . $i . '_DESC', 'Frais d\'expédition par zone ' . $i . ' destinations, sur la base d\'un groupe de poids de commande maximum. Exemple : 3:8.50,7:10.50,.... Un poids inférieur ou égal à 3 coûterait 8,50 par zone ' . $i . ' pays de destination.');
+for ($module_shipping_gls_i = 1; $module_shipping_gls_i <= 6; $module_shipping_gls_i ++) {
+  define('MODULE_SHIPPING_GLS_COUNTRIES_'.$module_shipping_gls_i.'_TITLE', '<hr/>Zone '.$module_shipping_gls_i.' Pays');
+  define('MODULE_SHIPPING_GLS_COUNTRIES_'.$module_shipping_gls_i.'_DESC', 'Liste de codes ISO de pays (2 caractères) séparés par une virgule, qui font partie de la zone '.$module_shipping_gls_i.' (inscrire WORLD pour le reste du monde.).');
+  define('MODULE_SHIPPING_GLS_COST_'.$module_shipping_gls_i.'_TITLE', 'Zone '.$module_shipping_gls_i.' Frais de livraison');
+  define('MODULE_SHIPPING_GLS_COST_'.$module_shipping_gls_i.'_DESC', 'Frais d\'expédition par zone '.$module_shipping_gls_i.'. Destinations basées sur un groupe de poids maximum de commande. Exemple : 3:8.50,7:10.50,... Un poids inférieur ou égal à 3 serait de 8.50 pour la zone '.$module_shipping_gls_i.' pays de destination.');
 }

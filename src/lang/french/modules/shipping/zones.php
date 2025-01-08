@@ -31,12 +31,12 @@ define('MODULE_SHIPPING_ZONES_DISPLAY_TITLE', 'Activer l\'affichage');
 define('MODULE_SHIPPING_ZONES_DISPLAY_DESC', 'Vous souhaitez indiquer si l\'expédition vers le pays n\'est pas possible ou si les frais d\'expédition ne peuvent être calculés ?');
 
 if (defined('MODULE_SHIPPING_ZONES_NUMBER_ZONES')) {
-    for ($i = 1; $i <= MODULE_SHIPPING_ZONES_NUMBER_ZONES; $i++) {
-        define('MODULE_SHIPPING_ZONES_COUNTRIES_' . $i . '_TITLE', '<hr/>Zone ' . $i . ' L&auml;nder');
-        define('MODULE_SHIPPING_ZONES_COUNTRIES_' . $i . '_DESC', 'Liste séparée par des virgules des codes pays ISO (2 caractères) qui font partie de la ' . $i . '(Entrez WORLD pour le reste du monde).');
-        define('MODULE_SHIPPING_ZONES_COST_' . $i . '_TITLE', 'Zone ' . $i . 'Frais d\'expédition');
-        define('MODULE_SHIPPING_ZONES_COST_' . $i . '_DESC', 'Frais d\'expédition par zone ' . $i . ' destinations, sur la base d\'un groupe de poids de commande maximum. Exemple : 3:8.50,7:10.50,.... Un poids inférieur ou égal à 3 coûterait 8,50 par zone ' . $i . ' pays de destination.');
-        define('MODULE_SHIPPING_ZONES_HANDLING_' . $i . '_TITLE', 'Area ' . $i . ' Coûts de traitement');
-        define('MODULE_SHIPPING_ZONES_HANDLING_' . $i . '_DESC', 'Frais de manutention pour cette zone d\'expédition');
-    }
+  for ($module_shipping_zones_i = 1; $module_shipping_zones_i <= MODULE_SHIPPING_ZONES_NUMBER_ZONES; $module_shipping_zones_i ++) {
+    define('MODULE_SHIPPING_ZONES_COUNTRIES_'.$module_shipping_zones_i.'_TITLE', '<hr/>Zone '.$module_shipping_zones_i.' Pays');
+    define('MODULE_SHIPPING_ZONES_COUNTRIES_'.$module_shipping_zones_i.'_DESC', 'Liste de codes ISO de pays (2 caractères) séparés par une virgule, qui font partie de la zone '.$module_shipping_zones_i.' (inscrire WORLD pour le reste du monde.).');
+    define('MODULE_SHIPPING_ZONES_COST_'.$module_shipping_zones_i.'_TITLE', 'Zone '.$module_shipping_zones_i.' Frais d\'expédition');
+    define('MODULE_SHIPPING_ZONES_COST_'.$module_shipping_zones_i.'_DESC', 'Frais de livraison par zone '.$module_shipping_zones_i.' Destinations basées sur un groupe de poids maximum de commande. Exemple : 3:8.50,7:10.50,... Poids inférieur ou égal à 3 serait de 8.50 pour la zone '.$module_shipping_zones_i.' pays de destination.');
+    define('MODULE_SHIPPING_ZONES_HANDLING_'.$module_shipping_zones_i.'_TITLE', 'Zone '.$module_shipping_zones_i.' Frais de manutention');
+    define('MODULE_SHIPPING_ZONES_HANDLING_'.$module_shipping_zones_i.'_DESC', 'Frais de manutention pour cette zone d\'expédition');
+  }
 }

@@ -9,22 +9,7 @@
  */
 
 define('MODULE_ADMIN_LOG_TEXT_TITLE', 'Journal de l\'administrateur');
-define(
-    'MODULE_ADMIN_LOG_TEXT_DESCRIPTION',
-    'Le journal de l\'administrateur est utilisé pour enregistrer les modifications.
-    <ul>
-        <li>Commandes</li>
-        <li>Catégories</li>
-        <li>Articles</li>
-        <li>Système de gestion de contenu</li>
-        <li>Méthodes d\'expédition</li>
-        <li>Méthodes de paiement</li>
-        <li>Vue d\'ensemble</li>
-        <li>Modules du système</li>
-        <li>Modules d\'exportation</li>
-        <li>Configuration</li>
-    </ul>'
-);
+define('MODULE_ADMIN_LOG_TEXT_DESCRIPTION', 'Le journal de l\'administrateur est utilisé pour enregistrer les modifications. <ul> <li>Commandes</li> <li>Catégories</li> <li>Articles</li> <li>Système de gestion de contenu</li> <li>Méthodes d\'expédition</li> <li>Méthodes de paiement</li> <li>Vue d\'ensemble</li> <li>Modules du système</li> <li>Modules d\'exportation</li> <li>Configuration</li> </ul>');
 define('MODULE_ADMIN_LOG_STATUS_TITLE', 'Activer le module ?');
 define('MODULE_ADMIN_LOG_STATUS_DESC', 'Activer l\'enregistrement de l\'administrateur');
 
@@ -36,3 +21,9 @@ define('MODULE_ADMIN_LOG_SHOW_DETAILS_DESC', 'Montrez les détails du changement
 
 define('MODULE_ADMIN_LOG_SHOW_DETAILS_FULL_TITLE', 'Montrer tous les détails ?');
 define('MODULE_ADMIN_LOG_SHOW_DETAILS_FULL_DESC', 'Afficher les détails complets du changement sous forme de matrice');
+
+define('MODULE_ADMIN_LOG_SCHEDULED_TASKS_TITLE', 'Nettoyer les logs');
+define('MODULE_ADMIN_LOG_SCHEDULED_TASKS_DESC', 'Les journaux doivent-ils être nettoyés régulièrement ?');
+
+define('MODULE_ADMIN_LOG_TRESHOLD_DAYS_TITLE', 'Temps de réserve Logs');
+define('MODULE_ADMIN_LOG_TRESHOLD_DAYS_DESC', 'Combien de jours les logs doivent-ils être conservés ?');

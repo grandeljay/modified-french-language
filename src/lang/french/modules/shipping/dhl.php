@@ -28,7 +28,7 @@ define('MODULE_SHIPPING_DHL_SORT_ORDER_DESC', 'Le plus bas est affiché en premi
 define('MODULE_SHIPPING_DHL_ALLOWED_TITLE', 'Zones d\'expédition individuelles');
 define('MODULE_SHIPPING_DHL_ALLOWED_DESC', 'Spécifiez <b>individuellement</b> les zones vers lesquelles l\'expédition doit être possible, par exemple AT,DE');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_1_TITLE', 'Tarifzone 0 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_1_TITLE', 'Zone tarifaire 0 Pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_1_DESC', 'Zone intérieure');
 define('MODULE_SHIPPING_DHL_COST_ECX_1_TITLE', 'Tableau des tarifs pour la zone ECX de 0 à 10 kg');
 define('MODULE_SHIPPING_DHL_COST_ECX_1_DESC', 'Tableau des tarifs pour la zone 0, en <b> ECX</b> jusqu\'à 10 kg de poids d\'expédition.');
@@ -61,7 +61,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_1_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_1_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_1_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_2_TITLE', 'Zone tarifaire 1 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_2_TITLE', 'Zone tarifaire 1 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_2_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 1 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_ECX_2_TITLE', 'Tableau des tarifs pour la zone 1 jusqu\'à 10 kg ECX');
 define('MODULE_SHIPPING_DHL_COST_ECX_2_DESC', 'Tableau des tarifs pour la zone 1, en <b>\'ECX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -94,7 +94,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_2_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_2_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_2_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_3_TITLE', 'Tarifzone 2 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_3_TITLE', 'Zone tarifaire 2 Pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_3_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 2 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_ECX_3_TITLE', 'Tableau des tarifs pour la zone 2 jusqu\'à 10 kg ECX');
 define('MODULE_SHIPPING_DHL_COST_ECX_3_DESC', 'Tableau des tarifs pour la zone 2, en <b>\'ECX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -127,7 +127,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_3_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_3_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_3_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_4_TITLE', 'Tarifzone 3 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_4_TITLE', 'Zone tarifaire 3 Pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_4_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 3 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_4_TITLE', 'Tableau des tarifs pour la zone 3 jusqu\'à 10 kg de DOX');
 define('MODULE_SHIPPING_DHL_COST_DOX_4_DESC', 'Liste des tarifs pour la zone 3, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -170,7 +170,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_4_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_4_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_4_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_5_TITLE', 'Tarifzone 4 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_5_TITLE', 'Zone tarifaire 4 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_5_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 4 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_5_TITLE', 'Tableau des tarifs pour la zone 4 jusqu\'à 10 kg de DOX');
 define('MODULE_SHIPPING_DHL_COST_DOX_5_DESC', 'Liste des tarifs pour la zone 4, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -213,7 +213,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_5_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_5_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_5_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_6_TITLE', 'Tarifzone 5 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_6_TITLE', 'Zone tarifaire 5 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_6_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 5 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_6_TITLE', 'Tableau des tarifs pour la zone de 5 à 10 kg de DOX');
 define('MODULE_SHIPPING_DHL_COST_DOX_6_DESC', 'Liste des tarifs pour la zone 5, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -236,7 +236,7 @@ define('MODULE_SHIPPING_DHL_STEP_WPX_50_6_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_WPX_51_6_TITLE', 'Augmentation de la surtaxe à partir de 50 kg WPX');
 define('MODULE_SHIPPING_DHL_STEP_WPX_51_6_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_7_TITLE', 'Zone tarifaire 6 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_7_TITLE', 'Zone tarifaire 6 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_7_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 6 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_7_TITLE', 'Tableau des tarifs de la zone DOX 6 à 10 kg');
 define('MODULE_SHIPPING_DHL_COST_DOX_7_DESC', 'Liste des tarifs pour la zone 6, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -259,7 +259,7 @@ define('MODULE_SHIPPING_DHL_STEP_WPX_50_7_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_WPX_51_7_TITLE', 'Augmentation de la surtaxe à partir de 50 kg WPX');
 define('MODULE_SHIPPING_DHL_STEP_WPX_51_7_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_8_TITLE', 'Zone tarifaire 7 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_8_TITLE', 'Zone tarifaire 7 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_8_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 7 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_8_TITLE', 'Tableau des tarifs pour la zone de 7 à 10 kg de DOX');
 define('MODULE_SHIPPING_DHL_COST_DOX_8_DESC', 'Liste des tarifs pour la zone 7, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -302,7 +302,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_8_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_8_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_8_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_9_TITLE', 'Tarifzone 8 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_9_TITLE', 'Zone tarifaire 8 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_9_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 8 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_9_TITLE', 'Tableau des tarifs pour la zone de 8 à 10 kg de DOX');
 define('MODULE_SHIPPING_DHL_COST_DOX_9_DESC', 'Liste des tarifs pour la zone 8, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
@@ -345,7 +345,7 @@ define('MODULE_SHIPPING_DHL_STEP_SDX_50_9_DESC', 'Augmentation de la surtaxe pou
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_9_TITLE', 'Augmentation de la surtaxe à partir de 50 kg SDX');
 define('MODULE_SHIPPING_DHL_STEP_SDX_51_9_DESC', 'Augmentation de la surtaxe pour le dépassement de 0,50 kg en EUR');
 
-define('MODULE_SHIPPING_DHL_COUNTRIES_10_TITLE', 'Tarifzone 8 L&auml;nder');
+define('MODULE_SHIPPING_DHL_COUNTRIES_10_TITLE', 'Zone tarifaire 8 pays');
 define('MODULE_SHIPPING_DHL_COUNTRIES_10_DESC', 'Liste de pays séparés par des virgules, sous forme de codes de pays ISO à deux caractères, faisant partie de la zone 8 (entrez WORLD pour le reste du monde).');
 define('MODULE_SHIPPING_DHL_COST_DOX_10_TITLE', 'Tableau des tarifs pour la zone de 8 à 10 kg de DOX');
 define('MODULE_SHIPPING_DHL_COST_DOX_10_DESC', 'Liste des tarifs pour la zone 8, en <b>\'DOX</b> \' jusqu\'à 10 kg de poids d\'expédition.');
