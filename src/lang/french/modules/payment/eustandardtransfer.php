@@ -14,7 +14,7 @@
   if (defined('MODULE_PAYMENT_EUSTANDARDTRANSFER_SUCCESS') && MODULE_PAYMENT_EUSTANDARDTRANSFER_SUCCESS == 'True') {
     define('MODULE_PAYMENT_EUSTANDARDTRANSFER_TEXT_INFO', 'Veuillez transférer le montant de la facture due sur notre compte. Vous recevrez les détails du compte lors de la dernière étape de la commande.');
   } else {
-    define('MODULE_PAYMENT_EUSTANDARDTRANSFER_TEXT_INFO', 'Veuillez transférer le montant de la facture due sur notre compte. Vous recevrez les détails du compte lors de la dernière étape de la commande.');
+    define('MODULE_PAYMENT_EUSTANDARDTRANSFER_TEXT_INFO', 'Veuillez virer le montant dû de la facture sur notre compte. Vous recevrez les coordonnées du compte par e-mail après l\'acceptation de la commande.');
   }
   define('MODULE_PAYMENT_EUSTANDARDTRANSFER_STATUS_TITLE', 'Activez le module de virement bancaire standard de l\'UE');
   define('MODULE_PAYMENT_EUSTANDARDTRANSFER_STATUS_DESC', 'Souhaitez-vous accepter les virements bancaires ?');
@@ -26,7 +26,7 @@
   define('MODULE_PAYMENT_EUSTANDARDTRANSFER_BANKNAM_DESC', 'Le nom complet de la banque.');
 
   define('MODULE_PAYMENT_EUSTANDARDTRANSFER_ACCIBAN_TITLE', 'Cuenta bancaria IBAN');
-  define('MODULE_PAYMENT_EUSTANDARDTRANSFER_ACCIBAN_DESC', 'International Account ID.<br />(Demandez à votre banque si vous n\'êtes pas sûr).');
+  define('MODULE_PAYMENT_EUSTANDARDTRANSFER_ACCIBAN_DESC', 'ID de compte international.<br />(Demandez à votre banque si vous n\'êtes pas sûr).');
 
   define('MODULE_PAYMENT_EUSTANDARDTRANSFER_BANKBIC_TITLE', 'Banque Bic');
   define('MODULE_PAYMENT_EUSTANDARDTRANSFER_BANKBIC_DESC', 'ID bancaire international.<br />(Demandez à votre banque si vous n\'êtes pas sûr).');

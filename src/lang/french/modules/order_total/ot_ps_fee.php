@@ -29,12 +29,12 @@
       foreach($installed_shipping_modules as $shipping_code) {
         $module_type = 'shipping';
         $file = $shipping_code.'.php';
-        $shipping_code = ($shipping_code == 'FREEAMOUNT') ? 'FREEAMOUNT_FREE' : 'FEE_' . $shipping_code;
-        $title = $shipping_code == 'FREE' ? 'Frais de port offerts (résumé du module ot_shipping)' : $title;
+        $shipping_code = strtoupper($shipping_code);
+        $title = '';
 
         if (defined('DIR_FS_LANGUAGES') && is_file(DIR_FS_LANGUAGES . 'french/modules/' . $module_type . '/' . $file)) {
           include_once(DIR_FS_LANGUAGES . 'french/modules/' . $module_type . '/' . $file);
-        $title = $shipping_code == 'FREE' ? 'Frais de port offerts (résumé du module ot_shipping)' : $title;
+          $title = constant('MODULE_SHIPPING_'.$shipping_code.'_TEXT_TITLE');
         }
         $title = $shipping_code == 'FREE' ? 'Frais de port offerts (résumé du module ot_shipping)' : $title;
 

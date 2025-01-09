@@ -14,7 +14,7 @@
   if (defined('MODULE_PAYMENT_MONEYORDER_SUCCESS') && MODULE_PAYMENT_MONEYORDER_SUCCESS == 'True') {
     define('MODULE_PAYMENT_MONEYORDER_TEXT_INFO', 'Nous expédions votre commande dès que le paiement a été reçu. Vous recevrez les détails de votre compte par e-mail une fois que votre commande aura été acceptée.');
   } else {
-    define('MODULE_PAYMENT_MONEYORDER_TEXT_INFO', 'Nous expédions votre commande dès que le paiement a été reçu. Vous recevrez les détails de votre compte par e-mail une fois que votre commande aura été acceptée.');
+    define('MODULE_PAYMENT_MONEYORDER_TEXT_INFO','Nous expédions votre commande dès réception de votre paiement. Vous recevrez les coordonnées du compte par e-mail après l\'acceptation de la commande.');
   }
   define('MODULE_PAYMENT_MONEYORDER_STATUS_TITLE', 'Activez le module Chèque/Mandat');
   define('MODULE_PAYMENT_MONEYORDER_STATUS_DESC', 'Souhaitez-vous accepter le paiement par chèque/mandat ?');
