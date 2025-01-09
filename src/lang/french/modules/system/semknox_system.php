@@ -17,7 +17,7 @@
   define('MODULE_SEMKNOX_SYSTEM_COLOR_TITLE', 'Couleur d\'accent');
   define('MODULE_SEMKNOX_SYSTEM_COLOR_DESC', 'Spécifiez la couleur d\'accentuation des titres et des boutons (le paramètre s\'applique uniquement si le CSS standard est chargé).');
 
-$languages = xtc_get_languages();
+  $languages = xtc_get_languages();
   foreach ($languages as $language) {
     define('MODULE_SEMKNOX_SYSTEM_API_'.$language['id'].'_TITLE', '['.strtoupper($language['code']).'] API Key');
     define('MODULE_SEMKNOX_SYSTEM_API_'.$language['id'].'_DESC', 'Clé API pour '.strtoupper($language['code']).'');
