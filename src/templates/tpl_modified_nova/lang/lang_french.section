@@ -1,0 +1,185 @@
+[account_checkout_express]
+
+[account_delete]
+title_delete_account = 'Voulez-vous vraiment supprimer votre compte ?'
+text_password = 'Mot de passe :'
+
+[account_edit]
+text_must = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+
+[account_history_info]
+order_text_each = 'par'
+
+[account_history]
+text_account_history = 'Vous voyez ici toutes les commandes que vous avez passées.<br />Vous pouvez les consulter à nouveau en détail ou déclencher à nouveau la commande en cliquant sur les boutons du panier.'
+
+[account_password]
+text_must = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+text_note = 'Note'
+text_account_new_password_info = 'Après avoir envoyé le formulaire, votre nouveau mot de passe sera enregistré et vous serez automatiquement redirigé vers la page de connexion. Vous pouvez alors vous connecter avec votre nouveau mot de passe.'
+
+[account]
+title_nav_account = 'Mon compte'
+title_nav_account_edit = 'Modifier les données du compte'
+title_nav_address_book = 'Carnet d\'adresses'
+title_nav_password = 'Modifier le mot de passe'
+title_nav_orders = 'Commandes'
+title_nav_account_delete = 'Supprimer un compte'
+title_nav_checkout_express = 'Mon achat rapide'
+title_nav_newsletter = 'Bulletin d\'information'
+title_nav_logoff = 'Se désabonner'
+
+title_accountbox_create = 'Créer un compte client'
+title_accountbox_create_guest = 'Créer un compte d\'invité'
+title_accountbox_password_forgotten = 'Mot de passe oublié ?'
+title_accountbox_login_success = 'Bienvenue sur le site'
+
+[address_book_process]
+text_must = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+
+[address_book]
+
+[advanced_search]
+
+[also_purchased]
+
+[boxes]
+text_shippingtime = 'Délai de livraison :'
+show_all = 'Tout afficher'
+subcats_total_heading = 'Gamme complète'
+
+[error_handler]
+
+[checkout_navigation]
+title_shipping = 'Mode d\'expédition'
+desc_shipping = 'Sélectionnez le mode d\'expédition souhaité'
+title_payment = 'Mode de paiement'
+desc_payment = 'Sélectionnez le mode de paiement souhaité'
+title_confirmation = 'Confirmer'
+desc_confirmation = 'Confirmez votre commande'
+title_success = 'Prêt'
+desc_success = 'Merci beaucoup'
+
+[checkout_confirmation]
+order_text_each = 'par'
+text_payment_info_layertext = 'Info'
+
+[checkout_payment]
+checkout_edit_address = 'Modifier l\'adresse'
+
+[checkout_new_address]
+
+[checkout_payment_address]
+
+[checkout_shipping_address]
+
+[checkout_shipping]
+checkout_edit_address = 'Modifier l\'adresse'
+
+[checkout_success]
+
+[contact_us]
+text_hint = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+
+[cookie_usage]
+
+[create_account]
+text_must = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+
+[create_account_guest]
+text_must = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+
+[cross_selling]
+
+[downloads_module]
+heading_personal = 'Vos données'
+
+[main]
+
+[gift_cart]
+text_heading_gift = 'Vous avez un coupon/bon de réduction ?'
+voucher_info_text = 'Votre solde actuel est de'
+voucher_heading_text_popup = 'Informations sur votre crédit'
+text_create_account = 'Créer un compte client'
+
+[graduated_price]
+
+[gv_redeem]
+
+[gv_send]
+
+[filter]
+listing_text_filter_sort = 'Filtrer et trier'
+listing_text_sort = 'Trier'
+listing_filter_text_delete = 'Supprimer le filtre'
+
+[login]
+text_returning = 'Vous avez déjà commandé chez nous ?<br />Nous vous remercions de nous accorder une nouvelle fois votre confiance.'
+
+[logoff]
+
+[index]
+
+[new_products]
+
+[newsletter]
+
+[shopping_cart]
+order_text_update = 'Mettre à jour'
+order_total_heading = 'Résumé'
+checkout_express_activate = 'Activer mon achat rapide'
+order_text_each = 'par'
+products_basket_quantity = 'Nombre'
+text_cart_or = 'ou'
+
+[new_password]
+heading_personal = 'Vos données'
+text_must = '<i class="fa-solid fa-asterisk"></i> informations nécessaires'
+text_note = 'Note'
+
+[password_forgotten]
+
+[popup_coupon_help]
+
+[popup_search_help]
+
+[print_order]
+
+[print_product_info]
+
+[product_info]
+products_basket_quantity = 'Nombre'
+
+[product_navigator]
+
+[reviews]
+heading_reviews = 'Témoignages de clients'
+text_reviews_avg = 'Note moyenne'
+text_reviews_based = 'Basé sur'
+text_single_review = 'Évaluation'
+text_multiple_review = 'Évaluations'
+text_review_show_1 = 'Tous les'
+text_review_show_2 = 'Afficher les évaluations'
+text_review_show = 'Afficher l\'évaluation'
+reviews_signs = 'Caractère'
+reviews_min = 'Au moins'
+
+[product_tags]
+
+[products_category]
+
+[products_media]
+
+[reverse_cross_selling]
+
+[sitemap]
+
+[specials]
+
+[ssl_check]
+
+[categorie_listing]
+
+[upcoming_products]
+
+[wishlist]
