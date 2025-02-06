@@ -43,46 +43,5 @@ text_search_again = 'La recherche n\'a pas donné de résultats précis'
 
 listing_listview = 'Vue en liste'
 listing_boxview = 'Vue de la boîte'
-
-subcats_menu_heading = 'Catégories'
-
-link_settings = 'Paramètres'
-link_specials = 'Offres'
-link_whatsnew = 'Nouveaux articles'
-link_cart = 'Panier d\'achat'
-link_menu = 'Menu'
-link_search = 'Rechercher'
-
-addquickie_placeholder = 'Numéro d\'article ...'
-heading_flyout_text_quickie = 'Veuillez saisir un numéro d\'article.'
-heading_flyout_product_cart = 'Article dans le panier'
-heading_flyout_product_wishlist = 'Articles sur le mémo'
-heading_flyout_qty = 'Nombre :'
-heading_flyout_cart = 'Voir le panier'
-heading_flyout_checkout = 'Passer à la caisse'
-heading_flyout_wishlist = 'Afficher le mémo'
-
-heading_box_languages = 'Langues'
-
-header_back_to_shop = 'Retour à la boutique'
-header_back_to_cart = 'Retour au panier'
-
-subfooter_newsletter_headline = 'Abonnez-vous à notre newsletter'
-subfooter_newsletter_text = 'Offres exclusives gratuites et nouveaux produits par e-mail'
-subfooter_newsletter_disclaim = 'La newsletter est gratuite et vous pouvez vous désabonner à tout moment ici ou dans votre compte client.'
-subfooter_text_email = 'Votre adresse électronique ...'
-
-footer_price_hinweis_1 = 'Tous les prix'
-footer_price_hinweis_incl = 'incl.'
-footer_price_hinweis_excl = 'excl.'
-footer_price_hinweis_2 = 'TVA légale en sus'
-footer_price_hinweis_3 = 'Frais d\'expédition'
-footer_price_hinweis_4 = 'Les prix barrés correspondent à l\'ancien prix chez'
-
-footer_heading_payment = 'Méthodes de paiement'
-footer_heading_social = 'Médias sociaux'
-footer_heading_contact = 'Contact'
-footer_text_contact = 'Boutique de démonstration du logiciel de boutique en ligne modified eCommerce<br />123, rue de l\'Épreuve<br />12345 Modèleville<br /><br />Téléphone : 01234 56789<br />Courrier électronique : demo@modified-shop.org'
-
-text_expires_date = 'Offre spéciale valable jusqu\'au :'
+header_menu = 'Menu'
 products_flag_new = 'Nouveau'
