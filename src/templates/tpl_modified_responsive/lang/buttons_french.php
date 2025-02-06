@@ -108,7 +108,7 @@ define('CSS_IMAGE_BUTTON_SAVE_TEXT', 'Speichern');
 define('CSS_IMAGE_BUTTON_SAVE_ICON_RIGHT', '');
 define('CSS_IMAGE_BUTTON_SAVE_ICON_LEFT', '<i class="far fa-save"></i>');
 
-define('CSS_IMAGE_BUTTON_IN_CART_TEXT', 'In den Warenkorb');
+define('CSS_IMAGE_BUTTON_IN_CART_TEXT', 'Ajouter au panier');
 define('CSS_IMAGE_BUTTON_IN_CART_ICON_RIGHT', '<i class="fas fa-angle-right"></i>');
 define('CSS_IMAGE_BUTTON_IN_CART_ICON_LEFT', '<i class="fas fa-shopping-cart"></i>');
 
