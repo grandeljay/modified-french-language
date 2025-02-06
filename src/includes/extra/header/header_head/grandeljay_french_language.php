@@ -18,7 +18,7 @@ if ('tpl_modified_responsive' !== \CURRENT_TEMPLATE) {
     return;
 }
 
-$css_file_relative = 'templates/' . \CURRENT_TEMPLATE . '/css/grandeljay_french_language.css';
+$css_file_relative = '/templates/' . \CURRENT_TEMPLATE . '/css/grandeljay_french_language.css';
 $css_file_path     = \DIR_FS_CATALOG . $css_file_relative;
 
 if (!\file_exists($css_file_path)) {
