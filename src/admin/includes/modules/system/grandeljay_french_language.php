@@ -11,6 +11,7 @@
  * @phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
  */
 
+use Grandeljay\FrenchLanguage\Constants;
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 class grandeljay_french_language extends StdModule
@@ -19,7 +20,7 @@ class grandeljay_french_language extends StdModule
 
     public function __construct()
     {
-        parent::__construct();
+        parent::__construct(Constants::MODULE_NAME);
 
         $this->checkForUpdate(true);
     }

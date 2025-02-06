@@ -47,3 +47,4 @@ define('MAX_DISPLAY_NEW_PRODUCTS_DAYS', '');
 define('STOCK_MARK_PRODUCT_OUT_OF_STOCK', '');
 define('SEARCH_MIN_LENGTH', '');
 define('MAX_PRODUCTS_QTY', '');
+define('CURRENT_TEMPLATE', '');
