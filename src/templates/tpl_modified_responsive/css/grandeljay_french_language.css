@@ -1,3 +1,6 @@
+/**
+ * Avoid cut off text. It's usually set to `80px`.
+ */
 .cssButtonPos2 {
     width: auto;
 }
